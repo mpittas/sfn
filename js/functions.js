@@ -73,6 +73,8 @@ $('.sfn-news-box__excerpt').each(function(){
   $(this).html(truncateTitle);
 });
 
+
+
 //Show Submenu on when hover on main navigation links
 var headerLink = $('.sfn-header-nav__inner ul li.dropdown a');
 var submenuSection = $('.sfn-header-submenu');

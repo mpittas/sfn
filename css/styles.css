@@ -765,7 +765,7 @@ img {
 
 @media (min-width: 992px) {
   .sfn-meta__date {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
@@ -779,6 +779,10 @@ img {
   letter-spacing: 0.15em;
   -webkit-transition: background .3s ease-in-out;
   transition: background .3s ease-in-out;
+  max-width: 200px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .sfn-meta__badge:hover {
@@ -947,6 +951,14 @@ img {
   margin-left: 0.5rem;
 }
 
+.sfn-news-box__meta .sfn-meta__date {
+  font-size: 12px;
+}
+
+.sfn-news-box__meta .sfn-meta__badge {
+  max-width: 100px;
+}
+
 .sfn-news-box__title {
   margin-bottom: 0.5rem;
 }
@@ -954,7 +966,7 @@ img {
 .sfn-news-box__title h3 {
   font-size: 18px;
   line-height: 1.25em;
-  font-weight: 400;
+  font-weight: 600;
   margin-bottom: 0;
 }
 
@@ -1027,6 +1039,15 @@ img {
   border: 1px solid #C6E2FD;
 }
 
+.sfn-news-box--medium-heading .sfn-news-box__content .sfn-news-box__title h3 {
+  font-size: 20px;
+  line-height: 1.25em;
+}
+
+.sfn-news-box--big-heading .sfn-news-box__content .sfn-news-box__title h3 {
+  font-size: 26px;
+}
+
 @media only screen and (min-width: 992px) {
   .sfn-news-box--def {
     display: -webkit-box;
@@ -1057,7 +1078,7 @@ img {
     line-height: 1.35em;
   }
   .sfn-news-box--def .sfn-news-box__excerpt {
-    font-size: 15px;
+    font-size: 18px;
   }
   .sfn-news-box--def-vertical {
     display: block;
@@ -1436,6 +1457,14 @@ img {
   margin-left: 0.5rem;
 }
 
+.sfn-news-box__meta .sfn-meta__date {
+  font-size: 12px;
+}
+
+.sfn-news-box__meta .sfn-meta__badge {
+  max-width: 100px;
+}
+
 .sfn-news-box__title {
   margin-bottom: 0.5rem;
 }
@@ -1443,7 +1472,7 @@ img {
 .sfn-news-box__title h3 {
   font-size: 18px;
   line-height: 1.25em;
-  font-weight: 400;
+  font-weight: 600;
   margin-bottom: 0;
 }
 
@@ -1516,6 +1545,15 @@ img {
   border: 1px solid #C6E2FD;
 }
 
+.sfn-news-box--medium-heading .sfn-news-box__content .sfn-news-box__title h3 {
+  font-size: 20px;
+  line-height: 1.25em;
+}
+
+.sfn-news-box--big-heading .sfn-news-box__content .sfn-news-box__title h3 {
+  font-size: 26px;
+}
+
 @media only screen and (min-width: 992px) {
   .sfn-news-box--def {
     display: -webkit-box;
@@ -1546,7 +1584,7 @@ img {
     line-height: 1.35em;
   }
   .sfn-news-box--def .sfn-news-box__excerpt {
-    font-size: 15px;
+    font-size: 18px;
   }
   .sfn-news-box--def-vertical {
     display: block;
