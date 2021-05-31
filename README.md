@@ -1,2 +1,2 @@
-# sfn
-Scottish Financial News
+# Scottish Financial News
+Developement of static front-end pages.
