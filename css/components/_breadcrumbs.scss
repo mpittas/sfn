@@ -1,0 +1,25 @@
+.breadcrumb {
+  margin: 0;
+  &-holder {
+    justify-content: center;
+    display: flex;
+  }
+  .breadcrumb-item {
+    font-size: 14px;
+    +.breadcrumb-item {
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 5px;
+        height: 10px;
+        background-image: url('../assets/images/icons/chevron-right.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 7px;
+        margin-right: .5rem;
+        position: relative;
+        top: 5px;
+      }
+    }
+  }
+}

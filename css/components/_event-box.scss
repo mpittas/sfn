@@ -1,0 +1,100 @@
+.sfn-event-box {
+  position: relative;
+  background-color: $grey;
+  margin-bottom: 1.25rem;
+  &__date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background: $black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    user-select: none;
+    z-index: 2;
+    > h2 {
+      margin: 0 0 0 0;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 0.9em;
+      margin-top: 0.25rem;
+    }
+    > span {
+      font-size: 11px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  }
+
+  &__image {
+    height: 0;
+    padding-bottom: 52%;
+    position: relative;
+    overflow: hidden;
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      background: #438cd1;
+      background: -webkit-gradient(linear, left bottom, left top, from(#438cd1), to(rgba(67, 140, 209, 0.075)));
+      background: linear-gradient(0deg, #438cd1 0%, rgba(67, 140, 209, 0.075) 100%);
+      z-index: 1;
+    }
+    img {
+      width: 100%;
+    }
+    @media (min-width: 992px) {
+      padding-bottom: 84%;
+    }
+  }
+
+  &__content {
+    z-index: 3;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 1.25rem;
+    right: 1.25rem;
+    > .sfn-meta__location {
+      margin-bottom: 0.25em;
+      a {
+        color: white;
+      }
+    }
+    > h2,
+    > h4 {
+      margin-bottom: 0;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+    @media (min-width: 992px) {
+      bottom: 0.75rem;
+      left: 0.75rem;
+      right: 0.75rem;
+      > .sfn-meta__location {
+        margin-bottom: 0.5em;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .sfn-event-box {
+    &__content {
+      bottom: 1.25rem;
+      left: 1.25rem;
+      right: 1.25rem;
+    }
+  }
+}

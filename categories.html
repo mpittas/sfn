@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scotish Financial News</title>
+
+    <!-- Favicon -->
+    <!-- <link rel="icon" type="image/png" href="./assets/images/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./assets/images/favicon/favicon-16x16.png" sizes="16x16" /> -->
+
+    <!-- Bootstrap CSS -->
+
+    <link rel=“stylesheet” href=“https://use.typekit.net/gud1dio.css”>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <header class="sfn-header">
+      <div class="sfn-header-main navbar-expand-lg">
+          <div class="container">
+              <div class="row align-items-center">
+                  <div class="col-7 col-lg-3 col-xl-4">
+                      <div class="logo-holder">
+                          <div class="toggle-button d-block d-lg-none" data-bs-toggle="collapse" data-bs-target="#toggleMainNav" aria-controls="toggleMainNav" aria-expanded="false" role="button">
+                              <div class="line-top"></div>
+                              <div class="line-middle"></div>
+                              <div class="line-bottom"></div>
+                          </div>
+                          <div class="navbar-brand logo">
+                              <a href="#">
+                                  <img src="./assets/images/logos/sfn-large-logo.svg" alt="SFN Logo" class="d-none d-lg-block" style="width: 330px"/>
+                                  <img src="./assets/images/logos/sfn-logo-main.svg" alt="SFN Logo" class="d-block d-lg-none" style="width: 80px"/>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-5 col-lg-4 col-xl-3 order-lg-3">
+                      <div class="sfn-header-top-links">
+                          <nav>
+                              <ul>
+                                  <li class="d-none d-lg-block">
+                                      <a href="#">
+                                          About
+                                      </a>
+                                  </li>
+
+                                  <li class="d-none d-lg-block">
+                                      <a href="#">
+                                          Advertise
+                                      </a>
+                                  </li>
+
+                                  <li class="sfn-header-cta">
+                                      <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#subscribeModal">
+                                          SUBSCRIBE
+                                      </a>
+                                  </li>
+                              </ul>
+                          </nav>
+                      </div>
+                  </div>
+
+                  <div class="col-lg-5 order-lg-2 d-none d-lg-block">
+                      <div class="searchbar">
+                          <div class="searchbar__inner">
+                              <input type="text" placeholder="Search articles, jobs, events...">
+                              <input type="submit" value="" style="background-image: url('./assets/images/icons/magnifying-glass-icon.svg');">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="sfn-header-nav navbar navbar-expand-lg">
+          <div class="collapse navbar-collapse" id="toggleMainNav">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-12">
+                          <div class="sfn-header-nav__holder">
+                              <div>
+                                  <div class="searchbar d-block d-lg-none">
+                                      <div class="searchbar__inner">
+                                          <input type="text" placeholder="Search articles, jobs, events...">
+                                          <input type="submit" value="" style="background-image: url('./assets/images/icons/magnifying-glass-icon.svg');">
+                                      </div>
+                                  </div>
+
+                                  <nav class="sfn-header-nav__inner">
+                                      <ul class="navbar-nav">
+                                          <li class="dropdown">
+                                              <a class="dropdown-toggle active" href="#" id="navbarDropdown01" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                News
+                                              </a>
+                                              <ul class="dropdown-menu" aria-labelledby="navbarDropdown01">
+                                                <li><a class="dropdown-item" href="#">Latest</a></li>
+                                                <li><a class="dropdown-item" href="#">Appointments</a></li>
+                                                <li><a class="dropdown-item" href="#">Legislation</a></li>
+                                                <li><a class="dropdown-item" href="#">Courts</a></li>
+                                                <li><a class="dropdown-item" href="#">Financial Regulatory</a></li>
+                                                <li><a class="dropdown-item" href="#">And Finally</a></li>
+                                              </ul>
+                                            </li>
+                                          <li class="active">
+                                              <a href="#" class="dropdown-toggle" id="navbarDropdown02" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  Analysis
+                                              </a>
+                                              <ul class="dropdown-menu" aria-labelledby="navbarDropdown02">
+                                                  <li><a class="dropdown-item" href="#">Analysis Data</a></li>
+                                                  <li><a class="dropdown-item" href="#">Analyisi News</a></li>
+                                                </ul>
+                                          </li>
+                                          <li>
+                                              <a href="#">
+                                                  Events
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a href="#">
+                                                  Advertisement
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a href="#">
+                                                  About Us
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  </nav>
+                              </div>
+
+                              <div class="sfn-social">
+                                  <nav>
+                                      <ul class="sfn-social__nav d-block d-lg-none">
+                                          <li>
+                                              <a href="#">Terms & Conditions</a>
+                                          </li>
+                                          <li>
+                                              <a href="#">Privacy Policy</a>
+                                          </li>
+                                          <li>
+                                              <a href="#">Cookies</a>
+                                          </li>
+                                      </ul>
+                                  </nav>
+
+                                  <nav>
+                                      <ul class="sfn-social__media">
+                                          <li>
+                                              <a href="#">
+                                                  <img src="./assets/images/brands/facebook.svg" alt="Facebook">
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a href="#">
+                                                  <img src="./assets/images/brands/twitter.svg" alt="Twitter">
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a href="#">
+                                                  <img src="./assets/images/brands/linked-in.svg" alt="Linked In">
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  </nav>
+
+                                  <nav>
+                                      <ul class="sfn-social__list-icons d-block d-lg-none">
+                                          <li>
+                                              <a href="tel:+44(0)1382549723">
+                                                  <img src="./assets/images/icons/phone-icon.svg" alt="Phone icon">
+                                                  +44 (0) 1382 549723
+                                              </a>
+                                          </li>
+  
+                                          <li>
+                                              <a href="mailto:newsdesk@irishlegal.com">
+                                                  <img src="./assets/images/icons/email-icon.svg" alt="Email icon">
+                                                  newsdesk@irishlegal.com.
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  </nav>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- We use 'collapse' option from bootstrap to toggle the custom navigation -->
+      <div class="sfn-header-submenu d-none d-lg-block">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="sfn-header-submenu__inner">
+                          <nav>
+                              <ul>
+                                  <li>
+                                      <a href="#" class="active" aria-current="page">Latest</a>
+                                  </li>
+                                  <li>
+                                      <a href="#">Appointments</a>
+                                  </li>
+                                  <li>
+                                      <a href="#">Legislation</a>
+                                  </li>
+                                  <li>
+                                      <a href="#">Courts</a>
+                                  </li>
+                                  <li>
+                                      <a href="#">Financial Regulatory</a>
+                                  </li>
+                                  <li>
+                                      <a href="#">And Finally</a>
+                                  </li>
+                              </ul>
+                          </nav>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+
+  <main class="wrapper">
+    <div class="mb-4 d-block d-lg-none">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <nav aria-label="breadcrumb" class="breadcrumb-holder">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Library</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>      
+    </div>
+
+    <div class="mb-4">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="sfn-banner d-none d-lg-block">
+                    <a href="#">
+                        <img src="./assets/images/banners/banner-ratio-1280-120.jpg" alt="Banner 1280-120">
+                    </a>
+                </div>
+
+                <div class="sfn-banner d-block d-lg-none">
+                  <a href="#">
+                    <img src="./assets/images/banners/banner-ratio-335-120.jpg" alt="Banner 335-120">
+                  </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="mb-4">
+              <article class="sfn-featured-newsbox sfn-home-featured mb-4">
+                <div class="sfn-featured-newsbox__image">
+                    <img src="./assets/images/placeholder/featured-image.jpg" alt="Featured article image">
+  
+                    <div class="sfn-meta__badge d-none d-lg-block">
+                        <a href="#">Reviews</a>
+                    </div>
+                </div>
+                <div class="sfn-featured-newsbox__content">
+                    <div class="sfn-meta__holder">
+                        <a href="#" class="sfn-meta__date">
+                            <time datetime="2021-08-14">
+                                14 Apr 2021
+                            </time>
+                        </a>
+  
+                        <address class="sfn-meta__time d-none d-lg-block">
+                            <img src="./assets/images/icons/clock-icon.svg" alt="Clock icon">
+                            Reading time: <span>7 minutes</span>
+                        </address>
+  
+                        <div class="sfn-meta__badge d-block d-lg-none">
+                            <a href="#">Reviews</a>
+                        </div>
+                    </div>                   
+                    <div class="sfn-featured-newsbox__title">
+                        <h2>
+                            <a href="#">French Duncan’s corporate advisory team surpasses &pound;110m of transactions since 2020</a>
+                        </h2>
+                    </div>
+                    <div class="sfn-featured-newsbox__author d-none d-lg-block">
+                        <address class="sfn-meta__author">
+                            <a href="#" rel="author">
+                                <img src="./assets/images/icons/user-icon.svg" alt="User icon">
+                                by
+                                <span>Connor Beaton</span>
+                            </a>
+                        </address>
+                    </div>
+                    <div class="sfn-featured-newsbox__excerpt d-none d-lg-block">
+                        <p>Over the course of the past 15 months, the team completed close to 20 transactions, with a combined value of over &pound;110m. The firm experienced particular activity in the care home, engineering and e-commerce sectors, along with supporting....</p>
+                    </div>
+                    <div class="sfn-element__read-more d-none d-lg-block">
+                        <a href="#">Read Full Article <img src="./assets/images/icons/arrow-right.svg" alt="Arrow right"></a>
+                    </div>
+                </div>
+              </article>
+  
+              <article class="sfn-box-video" style="background-image: url('');">
+                <div class="sfn-meta__badge">
+                    <a href="#">
+                        Category
+                    </a>
+                </div>
+                <div class="sfn-box-video__content">
+                    <a href="#" class="sfn-meta__date">
+                        <time datetime="2021-08-14">
+                            14 Apr 2021
+                        </time>
+                    </a>
+                    
+                    <h3>
+                        <a href="#">French Duncan’s corporate advisory team surpasses &pound;110m of transactions since 2020</a>
+                    </h3>
+                </div>
+  
+                <div class="sfn-box-video__play-button">
+                    <a href="#">
+                        <img src="./assets/images/icons/play-circle.svg" alt="Play button">
+                    </a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="col-lg-3 sfn-mobile-separator">
+            <div class="row">
+              <div class="col-6 col-lg-12">
+                <article class="sfn-news-box sfn-news-box--def sfn-news-box--def-vertical mb-4">
+                  <div class="sfn-news-box__image">
+                      <div class="sfn-meta__badge">
+                        <a href="#">Legislation</a>
+                      </div>
+                      <a href="#">
+                          <img src="./assets/images/placeholder/normal-size.jpg" alt="Box image">
+                      </a>
+                  </div>
+                  <div class="sfn-news-box__content">
+                      <div class="sfn-meta__holder">
+                          <a href="#" class="sfn-meta__date">
+                              <time datetime="2021-08-14">
+                                  14 Apr 2021
+                              </time>
+                          </a>
+    
+                          <address class="sfn-meta__time d-none d-lg-block">
+                              <img src="./assets/images/icons/clock-icon.svg" alt="Clock icon">
+                              Reading time: <span>7 minutes</span>
+                          </address>
+                      </div>
+    
+                      <div class="sfn-news-box__title">
+                          <h3>
+                              <a href="#">French Duncan’s corporate advisory team surpasses &pound;110m of transactions...</a>
+                          </h3>
+                      </div>
+    
+                      <address class="sfn-meta__author">
+                          <a href="#" rel="author">
+                              <img src="./assets/images/icons/user-icon.svg" alt="User icon">
+                              by
+                              <span>Connor Beaton</span>
+                          </a>
+                      </address>
+                  </div> 
+                </article>
+              </div>
+              <div class="col-6 col-lg-12">
+                <article class="sfn-news-box sfn-news-box--def sfn-news-box--def-vertical">
+                  <div class="sfn-news-box__image">
+                      <div class="sfn-meta__badge">
+                        <a href="#">Legislation</a>
+                      </div>
+                      <a href="#">
+                          <img src="./assets/images/placeholder/normal-size.jpg" alt="Box image">
+                      </a>
+                  </div>
+                  <div class="sfn-news-box__content">
+                      <div class="sfn-meta__holder">
+                          <a href="#" class="sfn-meta__date">
+                              <time datetime="2021-08-14">
+                                  14 Apr 2021
+                              </time>
+                          </a>
+    
+                          <address class="sfn-meta__time d-none d-lg-block">
+                              <img src="./assets/images/icons/clock-icon.svg" alt="Clock icon">
+                              Reading time: <span>7 minutes</span>
+                          </address>
+                      </div>
+    
+                      <div class="sfn-news-box__title">
+                          <h3>
+                              <a href="#">French Duncan’s corporate advisory team surpasses &pound;110m of transactions...</a>
+                          </h3>
+                      </div>
+    
+                      <address class="sfn-meta__author">
+                          <a href="#" rel="author">
+                              <img src="./assets/images/icons/user-icon.svg" alt="User icon">
+                              by
+                              <span>Connor Beaton</span>
+                          </a>
+                      </address>
+                  </div> 
+                </article>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-3">
+            <div class="mb-4">
+              <div class="sfn-title-main">
+                <h3>Latest Jobs:</h3>
+              </div>
+              <div class="sfn-news-boxes mb-4">
+                <article class="sfn-news-box">
+                  <div class="sfn-news-box__image">
+                    <a href="#">
+                      <img src="./assets/images/placeholder/square-image.jpg" alt="Box image">
+                    </a>
+                  </div>
+                  <div class="sfn-news-box__content">
+                      <div class="sfn-news-box__meta">
+                          <div class="sfn-meta__term">
+                              <a href="#">BRODIES LLP</a>
+                          </div>
+                      </div>
+
+                      <div class="sfn-news-box__title">
+                          <h3>
+                              <a href="#">Solicitor (NQ – 3 years' PQE) – Personal & Family...</a>
+                          </h3>
+                      </div>
+
+                      <div class="sfn-meta__location">
+                          <a href="#">
+                              <img src="./assets/images/icons/map-pointer.svg" alt="Map pointer icon"/>
+                              Aberdeen
+                          </a>
+                      </div>
+                  </div>
+                </article>
+  
+                  <article class="sfn-news-box">
+                      <div class="sfn-news-box__image">
+                          <a href="#">
+                              <img src="./assets/images/placeholder/square-image.jpg" alt="Box image">
+                          </a>
+                      </div>
+                      <div class="sfn-news-box__content">
+                          <div class="sfn-news-box__meta">
+                              <div class="sfn-meta__term">
+                                  <a href="#">BRODIES LLP</a>
+                              </div>
+                          </div>
+  
+                          <div class="sfn-news-box__title">
+                              <h3>
+                                  <a href="#">Legal Software Implementation Consultant.</a>
+                              </h3>
+                          </div>
+  
+                          <div class="sfn-meta__location">
+                              <a href="#">
+                                  <img src="./assets/images/icons/map-pointer.svg" alt="Map pointer icon"/>
+                                  Remote
+                              </a>
+                          </div>
+                      </div>
+                  </article>
+  
+                  <article class="sfn-news-box">
+                      <div class="sfn-news-box__image">
+                          <a href="#">
+                              <img src="./assets/images/placeholder/square-image.jpg" alt="Box image">
+                          </a>
+                      </div>
+                      <div class="sfn-news-box__content">
+                          <div class="sfn-news-box__meta">
+                              <div class="sfn-meta__term">
+                                  <a href="#">BRODIES LLP</a>
+                              </div>
+                          </div>
+  
+                          <div class="sfn-news-box__title">
+                              <h3>
+                                  <a href="#">Employment Solicitor/Senior Solicitor...</a>
+                              </h3>
+                          </div>
+  
+                          <div class="sfn-meta__location">
+                              <a href="#">
+                                  <img src="./assets/images/icons/map-pointer.svg" alt="Map pointer icon"/>
+                                  Aberdeen
+                              </a>
+                          </div>
+                      </div>
+                  </article>
+              </div>
+              <div class="sfn-element__read-more">
+                  <a href="#">See All Jobs <img src="./assets/images/icons/arrow-right.svg" alt="Arrow right"></a>
+              </div>
+            </div>
+
+            <div class="sfn-banner d-block d-lg-none mb-4">
+              <a href="#">
+                <img src="./assets/images/banners/banner-ratio-335-120.jpg" alt="Banner 335-120">
+              </a>
+            </div>
+
+            <article class="sfn-cta" style="background-image: url();">
+              <div class="sfn-cta__inner">
+                <img src="./assets/images/icons/book-open.svg" alt="Book open icon">
+                <h3>Visit Scottish News Online!</h3>
+                <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                <a href="#" class="btn btn-primary">TO SCOTISH NEWS...</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3 d-none d-lg-block">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="sfn-banner mb-3">
+                      <a href="#">
+                          <img src="./assets/images/banners/banner-ratio-624-166.jpg" alt="Banner image">
+                      </a>
+                  </div>
+              </div>
+
+              <div class="col-md-6">
+                  <div class="sfn-banner mb-3">
+                      <a href="#">
+                          <img src="./assets/images/banners/banner-ratio-624-166.jpg" alt="Banner image">
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="d-block d-lg-none mb-4">
+              <div class="sfn-counter">
+                <span>1-10</span>  of <span>283</span> Articles
+              </div>
+            </div>
+
+            <div class="sfn-news-boxes sfn-separator">
+              <article class="sfn-news-box sfn-news-box--list mb-4">
+                <div class="sfn-news-box__image">
+                    <a href="#">
+                        <img src="./assets/images/placeholder/normal-size.jpg" alt="Box image">
+                    </a>
+                </div>
+                <div class="sfn-news-box__content">
+                  <div class="sfn-meta__holder">
+                    <a href="#" class="sfn-meta__date">
+                        <time datetime="2021-08-14">
+                            14 Apr 2021
+                        </time>
+                    </a>
+  
+                    <address class="sfn-meta__time d-none d-lg-block">
+                        <img src="./assets/images/icons/clock-icon.svg" alt="Clock icon">
+                        Reading time: <span>7 minutes</span>
+                    </address>
+  
+                    <div class="sfn-meta__badge d-block d-lg-none">
+                        <a href="#">Reviews</a>
+                    </div>
+                  </div>
+  
+                  <div class="sfn-news-box__title">
+                      <h3>
+                          <a href="#">French Duncan’s corporate advisory team surpasses &pound;110m of transactions...</a>
+                      </h3>
+                  </div>
+  
+                  <div class="sfn-news-box__excerpt d-none d-lg-block">
+                      <p>Over the course of the past 15 months, the team completed close to 20 transactions, with a combined value of over &pound;110m. The firm experienced particular activity in the care home, engineering and e-commerce sectors, along with supporting....</p>
+                  </div>
+  
+                  <address class="sfn-meta__author d-none d-lg-block">
+                    <a href="#" rel="author">
+                      <img src="./assets/images/icons/user-icon.svg" alt="User icon">
+                      by
+                      <span>Connor Beaton</span>
+                    </a>
+                  </address>
+                </div> 
+              </article>
+
+              <article class="sfn-news-box sfn-news-box--list mb-4">
+                <div class="sfn-news-box__image">
+                    <a href="#">
+                        <img src="./assets/images/placeholder/normal-size.jpg" alt="Box image">
+                    </a>
+                </div>
+                <div class="sfn-news-box__content">
+                  <div class="sfn-meta__holder">
+                    <a href="#" class="sfn-meta__date">
+                        <time datetime="2021-08-14">
+                            14 Apr 2021
+                        </time>
+                    </a>
+  
+                    <address class="sfn-meta__time d-none d-lg-block">
+                        <img src="./assets/images/icons/clock-icon.svg" alt="Clock icon">
+                        Reading time: <span>7 minutes</span>
+                    </address>
+  
+                    <div class="sfn-meta__badge d-block d-lg-none">
+                        <a href="#">Reviews</a>
+                    </div>
+                  </div>
+  
+                  <div class="sfn-news-box__title">
+                      <h3>
+                          <a href="#">French Duncan’s corporate advisory team surpasses &pound;110m of transactions...</a>
+                      </h3>
+                  </div>
+  
+                  <div class="sfn-news-box__excerpt d-none d-lg-block">
+                      <p>Over the course of the past 15 months, the team completed close to 20 transactions, with a combined value of over &pound;110m. The firm experienced particular activity in the care home, engineering and e-commerce sectors, along with supporting....</p>
+                  </div>
+  
+                  <address class="sfn-meta__author d-none d-lg-block">
+                    <a href="#" rel="author">
+                      <img src="./assets/images/icons/user-icon.svg" alt="User icon">
+                      by
+                      <span>Connor Beaton</span>
+                    </a>
+                  </address>
+                </div> 
+              </article>
+
+              <article class="sfn-news-box sfn-news-box--list mb-4">
+                <div class="sfn-news-box__image">
+                    <a href="#">
+                        <img src="./assets/images/placeholder/normal-size.jpg" alt="Box image">
+                    </a>
+                </div>
+                <div class="sfn-news-box__content">
+                  <div class="sfn-meta__holder">
+                    <a href="#" class="sfn-meta__date">
+                        <time datetime="2021-08-14">
+                            14 Apr 2021
+                        </time>
+                    </a>
+  
+                    <address class="sfn-meta__time d-none d-lg-block">
+                        <img src="./assets/images/icons/clock-icon.svg" alt="Clock icon">
+                        Reading time: <span>7 minutes</span>
+                    </address>
+  
+                    <div class="sfn-meta__badge d-block d-lg-none">
+                        <a href="#">Reviews</a>
+                    </div>
+                  </div>
+  
+                  <div class="sfn-news-box__title">
+                      <h3>
+                          <a href="#">French Duncan’s corporate advisory team surpasses &pound;110m of transactions...</a>
+                      </h3>
+                  </div>
+  
+                  <div class="sfn-news-box__excerpt d-none d-lg-block">
+                      <p>Over the course of the past 15 months, the team completed close to 20 transactions, with a combined value of over &pound;110m. The firm experienced particular activity in the care home, engineering and e-commerce sectors, along with supporting....</p>
+                  </div>
+  
+                  <address class="sfn-meta__author d-none d-lg-block">
+                    <a href="#" rel="author">
+                      <img src="./assets/images/icons/user-icon.svg" alt="User icon">
+                      by
+                      <span>Connor Beaton</span>
+                    </a>
+                  </address>
+                </div> 
+              </article>
+
+              <article class="sfn-news-box sfn-news-box--list mb-4">
+                <div class="sfn-news-box__image">
+                    <a href="#">
+                        <img src="./assets/images/placeholder/normal-size.jpg" alt="Box image">
+                    </a>
+                </div>
+                <div class="sfn-news-box__content">
+                  <div class="sfn-meta__holder">
+                    <a href="#" class="sfn-meta__date">
+                        <time datetime="2021-08-14">
+                            14 Apr 2021
+                        </time>
+                    </a>
+  
+                    <address class="sfn-meta__time d-none d-lg-block">
+                        <img src="./assets/images/icons/clock-icon.svg" alt="Clock icon">
+                        Reading time: <span>7 minutes</span>
+                    </address>
+  
+                    <div class="sfn-meta__badge d-block d-lg-none">
+                        <a href="#">Reviews</a>
+                    </div>
+                  </div>
+  
+                  <div class="sfn-news-box__title">
+                      <h3>
+                          <a href="#">French Duncan’s corporate advisory team surpasses &pound;110m of transactions...</a>
+                      </h3>
+                  </div>
+  
+                  <div class="sfn-news-box__excerpt d-none d-lg-block">
+                      <p>Over the course of the past 15 months, the team completed close to 20 transactions, with a combined value of over &pound;110m. The firm experienced particular activity in the care home, engineering and e-commerce sectors, along with supporting....</p>
+                  </div>
+  
+                  <address class="sfn-meta__author d-none d-lg-block">
+                    <a href="#" rel="author">
+                      <img src="./assets/images/icons/user-icon.svg" alt="User icon">
+                      by
+                      <span>Connor Beaton</span>
+                    </a>
+                  </address>
+                </div> 
+              </article>
+            </div>
+
+            <div class="sfn-list-navigation">
+              <div class="d-none d-lg-block">
+                <div class="sfn-counter">
+                  <span>1-10</span>  of <span>283</span> Articles
+                </div>
+              </div>
+
+              <div>
+                <div class="sfn-pagination">
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="pagination-nav inactive"><a href="#">Previous</a></li>
+                      <li class="active"><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li class="pagination-nav"><a href="#">Next</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="sfn-footer">
+      <div class="sfn-footer__top">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-4">
+                      <div class="sfn-footer__info">
+                          <div class="sfn-footer__logo">
+                              <img src="./assets/images/logos/sfn-large-logo-light.svg" alt="SFN Logo light">
+                          </div>
+
+                          <div class="sfn-social">
+                              <div class="sfn-footer__socials">
+                                  <h4 class="d-none d-lg-block">Follow us:</h4>
+                                  <ul class="sfn-social__media">
+                                      <li>
+                                          <a href="#">
+                                              <img src="./assets/images/brands/facebook-light.svg" alt="Facebook">
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a href="#">
+                                              <img src="./assets/images/brands/twitter-light.svg" alt="Twitter">
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a href="#">
+                                              <img src="./assets/images/brands/linked-in-light.svg" alt="Linked In">
+                                          </a>
+                                      </li>
+                                  </ul>
+                              </div>
+
+                              <div class="sfn-footer__contacts">
+                                  <ul class="sfn-social__list-icons">
+                                      <li>
+                                          <a href="tel:+44(0)1382549723">
+                                              <img src="./assets/images/icons/phone-icon-light.svg" alt="Phone icon">
+                                              +44 (0) 1382 549723
+                                          </a>
+                                      </li>
+  
+                                      <li>
+                                          <a href="mailto:newsdesk@irishlegal.com">
+                                              <img src="./assets/images/icons/email-icon-light.svg" alt="Email icon">
+                                              newsdesk@irishlegal.com.
+                                          </a>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-2">
+                      <div class="sfn-footer__nav">
+                          <div class="sfn-footer__nav-title">
+                              <h2>News</h2>
+                              <img src="./assets/images/icons/chevron-right-light.svg" alt="Chevron right icon">
+                          </div>
+
+                          <div class="sfn-footer__nav-inner">
+                              <ul>
+                                  <li>
+                                      <a href="#">Latest</a>
+                                  </li>
+                                  <li>
+                                      <a href="#">Appointments</a>
+                                  </li>
+                                  <li>
+                                      <a href="#">Legislation</a>
+                                  </li>
+                                  <li>
+                                      <a href="#">Courts</a>
+                                  </li>
+                                  <li>
+                                      <a href="#">Financial Regulatory</a>
+                                  </li>
+                                  <li>
+                                      <a href="#">And Finally</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-2">
+                      <div class="sfn-footer__nav">
+                          <div class="sfn-footer__nav-title">
+                              <h2>Analysis</h2>
+                              <img src="./assets/images/icons/chevron-right-light.svg" alt="Chevron right icon">
+                          </div>
+
+                          <div class="sfn-footer__nav-inner">
+                              <ul>
+                                  <li>
+                                      <a href="#">Opinion</a>
+                                  </li>
+                                  <li>
+                                      <a href="#">Interviews</a>
+                                  </li>
+                                  <li>
+                                      <a href="#">Reviews</a>
+                                  </li>
+                                  <li>
+                                      <a href="#">Our Legal Heritage</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-2">
+                      <div class="sfn-footer__nav">
+                          <div class="sfn-footer__nav-title">
+                              <h2>SFN</h2>
+                              <img src="./assets/images/icons/chevron-right-light.svg" alt="Chevron right icon">
+                          </div>
+
+                          <div class="sfn-footer__nav-inner">
+                              <ul>
+                                  <li>
+                                      <a href="#">Jobs</a>
+                                  </li>
+                                  <li>
+                                      <a href="#">Events</a>
+                                  </li>
+                                  <li>
+                                      <a href="#">About Us</a>
+                                  </li>
+                                  <li>
+                                      <a href="#">Advertisement</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-2">
+                      <div class="sfn-footer__nav">
+                          <div class="sfn-footer__nav-title">
+                              <h2>Legal</h2>
+                              <img src="./assets/images/icons/chevron-right-light.svg" alt="Chevron right icon">
+                          </div>
+
+                          <div class="sfn-footer__nav-inner">
+                              <ul>
+                                  <li>
+                                      <a href="#">Terms & Conditions</a>
+                                  </li>
+                                  <li>
+                                      <a href="#">Privacy Policy</a>
+                                  </li>
+                                  <li>
+                                      <a href="#">Cookies</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="sfn-footer__bottom">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12">
+                      <div class="sfn-footer__bottom-inner">
+                          <div class="sfn-footer__copyright">
+                              <small>All Righst Reserved &copy; Dundee Press Agency Ltd 2021</small>
+                          </div>
+
+                          <div class="sfn-footer__credits">
+                              <h3>Design by:</h3>
+                              <a href="#">
+                                  <img src="./assets/images/logos/future-nature-logo.svg" alt="Future Nature logo">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal modal-newsletter fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-body">
+              <div class="sfn-newsletter-modal">
+                  <div class="sfn-newsletter-modal__title">
+                      <img src="./assets/images/icons/document-icon.svg" alt="Newsletter icon" />
+                      <h3>Stay up to date with all financial news by subscribing to our newsletter:</h3>
+                  </div>
+                  <div class="sfn-newsletter-modal__content">
+                      <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                  </div>
+                  <div class="sfn-newsletter-modal__form">
+                      <form action="#">
+                          <input type="email" placeholder="Enter your email...">
+                          <input type="submit" value="Subscribe">
+                      </form>
+                  </div>
+              </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+  <script src="./js/functions.js"></script>
+</body>
+</html>

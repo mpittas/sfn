@@ -1,0 +1,119 @@
+.sfn-featured-newsbox {
+  &__image {
+    position: relative;
+    margin-bottom: 1rem;
+    &-inner {
+      height: 0;
+      padding-bottom: 53.25%;
+      position: relative;
+      overflow: hidden;
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        background: rgb(67,140,209);
+        background: linear-gradient(0deg, rgba(67,140,209,1) 0%, rgba(67,140,209,0.075) 100%);
+        z-index: 1;
+      }
+      img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+      }
+    }
+    .sfn-meta__badge {
+      position: absolute;
+      left: 10px;
+      top: -10px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 0.75rem;
+    h2 {
+      margin-bottom: 0;
+      font-weight: bold;
+      a {
+        color: black;
+        text-decoration: none;
+        transition: color .2s ease-in-out;
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+
+  &__author {
+    margin-bottom: 0.75rem;
+  }
+  &__excerpt {
+    font-family: adobe-caslon-pro, serif;
+    font-size: 18px;
+    line-height: 1.4em;
+  }
+}
+
+
+@media only screen and (max-width: 991px) {
+  .sfn-featured-newsbox {
+    margin: 0 -0.75rem;
+    &.sfn-top-featured {
+      position: relative;
+      .sfn-meta__holder {
+        * + *:before {
+          display: none;
+        }
+      }
+      .sfn-featured-newsbox__content {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        z-index: 2;
+      }
+      .sfn-featured-newsbox__title {
+        margin-bottom: 0;
+        h2 {
+          a {
+            color: white;
+          }
+        }
+      }
+  
+      .sfn-meta__holder {
+        margin-bottom: 5px;
+        .sfn-meta__date {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .sfn-featured-newsbox {
+    &--horizontal {
+      display: flex;
+      > div {
+        width: 50%;
+        &:nth-child(1) {
+          padding-right: 1rem;
+        }
+        &:nth-child(2) {
+          padding-left: 1rem;
+        }
+      }
+    }
+    &__image {
+      &-inner {
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+}

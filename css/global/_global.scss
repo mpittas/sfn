@@ -1,0 +1,57 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  color: $grey-mid;
+}
+
+::-webkit-input-placeholder {
+  color: $grey;
+  font-style: italic;
+}
+::-moz-placeholder {
+  color: $grey;
+  font-style: italic;
+}
+:-ms-input-placeholder {
+  color: $grey;
+  font-style: italic;
+}
+:-moz-placeholder {
+  color: $grey;
+  font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: adobe-caslon-pro, serif;
+  font-weight: bold;
+  color: $black;
+}
+
+// H1 - 48px (Section title)
+// H2 - 32px (Featured newsbox title)
+// H3 - 24px (Small heading separator and CTA title)
+// h4 - 20px (Small newsbox title)
+
+h1 { margin-top: 0; font-size: 3rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+
+@media only screen and (max-width: 991px) {
+  h1 {font-size: 1.625rem; }
+  h2 { font-size: 1.125rem; }
+  // h3 { font-size: 1.5rem; }
+  // h4 { font-size: 1.25rem; }
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number] {
+  border: 1px solid $grey-light;
+  min-height: 40px;
+}
+
+img {
+  max-width: 100%;
+}

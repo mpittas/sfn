@@ -1,0 +1,68 @@
+@import './global/_variables.scss';
+
+
+@import './global/_global.scss';
+
+@import './components/_header.scss';
+@import './components/_breadcrumbs.scss';
+
+@import './components/_burger-toggle.scss';
+@import './components/_main-title.scss';
+@import './components/_meta-elements.scss';
+@import './components/_news-box.scss';
+
+@import './components/_call-to-action.scss';
+@import './components/_featured-box.scss';
+@import './components/_video-box.scss';
+@import './components/_elements.scss';
+@import './components/_news-box.scss';
+@import './components/_event-box.scss';
+@import './components/_social.scss';
+@import './components/_footer.scss';
+@import './components/_modals.scss';
+@import './components/_temp.scss';
+@import './components/_pagination.scss';
+@import './components/_searchbar.scss';
+@import './components/_buttons.scss';
+
+// .row {
+//   --bs-gutter-x: 1.875rem;
+// }
+
+.sfn-typography {
+  + .sfn-typography {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid $grey-light;
+  }
+  small {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+}
+
+
+
+.sfn-imgs {
+  display: flex;
+  > div {
+    margin: 1rem;
+    width: 15%;
+  }
+  .sfn-img {
+    display: block;
+    > div {
+      position: relative;
+      height: 0;
+      padding-bottom: 56.25%;
+      overflow: hidden;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}

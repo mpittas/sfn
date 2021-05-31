@@ -1,0 +1,32 @@
+.sfn-element {
+  &__read-more {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    a {
+      color: $primary;
+      text-decoration: none;
+      position: relative; 
+      transition: color .2s ease-in-out;
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 27px;
+        bottom: -3px;
+        height: 1px;
+        background: $primary;
+        transition: right .2s ease-in-out;
+      }
+      &:hover {
+        &:before {
+          right: 0;
+        }
+      }
+    }
+    img {
+      margin-left: 7px;
+    }
+  }
+}

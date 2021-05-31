@@ -1,0 +1,47 @@
+.sfn-cta {
+  background: $blue-light;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0.75rem;
+    right: 0.75rem;
+    top: 0.75rem;
+    bottom: 0.75rem;
+    border: 1px solid $blue-lightest;
+  }
+  &__inner {
+    position: relative;
+    z-index: 2;
+  }
+  img {
+    margin-bottom: 1.5rem;
+  }
+  h3 {
+    color: $blue-dark;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+  p {
+    color: $blue-dark;
+    margin-bottom: 1.75rem;
+    font-size: 18px;
+    font-family: adobe-caslon-pro, serif;
+    opacity: 0.8;
+    line-height: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .sfn-cta {
+    min-height: 386px;
+    padding: 1.5rem;
+  }
+}
