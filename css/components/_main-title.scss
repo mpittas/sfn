@@ -13,10 +13,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: -0.75rem 1rem -0.75rem 0;
+    margin: -0.75rem 0;
   }
   h3 {
     margin: 0;
+    padding-left: 1rem;
+    @media (min-width: 992px) {
+      position: relative;
+      top: 5px;
+      width: calc(100% - 52px);
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
   }
 }
 
@@ -26,6 +35,11 @@
   border-top: 1px solid $blue-lightest;
   border-bottom: 1px solid $blue-lightest;
   position: relative;
+  @media (min-width: 992px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   &:before {
     content: '';
     position: absolute;
@@ -40,13 +54,9 @@
     margin: 0;
     font-weight: bold;
     color: black;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .sfn-title-long {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @media (min-width: 992px) {
+      position: relative;
+      top: 7px;
+    }
   }
 }

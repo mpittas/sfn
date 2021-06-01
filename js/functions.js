@@ -52,28 +52,13 @@ function truncateString(str, num) {
   }
 }
 
-// Truncate headings
-$('.sfn-news-box__title a, .sfn-box-video__content h3 a').each(function(){
-  var title = $(this).html();
-  var truncateTitle = truncateString(title, 52);
-  $(this).html(truncateTitle);
-});
-
-// Truncate excerpts text
-$('.sfn-featured-newsbox__excerpt').each(function(){
-  var title = $(this).html();
-  var truncateTitle = truncateString(title, 278);
-  $(this).html(truncateTitle);
-});
-
-// Truncate excerpts text
-$('.sfn-news-box__excerpt').each(function(){
-  var title = $(this).html();
-  var truncateTitle = truncateString(title, 156);
-  $(this).html(truncateTitle);
-});
-
-
+// Truncate
+new Cuttr('.sfn-news-boxes--featured h3, .sfn-box-video__content h3 a', { truncate: 'words', length: 6 });
+new Cuttr('.sfn-news-box--medium-heading h3', { truncate: 'words', length: 8 });
+new Cuttr('.sfn-news-box--big-heading h3', { truncate: 'words', length: 8 });
+new Cuttr('.sfn-featured-newsbox__title h2', { truncate: 'words', length: 10 });
+new Cuttr('.sfn-featured-newsbox__excerpt', { truncate: 'words', length: 38 });
+new Cuttr('.sfn-news-box__excerpt', { truncate: 'words', length: 18 });
 
 //Show Submenu on when hover on main navigation links
 var headerLink = $('.sfn-header-nav__inner ul li.dropdown a');

@@ -665,11 +665,23 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: -0.75rem 1rem -0.75rem 0;
+  margin: -0.75rem 0;
 }
 
 .sfn-title-main h3 {
   margin: 0;
+  padding-left: 1rem;
+}
+
+@media (min-width: 992px) {
+  .sfn-title-main h3 {
+    position: relative;
+    top: 5px;
+    width: calc(100% - 52px);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
 }
 
 .sfn-title-long {
@@ -678,6 +690,20 @@ img {
   border-top: 1px solid #C6E2FD;
   border-bottom: 1px solid #C6E2FD;
   position: relative;
+}
+
+@media (min-width: 992px) {
+  .sfn-title-long {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .sfn-title-long:before {
@@ -697,17 +723,10 @@ img {
   color: black;
 }
 
-@media only screen and (min-width: 992px) {
-  .sfn-title-long {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+@media (min-width: 992px) {
+  .sfn-title-long h1 {
+    position: relative;
+    top: 7px;
   }
 }
 
