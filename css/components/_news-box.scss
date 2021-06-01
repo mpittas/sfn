@@ -64,8 +64,9 @@
   }
 
 
-  // Box witout an image
+  // Box witout an image.
   &--no-image {
+    
     margin-bottom: 1rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid $blue-lightest;
