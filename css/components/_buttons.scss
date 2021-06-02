@@ -5,7 +5,10 @@
     i,
     img {
       font-size: 14px;
-      margin-right: 0.5rem;
+      margin-right: 1rem;
+      @media (min-width: 992px) {
+        margin-right: 0.5rem;
+      }
     }
   }
   &-has-icon-right {
@@ -14,7 +17,10 @@
     i,
     img {
       font-size: 14px;
-      margin-left: 0.5rem;
+      margin-left: 1rem;
+      @media (min-width: 992px) {
+        margin-left: 1rem;
+      }
     }
   }
 }
@@ -27,7 +33,7 @@
   letter-spacing: 0.1rem;
   padding: 0.65rem 0.85rem;
   &.btn-primary {
-    color: $primary;
+    border: none;
     background: $primary;
     color: white;
     &:hover {
@@ -46,8 +52,7 @@
     transition: color .2s ease-in-out, border-color .2s ease-in-out, background .2s ease-in-out;
     &:hover {
       color: $primary;
-      background: $primary;
-      color: white;
+      background: lighten($primary, 38%);
     }
     &:focus {
       background: $grey-medium;
@@ -61,5 +66,12 @@
   justify-content: center;
   @media(min-width: 992px) {
     display: block;
+  }
+  @media(max-width: 991px) {
+    a {
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+    }
   }
 }

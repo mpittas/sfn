@@ -30,12 +30,13 @@
 }
 
 .sfn-title-long {
-  padding: 0.75rem 0 0.75rem 1rem;
+  padding: 0.75rem 0;
   margin: 0 0 2rem 0;
   border-top: 1px solid $blue-lightest;
   border-bottom: 1px solid $blue-lightest;
   position: relative;
   @media (min-width: 992px) {
+    min-height: 83px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -44,8 +45,8 @@
     content: '';
     position: absolute;
     left: 0;
-    top: 0;
-    bottom: 0;
+    top: -1px;
+    bottom: -1px;
     width: 83px;
     background: $blue-light;
     z-index: -1;
@@ -54,9 +55,12 @@
     margin: 0;
     font-weight: bold;
     color: black;
+    position: relative;
+    top: 4px;
     @media (min-width: 992px) {
-      position: relative;
       top: 7px;
+      position: relative;
+      left: 32px;
     }
   }
 }

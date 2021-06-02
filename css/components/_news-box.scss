@@ -28,7 +28,7 @@
     align-items: center;
     margin-bottom: 0.5rem;
     > * + * {
-      margin-left: 0.5rem;
+      margin-left: 0.75rem;
     }
     .sfn-meta__date {
       font-size: 12px;
@@ -114,6 +114,13 @@
         border: 1px solid $blue-lightest;
       }
     }
+    .sfn-news-box__title {
+      h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
   }
 
   &--medium-heading {
@@ -128,6 +135,7 @@
   }
 
   &--big-heading {
+    align-items: flex-start;
     .sfn-news-box__content {
       .sfn-news-box__title {
         h3 {

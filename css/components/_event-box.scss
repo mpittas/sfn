@@ -73,6 +73,7 @@
     > h2,
     > h4 {
       margin-bottom: 0;
+      color: white;
       a {
         color: white;
         text-decoration: none;
@@ -92,9 +93,9 @@
 @media only screen and (min-width: 992px) {
   .sfn-event-box {
     &__content {
-      bottom: 1.25rem;
-      left: 1.25rem;
-      right: 1.25rem;
+      bottom: 1.5rem;
+      left: 1.5rem;
+      right: 1.5rem;
     }
   }
 }

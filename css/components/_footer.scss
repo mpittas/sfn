@@ -1,6 +1,37 @@
 .sfn-footer {
+  @media (min-width: 992px) {
+    width: 1320px;
+    margin: 0 auto;
+    .sfn-footer__top {
+      padding-left: 3rem;
+      padding-right: 3rem;
+      > .container {
+        position: relative;
+        z-index: 2;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        left: 1rem;
+        top: 1rem;
+        right: 1rem;
+        bottom: -1px;
+        border: 1px solid #666;
+      }
+      .row {
+        > div:nth-child(2) {
+          margin-left: -20px;
+        }
+      }
+    }
+    .sfn-footer__bottom {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
   &__top {
     background: $black;
+    position: relative;
     .sfn-social__list-icons li a {
       color: white;
     }
@@ -8,6 +39,7 @@
 
   &__bottom {
     background: $grey-mid2;
+    z-index: 2;
   }
 
   &__info {
@@ -72,11 +104,11 @@
         margin: 0;
         li {
           + li {
-            margin-top: 0.5rem;
+            margin-top: 0.35rem;
           }
           a {
             color: rgba(255,255,255,0.8);
-            font-size: 13px;
+            font-size: 12px;
             text-transform: uppercase;
             text-decoration: none;
             letter-spacing: 0.1rem;
@@ -172,14 +204,14 @@
                 bottom: -4px;
                 left: 0;
                 right: 0;
-                width: 0;
                 height: 1px;
                 background: white;
-                transition: width .3s ease-in-out;
+                opacity: 0;
+                transition: opacity .2s ease;
               }
               &:hover {
                 &:before {
-                  width: 100%;
+                  opacity: 1;
                 }
               }
             }
