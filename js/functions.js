@@ -31,7 +31,6 @@ function toggleAnimation() {
 
 // Changes on document ready
 jQuery(document).ready(function($){
-
   toggleAnimation()
   footerCollapse();
 });
@@ -41,16 +40,6 @@ $(window).resize(function() {
   footerCollapse();
 });
 
-
-// Truncuate function
-function truncateString(str, num) {
-  if (num > str.length){
-    return str;
-  } else{
-    str = str.substring(0,num);
-    return str+"...";
-  }
-}
 
 // Truncate
 new Cuttr('.sfn-news-boxes--featured h3, .sfn-box-video__content h3 a', { truncate: 'words', length: 6 });
@@ -62,12 +51,8 @@ new Cuttr('.sfn-news-box__excerpt', { truncate: 'words', length: 18 });
 
 //Show Submenu on when hover on main navigation links
 var headerLink = $('.sfn-header-nav__inner ul li.dropdown a');
-var submenuSection = $('.sfn-header-submenu');
+var submenuSection = $('.sfn-header-submenu'); 
 
-// Temp solution
-headerLink.mouseenter(function(){
-    submenuSection.addClass('show');
-});  
-headerLink.mouseleave(function(){
-    submenuSection.removeClass('show');
-});  
+// headerLink.click(function(){
+//   submenuSection.toggle();
+// });

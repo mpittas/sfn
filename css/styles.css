@@ -88,11 +88,6 @@ img {
           align-items: center;
 }
 
-.sfn-header .collapsing {
-  -webkit-transition: height .15s ease;
-  transition: height .15s ease;
-}
-
 .sfn-header-top-links nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -280,12 +275,8 @@ img {
   .sfn-header-nav__inner ul li .dropdown-menu li + li {
     margin-left: 0;
   }
-  .sfn-header-submenu {
+  .sfn-header-submenu > .container {
     padding-top: 1rem;
-    display: none !important;
-  }
-  .sfn-header-submenu.show {
-    display: block !important;
   }
 }
 
@@ -328,6 +319,9 @@ img {
     position: absolute;
     top: 23px;
     right: 1rem;
+  }
+  .sfn-header-submenu {
+    display: none;
   }
 }
 

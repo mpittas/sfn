@@ -13,10 +13,6 @@
       }
   }
 
-  .collapsing {
-    transition: height .15s ease;
-  }
-
   &-top-links {
     nav {
         ul {
@@ -194,12 +190,8 @@
       }
     }
   }
-  .sfn-header-submenu {
+  .sfn-header-submenu > .container {
     padding-top: 1rem;
-    display: none !important;
-    &.show {
-      display: block !important;
-    }
   }
 }
 
@@ -253,5 +245,8 @@
         }
       }
     }
+  }
+  .sfn-header-submenu {
+    display: none;
   }
 }
