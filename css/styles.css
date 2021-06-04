@@ -239,7 +239,7 @@ img {
 
 @media only screen and (min-width: 992px) {
   .sfn-header {
-    margin-bottom: 2.5em;
+    margin-bottom: 1em;
   }
   .sfn-header-main {
     margin-bottom: 16px;
@@ -1065,8 +1065,14 @@ img {
 }
 
 .sfn-news-box--medium-heading .sfn-news-box__content .sfn-news-box__title h3 {
-  font-size: 20px;
-  line-height: 1.25em;
+  font-size: 18px;
+}
+
+@media (min-width: 992px) {
+  .sfn-news-box--medium-heading .sfn-news-box__content .sfn-news-box__title {
+    font-size: 20px;
+    line-height: 1.25em;
+  }
 }
 
 .sfn-news-box--big-heading {
@@ -1076,7 +1082,13 @@ img {
 }
 
 .sfn-news-box--big-heading .sfn-news-box__content .sfn-news-box__title h3 {
-  font-size: 26px;
+  font-size: 18px;
+}
+
+@media (min-width: 992px) {
+  .sfn-news-box--big-heading .sfn-news-box__content .sfn-news-box__title {
+    font-size: 26px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -1206,6 +1218,7 @@ img {
   padding-bottom: 53.25%;
   position: relative;
   overflow: hidden;
+  display: block;
 }
 
 .sfn-featured-newsbox__image-inner:before {
@@ -1262,6 +1275,16 @@ img {
   font-family: adobe-caslon-pro, serif;
   font-size: 18px;
   line-height: 1.4em;
+}
+
+.sfn-featured-newsbox--horizontal {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #C6E2FD;
+}
+
+.sfn-featured-newsbox--horizontal .sfn-featured-newsbox__image {
+  margin-bottom: 0;
 }
 
 @media only screen and (max-width: 991px) {
@@ -1573,8 +1596,14 @@ img {
 }
 
 .sfn-news-box--medium-heading .sfn-news-box__content .sfn-news-box__title h3 {
-  font-size: 20px;
-  line-height: 1.25em;
+  font-size: 18px;
+}
+
+@media (min-width: 992px) {
+  .sfn-news-box--medium-heading .sfn-news-box__content .sfn-news-box__title {
+    font-size: 20px;
+    line-height: 1.25em;
+  }
 }
 
 .sfn-news-box--big-heading {
@@ -1584,7 +1613,13 @@ img {
 }
 
 .sfn-news-box--big-heading .sfn-news-box__content .sfn-news-box__title h3 {
-  font-size: 26px;
+  font-size: 18px;
+}
+
+@media (min-width: 992px) {
+  .sfn-news-box--big-heading .sfn-news-box__content .sfn-news-box__title {
+    font-size: 26px;
+  }
 }
 
 @media only screen and (min-width: 992px) {

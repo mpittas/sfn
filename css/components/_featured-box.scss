@@ -7,6 +7,7 @@
       padding-bottom: 53.25%;
       position: relative;
       overflow: hidden;
+      display: block;
       &:before {
         content: '';
         position: absolute;
@@ -55,6 +56,15 @@
     font-family: adobe-caslon-pro, serif;
     font-size: 18px;
     line-height: 1.4em;
+  }
+
+  &--horizontal {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid $blue-lightest;
+    .sfn-featured-newsbox__image {
+      margin-bottom: 0;
+    }
   }
 }
 

@@ -127,6 +127,9 @@
     .sfn-news-box__content {
       .sfn-news-box__title {
         h3 {
+          font-size: 18px;
+        }
+        @media (min-width: 992px) {
           font-size: 20px;
           line-height: 1.25em;
         }
@@ -139,6 +142,9 @@
     .sfn-news-box__content {
       .sfn-news-box__title {
         h3 {
+          font-size: 18px;
+        }
+        @media (min-width: 992px) {
           font-size: 26px;
         }
       }
