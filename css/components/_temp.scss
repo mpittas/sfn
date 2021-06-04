@@ -7,13 +7,14 @@
 
 .sfn-counter {
   font-size: 16px;
-  color: black;
+  color: $grey-mid;
   span {
     font-weight: bold;
+    color: $black;
   }
 }
 
-.has-border-bottom {
+.has-spacing-bottom {
   position: relative;
   padding-bottom: 2rem;
   margin-bottom: 2rem;
@@ -34,6 +35,20 @@
     padding-bottom: 0;
     &:before {
       display: none;
+    }
+  }
+}
+
+.sfn-border-bottom {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid $blue-lightest;
+}
+
+.sfn-category-articles {
+  &__inner {
+    @media (min-width: 1368px) {
+      padding-right: 26%;
     }
   }
 }

@@ -1,34 +1,41 @@
 .pagination {
   display: flex;
   align-items: center;
+  margin-bottom: 0;
   li {
+    + li {
+      margin-left: -1px;
+    }
     a {
       display: block;
       background: white;
-      color: black;
+      color: $primary;
       transition: background .2s ease, color .2s ease;
       width: 38px;
       height: 38px;
-      border: 1px solid $grey-medium;
+      border: 1px solid $blue-lightest;
       text-align: center;
       line-height: 38px;
       text-decoration: none;
       font-size: 12px;
       font-weight: bold;
       &:hover {
-        background: $grey-lightest;
-        color: $grey;
+        background: $blue-light;
+        color: $blue-dark;
       }
     }
     &.active {
       a {
-        background: $grey-lightest;
-        color: $grey;
+        background: $blue-light;
+        color: $blue-dark;
       }
     }
     &.inactive {
       a {
         opacity: 0.6;
+        &:hover {
+          opacity: 0.6 !important;
+        }
       }
     }
     &.pagination-nav {
@@ -38,36 +45,41 @@
         width: auto;
         height: auto;
         border: none;
-        color: $black;
+        color: $primary;
         font-size: 14px;
         font-weight: 700;
         letter-spacing: 0.1em;
         text-decoration: underline;
         text-transform: uppercase;
         position: relative;
+        transition: opacity .2s ease;
         &:after,
         &:before {
           content: '';
           display: inline-block;
-          width: 12px;
-          height: 12px;
-          background-image: url('../assets/images/icons/arrow-left-small.svg');
+          width: 15px;
+          height: 11px;
+          background-image: url('../assets/images/icons/pagination-arrow-left.svg');
           background-repeat: no-repeat;
           background-position: center center;
-          background-size: 12px;
+          background-size: 15px;
           position: relative;
           top: 1px;
         }
         &:before {
-          margin-right: 0.5rem;
+          margin-right: 0.75rem;
         }
         &:after {
           margin-left: 0.5rem;
-          background-image: url('../assets/images/icons/arrow-right-small.svg');
+          background-image: url('../assets/images/icons/pagination-arrow-right.svg');
+        }
+        &:hover {
+          background: none;
+          opacity: 0.8;
         }
       }
       &:first-child {
-        margin-right: 1rem;
+        margin-right: 1.5rem;
         a {
           &:after {
             display: none;
@@ -75,7 +87,7 @@
         }
       }
       &:last-child {
-        margin-left: 1rem;
+        margin-left: 1.5rem;
         a {
           &:before {
             display: none;

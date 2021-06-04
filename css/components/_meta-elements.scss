@@ -41,24 +41,24 @@
   }
 
   &__badge {
-    font-size: 10px;
-    font-weight: 600;
-    text-transform: uppercase;
-    background: $blue-light;
-    border: 1px solid $blue-lightest;
-    padding: 0.2rem 0.5rem;
-    letter-spacing: 0.15em;
-    transition: background .3s ease-in-out;
-    max-width: 200px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    &:hover {
-      background: $blue-lightest;
-    }
     a {
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      background: $blue-light;
+      border: 1px solid $blue-lightest;
+      padding: 0.2rem 0.5rem;
+      letter-spacing: 0.15em;
+      transition: background .3s ease-in-out;
+      max-width: 200px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
       color: $primary;
       text-decoration: none;
+      &:hover {
+        background: $blue-lightest;
+      }
     }
   }
 

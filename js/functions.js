@@ -47,7 +47,8 @@ new Cuttr('.sfn-news-box--medium-heading h3', { truncate: 'words', length: 8 });
 new Cuttr('.sfn-news-box--big-heading h3', { truncate: 'words', length: 8 });
 new Cuttr('.sfn-featured-newsbox__title h2', { truncate: 'words', length: 10 });
 new Cuttr('.sfn-featured-newsbox__excerpt', { truncate: 'words', length: 38 });
-new Cuttr('.sfn-news-box__excerpt', { truncate: 'words', length: 18 });
+new Cuttr('.truncate-excerpt', { truncate: 'words', length: 18 });
+new Cuttr('.truncate-excerpt--long', { truncate: 'words', length: 27 });
 
 //Show Submenu on when hover on main navigation links
 var headerLink = $('.sfn-header-nav__inner ul li.dropdown a');

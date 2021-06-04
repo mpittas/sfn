@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Scottish Financial News</title>
 
     <!-- Favicon -->
@@ -239,28 +240,81 @@
     </header>
 
     <main class="wrapper pb-lg-5">
-        <!-- Featured News / Single Featured New / Latest Articles -->
+        <!-- Banners -->
         <div class="mb-4">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 order-lg-1">
-                        
+                    <div class="col-md-12 d-none d-lg-block">
+                        <div class="sfn-banner">
+                            <a href="#">
+                                <img src="./assets/images/banners/banner-ratio-1280-120.jpg" alt="Banner image">
+                            </a>
+                        </div>
                     </div>
-
-                    <div class="col-lg-3 col-md-6 order-lg-0">
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 order-lg-2">
+    
+                    <div class="col-md-12 d-block d-lg-none">
+                        <div class="sfn-banner">
+                            <a href="#">
+                                <img src="./assets/images/banners/banner-ratio-335-120.jpg" alt="Banner image">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Video / CTA / Latest Jobs -->
+        
+        <!-- Featured News, Video / Vertical News / Latest Jobs, CTA -->
         <div class="mb-4">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
+                        <article class="sfn-featured-newsbox sfn-top-featured mb-5">
+                            <div class="sfn-featured-newsbox__image">
+                                <a href="#" class="sfn-featured-newsbox__image-inner">
+                                    <img src="./assets/images/images/business-man.jpg" alt="Featured article image">
+                                </a>
+
+                                <div class="sfn-meta__badge d-none d-lg-block">
+                                    <a href="#">Reviews</a>
+                                </div>
+                            </div>
+                            <div class="sfn-featured-newsbox__content">
+                                <div class="sfn-meta__holder">
+                                    <time datetime="2021-08-14" class="sfn-meta__date">
+                                        14 Apr 2021
+                                    </time>
+
+                                    <address class="sfn-meta__time d-none d-lg-block">
+                                        <img src="./assets/images/icons/clock-icon.svg" alt="Clock icon">
+                                        <i>Reading time:</i> <span>7 minutes</span>
+                                    </address>
+
+                                    <div class="sfn-meta__badge d-block d-lg-none">
+                                        <a href="#">Reviews</a>
+                                    </div>
+                                </div>
+                                <div class="sfn-featured-newsbox__title">
+                                    <h2>
+                                        <a href="#">French Duncan’s corporate advisory team surpasses &pound;110m of transactions since 2020 and the media has covered this topic for years now.</a>
+                                    </h2>
+                                </div>
+                                <div class="sfn-featured-newsbox__author d-none d-lg-block">
+                                    <address class="sfn-meta__author">
+                                        <a href="#" rel="author">
+                                            <img src="./assets/images/images/user-image.jpg" alt="User icon">
+                                            <span>Connor Beaton</span>
+                                        </a>
+                                    </address>
+                                </div>
+                                <div class="sfn-featured-newsbox__excerpt d-none d-lg-block">
+                                    <p>Over the course of the past 15 months, the team completed close to 20 transactions, with a combined value of over &pound;110m. The firm experienced particular activity in the care home, engineering and e-commerce sectors, along with supporting the community growth bt providing monthly benefits for its users. It's estimated that by the year 2025 we will be able to live a fully self-sustainable lifestyle.</p>
+                                </div>
+                                <div class="sfn-element__read-more d-none d-lg-block">
+                                    <a href="#">Read Full Article <img src="./assets/images/icons/arrow-right.svg" alt="Arrow right"></a>
+                                </div>
+                            </div>
+                        </article>
+                        
                         <article class="sfn-box-video mb-4">
                             <a href="#">
                                 <div class="sfn-box-video__image">
@@ -288,107 +342,191 @@
                         </article>
                     </div>
 
-                    <div class="col-md-6 col-lg-3 order-md-2 mb-4">
-                        <div class="sfn-title-main">
-                            <em>
-                                <img src="./assets/images/icons/internship-icon.svg" alt="Intership icon">
-                            </em>
-                            <h3>Latest Jobs:</h3>
-                        </div>
-                        <div class="sfn-news-boxes has-border-bottom has-border-bottom-small">
-                            <article class="sfn-news-box sfn-news-box--job">
-                                <div class="sfn-news-box__image">
-                                    <a href="#">
-                                        <img src="./assets/images/logos/jobs/brodies-logo.png" alt="Jobs logo">
+                    <div class="col-lg-3 col-md-6">
+                        <article class="sfn-news-box sfn-news-box--def sfn-news-box--medium-heading sfn-news-box--def-vertical mb-5">
+                            <div class="sfn-news-box__image">
+                                <div class="sfn-meta__badge d-none d-lg-block">
+                                    <a href="#">Legislation</a>
+                                </div>
+                                <a href="#">
+                                    <img src="./assets/images/images/news-sample-image-3.jpg" alt="Box image">
+                                </a>
+                            </div>
+                            <div class="sfn-news-box__content">
+                                <div class="sfn-meta__holder">
+                                    <time datetime="2021-08-14" class="sfn-meta__date">
+                                        14 Apr 2021
+                                    </time>
+    
+                                    <address class="sfn-meta__time">
+                                        <img src="./assets/images/icons/clock-icon.svg" alt="Clock icon">
+                                        <span>4 minutes</span>
+                                    </address>
+                                </div>
+
+                                <div class="sfn-news-box__title">
+                                    <h3>
+                                        <a href="#">French Duncan’s corporate advisory team surpasses &pound;110m of transactions and they are held responsible for their actions</a>
+                                    </h3>
+                                </div>
+
+                                <div class="sfn-news-box__excerpt truncate-excerpt">
+                                    <p>Over the course of the past 15 months, the team completed close to 20 transactions, with a combined value of over &pound;110m. The firm experienced particular activity in the care home, engineering and e-commerce sectors, along with supporting the community growth bt providing monthly benefits for its users. It's estimated that by the year 2025 we will be able to live a fully self-sustainable lifestyle.</p>
+                                </div>
+
+                                <address class="sfn-meta__author">
+                                    <a href="#" rel="author">
+                                        <img src="./assets/images/images/user-image.jpg" alt="User icon">
+                                        by
+                                        <span>Connor Beaton</span>
                                     </a>
+                                </address>
+                            </div> 
+                        </article>
+
+                        <article class="sfn-news-box sfn-news-box--def sfn-news-box--medium-heading sfn-news-box--def-vertical">
+                            <div class="sfn-news-box__image">
+                                <div class="sfn-meta__badge d-none d-lg-block">
+                                    <a href="#">Appointments</a>
                                 </div>
-                                <div class="sfn-news-box__content">
-                                    <div class="sfn-news-box__meta">
-                                        <div class="sfn-meta__term">
-                                            <a href="#">BRODIES LLP</a>
-                                        </div>
-                                    </div>
-
-                                    <div class="sfn-news-box__title">
-                                        <h3>
-                                            <a href="#">Solicitor (NQ – 3 years' PQE) – Personal & Family...</a>
-                                        </h3>
-                                    </div>
-
-                                    <div class="sfn-meta__location">
-                                        <a href="#">
-                                            <img src="./assets/images/icons/map-pointer.svg" alt="Map pointer icon"/>
-                                            Aberdeen
-                                        </a>
-                                    </div>
+                                <a href="#">
+                                    <img src="./assets/images/images/news-sample-image-4.jpg" alt="Box image">
+                                </a>
+                            </div>
+                            <div class="sfn-news-box__content">
+                                <div class="sfn-meta__holder">
+                                    <time datetime="2021-08-14" class="sfn-meta__date">
+                                        14 Apr 2021
+                                    </time>
+    
+                                    <address class="sfn-meta__time">
+                                        <img src="./assets/images/icons/clock-icon.svg" alt="Clock icon">
+                                        <span>4 minutes</span>
+                                    </address>
                                 </div>
-                            </article>
 
-                            <article class="sfn-news-box sfn-news-box--job">
-                                <div class="sfn-news-box__image">
-                                    <a href="#">
-                                        <img src="./assets/images/logos/jobs/denovo-logo.png" alt="Jobs logo">
+                                <div class="sfn-news-box__title">
+                                    <h3>
+                                        <a href="#">French Duncan’s corporate advisory team surpasses &pound;110m of transactions and they are held responsible for their actions</a>
+                                    </h3>
+                                </div>
+
+                                <div class="sfn-news-box__excerpt truncate-excerpt">
+                                    <p>Over the course of the past 15 months, the team completed close to 20 transactions, with a combined value of over &pound;110m. The firm experienced particular activity in the care home, engineering and e-commerce sectors, along with supporting the community growth bt providing monthly benefits for its users. It's estimated that by the year 2025 we will be able to live a fully self-sustainable lifestyle.</p>
+                                </div>
+
+                                <address class="sfn-meta__author">
+                                    <a href="#" rel="author">
+                                        <img src="./assets/images/images/user-image.jpg" alt="User icon">
+                                        by
+                                        <span>Connor Beaton</span>
                                     </a>
-                                </div>
-                                <div class="sfn-news-box__content">
-                                    <div class="sfn-news-box__meta">
-                                        <div class="sfn-meta__term">
-                                            <a href="#">BRODIES LLP</a>
-                                        </div>
-                                    </div>
-
-                                    <div class="sfn-news-box__title">
-                                        <h3>
-                                            <a href="#">Legal Software Implementation Consultant.</a>
-                                        </h3>
-                                    </div>
-
-                                    <div class="sfn-meta__location">
-                                        <a href="#">
-                                            <img src="./assets/images/icons/map-pointer.svg" alt="Map pointer icon"/>
-                                            Remote
-                                        </a>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="sfn-news-box sfn-news-box--job">
-                                <div class="sfn-news-box__image">
-                                    <a href="#">
-                                        <img src="./assets/images/logos/jobs/jackson-boyd-logo.png" alt="Jobs logo">
-                                    </a>
-                                </div>
-                                <div class="sfn-news-box__content">
-                                    <div class="sfn-news-box__meta">
-                                        <div class="sfn-meta__term">
-                                            <a href="#">BRODIES LLP</a>
-                                        </div>
-                                    </div>
-
-                                    <div class="sfn-news-box__title">
-                                        <h3>
-                                            <a href="#">Employment Solicitor/Senior Solicitor...</a>
-                                        </h3>
-                                    </div>
-
-                                    <div class="sfn-meta__location">
-                                        <a href="#">
-                                            <img src="./assets/images/icons/map-pointer.svg" alt="Map pointer icon"/>
-                                            Aberdeen
-                                        </a>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="center-button">
-                            <a href="#" class="d-block btn btn-outline-primary">
-                                See All Jobs
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
+                                </address>
+                            </div> 
+                        </article>
                     </div>
 
-                    <div class="col-md-6 col-lg-3 order-md-1">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="mb-4">
+                            <div class="sfn-title-main">
+                                <em>
+                                    <img src="./assets/images/icons/internship-icon.svg" alt="Intership icon">
+                                </em>
+                                <h3>Latest Jobs:</h3>
+                            </div>
+                            <div class="sfn-news-boxes has-spacing-bottom has-spacing-bottom-small">
+                                <article class="sfn-news-box sfn-news-box--job">
+                                    <div class="sfn-news-box__image">
+                                        <a href="#">
+                                            <img src="./assets/images/logos/jobs/brodies-logo.png" alt="Jobs logo">
+                                        </a>
+                                    </div>
+                                    <div class="sfn-news-box__content">
+                                        <div class="sfn-news-box__meta">
+                                            <div class="sfn-meta__term">
+                                                <a href="#">BRODIES LLP</a>
+                                            </div>
+                                        </div>
+    
+                                        <div class="sfn-news-box__title">
+                                            <h3>
+                                                <a href="#">Solicitor (NQ – 3 years' PQE) – Personal & Family...</a>
+                                            </h3>
+                                        </div>
+    
+                                        <div class="sfn-meta__location">
+                                            <a href="#">
+                                                <img src="./assets/images/icons/map-pointer.svg" alt="Map pointer icon"/>
+                                                Aberdeen
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+    
+                                <article class="sfn-news-box sfn-news-box--job">
+                                    <div class="sfn-news-box__image">
+                                        <a href="#">
+                                            <img src="./assets/images/logos/jobs/denovo-logo.png" alt="Jobs logo">
+                                        </a>
+                                    </div>
+                                    <div class="sfn-news-box__content">
+                                        <div class="sfn-news-box__meta">
+                                            <div class="sfn-meta__term">
+                                                <a href="#">BRODIES LLP</a>
+                                            </div>
+                                        </div>
+    
+                                        <div class="sfn-news-box__title">
+                                            <h3>
+                                                <a href="#">Legal Software Implementation Consultant.</a>
+                                            </h3>
+                                        </div>
+    
+                                        <div class="sfn-meta__location">
+                                            <a href="#">
+                                                <img src="./assets/images/icons/map-pointer.svg" alt="Map pointer icon"/>
+                                                Remote
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+    
+                                <article class="sfn-news-box sfn-news-box--job">
+                                    <div class="sfn-news-box__image">
+                                        <a href="#">
+                                            <img src="./assets/images/logos/jobs/jackson-boyd-logo.png" alt="Jobs logo">
+                                        </a>
+                                    </div>
+                                    <div class="sfn-news-box__content">
+                                        <div class="sfn-news-box__meta">
+                                            <div class="sfn-meta__term">
+                                                <a href="#">BRODIES LLP</a>
+                                            </div>
+                                        </div>
+    
+                                        <div class="sfn-news-box__title">
+                                            <h3>
+                                                <a href="#">Employment Solicitor/Senior Solicitor...</a>
+                                            </h3>
+                                        </div>
+    
+                                        <div class="sfn-meta__location">
+                                            <a href="#">
+                                                <img src="./assets/images/icons/map-pointer.svg" alt="Map pointer icon"/>
+                                                Aberdeen
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="center-button">
+                                <a href="#" class="d-block btn btn-outline-primary">
+                                    See All Jobs
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
                         <article class="sfn-cta" style="background-image: url();">
                             <div class="sfn-cta__inner">
                                 <img src="./assets/images/icons/megaphone-icon.svg" alt="Megaphone icon">
@@ -403,7 +541,7 @@
         </div>
 
         <!-- Banners -->
-        <div class="mb-3 d-none d-lg-block">
+        <div class="mb-5 d-none d-lg-block">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -425,341 +563,33 @@
             </div>
         </div>
 
-        <!-- Busines -->
-        <div class="has-border-bottom" id="category-business">
+        <!-- Categories News -->
+        <div class="sfn-category-articles has-spacing-bottom" id="category-business">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="sfn-title-long">
-                            <h1>Business:</h1>
-
-                            <a href="#" class="btn btn-outline-primary btn-has-icon-right d-none d-lg-block">
-                                See all articles
-                                <img src="./assets/images/icons/arrow-right.svg" alt="Arrow right icon">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-12 d-none d-lg-block">
-                        <article class="sfn-featured-newsbox sfn-featured-newsbox--horizontal">
-                            <div class="sfn-featured-newsbox__image">
-                                <a href="#" class="sfn-featured-newsbox__image-inner">
-                                    <img src="./assets/images/images/featured-sample-image-1.jpg" alt="Featured article image">
-                                </a>
-
-                                <div class="sfn-meta__badge">
-                                    <a href="#">Reviews</a>
-                                </div>
-                            </div>
-                            <div class="sfn-featured-newsbox__content">
-                                <div class="sfn-meta__holder">
-                                    <time datetime="2021-08-14" class="sfn-meta__date">
-                                        14 Apr 2021
-                                    </time>
-
-                                    <address class="sfn-meta__time d-none d-lg-block">
-                                        <img src="./assets/images/icons/clock-icon.svg" alt="Clock icon">
-                                        <i>Reading time:</i> <span>7 minutes</span>
-                                    </address>
-                                </div>                   
-                                <div class="sfn-featured-newsbox__title">
-                                    <h2>
-                                        <a href="#">French Duncan’s corporate advisory team surpasses &pound;110m of transactions since 2020 and the media has covered this topic for years now.</a>
-                                    </h2>
-                                </div>
-                                <div class="sfn-featured-newsbox__author d-none d-lg-block">
-                                    <address class="sfn-meta__author">
-                                        <a href="#" rel="author">
-                                            <img src="./assets/images/images/user-image.jpg" alt="User icon">
-                                            <span>Connor Beaton</span>
-                                        </a>
-                                    </address>
-                                </div>
-                                <div class="sfn-featured-newsbox__excerpt d-none d-lg-block">
-                                    <p>Over the course of the past 15 months, the team completed close to 20 transactions, with a combined value of over &pound;110m. The firm experienced particular activity in the care home, engineering and e-commerce sectors, along with supporting the community growth bt providing monthly benefits for its users. It's estimated that by the year 2025 we will be able to live a fully self-sustainable lifestyle.</p>
-                                </div>
-                                <div class="sfn-element__read-more d-none d-lg-block">
-                                    <a href="#">Read Full Article <img src="./assets/images/icons/arrow-right.svg" alt="Arrow right"></a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-6 col-lg-12">
-                                <article class="sfn-news-box sfn-news-box--big-heading sfn-news-box--def pb-3 pb-lg-0 mb-4">
-                                    <div class="sfn-news-box__image">
-                                        <a href="#">
-                                            <img src="./assets/images/images/news-sample-image-1.jpg" alt="Box image">
-                                        </a>
-                                    </div>
-                                    <div class="sfn-news-box__content">
-                                        <div class="sfn-meta__holder">
-                                            <time datetime="2021-08-14" class="sfn-meta__date">
-                                                14 Apr 2021
-                                            </time>
-            
-                                            <address class="sfn-meta__time">
-                                                <img src="./assets/images/icons/clock-icon.svg" alt="Clock icon">
-                                                <span>4 minutes</span>
-                                            </address>
-                                        </div>
-        
-                                        <div class="sfn-news-box__title">
-                                            <h3>
-                                                <a href="#">French Duncan’s corporate advisory team surpasses &pound;110m of transactions and they are held responsible for their actions</a>
-                                            </h3>
-                                        </div>
-
-                                        <div class="sfn-news-box__excerpt d-block d-lg-none">
-                                            <p>Over the course of the past 15 months, the team completed close to 20 transactions, with a combined value of over &pound;110m. The firm experienced particular activity in the care home, engineering and e-commerce sectors, along with supporting the community growth bt providing monthly benefits for its users. It's estimated that by the year 2025 we will be able to live a fully self-sustainable lifestyle.</p>
-                                        </div>
-
-                                        <address class="sfn-meta__author">
-                                            <a href="#" rel="author">
-                                                <img src="./assets/images/images/user-image.jpg" alt="User icon">
-                                                by
-                                                <span>Connor Beaton</span>
-                                            </a>
-                                        </address>
-                                    </div> 
-                                </article>
-                            </div>
-
-                            <div class="col-6 col-lg-12">
-                                <article class="sfn-news-box sfn-news-box--big-heading sfn-news-box--def ">
-                                    <div class="sfn-news-box__image">
-                                        <a href="#">
-                                            <img src="./assets/images/images/news-sample-image-2.jpg" alt="Box image">
-                                        </a>
-                                    </div>
-                                    <div class="sfn-news-box__content">
-                                        <div class="sfn-meta__holder">
-                                            <time datetime="2021-08-14" class="sfn-meta__date">
-                                                14 Apr 2021
-                                            </time>
-            
-                                            <address class="sfn-meta__time">
-                                                <img src="./assets/images/icons/clock-icon.svg" alt="Clock icon">
-                                                <span>4 minutes</span>
-                                            </address>
-                                        </div>
-        
-                                        <div class="sfn-news-box__title">
-                                            <h3>
-                                                <a href="#">French Duncan’s corporate advisory team surpasses &pound;110m of transactions and they are held responsible for their actions</a>
-                                            </h3>
-                                        </div>
-
-                                        <div class="sfn-news-box__excerpt d-block d-lg-none">
-                                            <p>Over the course of the past 15 months, the team completed close to 20 transactions, with a combined value of over &pound;110m. The firm experienced particular activity in the care home, engineering and e-commerce sectors, along with supporting the community growth bt providing monthly benefits for its users. It's estimated that by the year 2025 we will be able to live a fully self-sustainable lifestyle.</p>
-                                        </div>
-
-                                        <address class="sfn-meta__author">
-                                            <a href="#" rel="author">
-                                                <img src="./assets/images/images/user-image.jpg" alt="User icon">
-                                                by
-                                                <span>Connor Beaton</span>
-                                            </a>
-                                        </address>
-                                    </div> 
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-6">
-                                <article class="sfn-news-box sfn-news-box--def sfn-news-box--medium-heading sfn-news-box--def-vertical">
-                                    <div class="sfn-news-box__image">
-                                        <a href="#">
-                                            <img src="./assets/images/images/news-sample-image-3.jpg" alt="Box image">
-                                        </a>
-                                    </div>
-                                    <div class="sfn-news-box__content">
-                                        <div class="sfn-meta__holder">
-                                            <time datetime="2021-08-14" class="sfn-meta__date">
-                                                14 Apr 2021
-                                            </time>
-            
-                                            <address class="sfn-meta__time">
-                                                <img src="./assets/images/icons/clock-icon.svg" alt="Clock icon">
-                                                <span>4 minutes</span>
-                                            </address>
-                                        </div>
-        
-                                        <div class="sfn-news-box__title">
-                                            <h3>
-                                                <a href="#">French Duncan’s corporate advisory team surpasses &pound;110m of transactions and they are held responsible for their actions</a>
-                                            </h3>
-                                        </div>
-
-                                        <div class="sfn-news-box__excerpt">
-                                            <p>Over the course of the past 15 months, the team completed close to 20 transactions, with a combined value of over &pound;110m. The firm experienced particular activity in the care home, engineering and e-commerce sectors, along with supporting the community growth bt providing monthly benefits for its users. It's estimated that by the year 2025 we will be able to live a fully self-sustainable lifestyle.</p>
-                                        </div>
-
-                                        <address class="sfn-meta__author">
-                                            <a href="#" rel="author">
-                                                <img src="./assets/images/images/user-image.jpg" alt="User icon">
-                                                by
-                                                <span>Connor Beaton</span>
-                                            </a>
-                                        </address>
-                                    </div> 
-                                </article>
-                            </div>
-
-                            <div class="col-6">
-                                <article class="sfn-news-box sfn-news-box--def sfn-news-box--medium-heading sfn-news-box--def-vertical">
-                                    <div class="sfn-news-box__image">
-                                        <a href="#">
-                                            <img src="./assets/images/images/news-sample-image-4.jpg" alt="Box image">
-                                        </a>
-                                    </div>
-                                    <div class="sfn-news-box__content">
-                                        <div class="sfn-meta__holder">
-                                            <time datetime="2021-08-14" class="sfn-meta__date">
-                                                14 Apr 2021
-                                            </time>
-            
-                                            <address class="sfn-meta__time">
-                                                <img src="./assets/images/icons/clock-icon.svg" alt="Clock icon">
-                                                <span>4 minutes</span>
-                                            </address>
-                                        </div>
-        
-                                        <div class="sfn-news-box__title">
-                                            <h3>
-                                                <a href="#">French Duncan’s corporate advisory team surpasses &pound;110m of transactions and they are held responsible for their actions</a>
-                                            </h3>
-                                        </div>
-
-                                        <div class="sfn-news-box__excerpt">
-                                            <p>Over the course of the past 15 months, the team completed close to 20 transactions, with a combined value of over &pound;110m. The firm experienced particular activity in the care home, engineering and e-commerce sectors, along with supporting the community growth bt providing monthly benefits for its users. It's estimated that by the year 2025 we will be able to live a fully self-sustainable lifestyle.</p>
-                                        </div>
-
-                                        <address class="sfn-meta__author">
-                                            <a href="#" rel="author">
-                                                <img src="./assets/images/images/user-image.jpg" alt="User icon">
-                                                by
-                                                <span>Connor Beaton</span>
-                                            </a>
-                                        </address>
-                                    </div> 
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-5 row d-block d-lg-none">
                     <div class="col-12">
-                        <div class="center-button">
-                            <a href="#" class="btn btn-outline-primary btn-has-icon-right">
-                                See all articles
-                                <img src="./assets/images/icons/arrow-right.svg" alt="Arrow right icon">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Banners -->
-        <div class="mb-4 d-block d-lg-none">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="sfn-banner">
-                            <a href="#">
-                                <img src="./assets/images/banners/banner-ratio-300-250.jpg" alt="Banner 300-250">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Legal -->
-        <div class="has-border-bottom d-block d-lg-none" id="category-legal">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="sfn-title-long">
-                            <h1>Legal:</h1>
-
-                            <a href="#" class="btn btn-outline-primary btn-has-icon-right d-none d-lg-block">
-                                See all articles
-                                <img src="./assets/images/icons/arrow-right.svg" alt="Arrow right icon">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-12 d-none d-lg-block">
-                        <article class="sfn-featured-newsbox sfn-featured-newsbox--horizontal mb-4">
-                            <div class="sfn-featured-newsbox__image">
-                                <a href="#" class="sfn-featured-newsbox__image-inner">
-                                    <img src="./assets/images/images/featured-sample-image-1.jpg" alt="Featured article image">
-                                </a>
-
-                                <div class="sfn-meta__badge">
-                                    <a href="#">Reviews</a>
+                        <div class="sfn-category-articles__inner">
+                            <div class="d-block d-lg-none mb-4">
+                                <div class="sfn-counter">
+                                    <span>1-10</span>  of <span>283</span> Articles
                                 </div>
                             </div>
-                            <div class="sfn-featured-newsbox__content">
-                                <div class="sfn-meta__holder">
-                                    <time datetime="2021-08-14" class="sfn-meta__date">
-                                        14 Apr 2021
-                                    </time>
-
-                                    <address class="sfn-meta__time d-none d-lg-block">
-                                        <img src="./assets/images/icons/clock-icon.svg" alt="Clock icon">
-                                        <i>Reading time:</i> <span>7 minutes</span>
-                                    </address>
-                                </div>                   
-                                <div class="sfn-featured-newsbox__title">
-                                    <h2>
-                                        <a href="#">French Duncan’s corporate advisory team surpasses &pound;110m of transactions since 2020 and the media has covered this topic for years now.</a>
-                                    </h2>
-                                </div>
-                                <div class="sfn-featured-newsbox__author d-none d-lg-block">
-                                    <address class="sfn-meta__author">
-                                        <a href="#" rel="author">
-                                            <img src="./assets/images/images/user-image.jpg" alt="User icon">
-                                            <span>Connor Beaton</span>
-                                        </a>
-                                    </address>
-                                </div>
-                                <div class="sfn-featured-newsbox__excerpt d-none d-lg-block">
-                                    <p>Over the course of the past 15 months, the team completed close to 20 transactions, with a combined value of over &pound;110m. The firm experienced particular activity in the care home, engineering and e-commerce sectors, along with supporting the community growth bt providing monthly benefits for its users. It's estimated that by the year 2025 we will be able to live a fully self-sustainable lifestyle.</p>
-                                </div>
-                                <div class="sfn-element__read-more d-none d-lg-block">
-                                    <a href="#">Read Full Article <img src="./assets/images/icons/arrow-right.svg" alt="Arrow right"></a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-6 col-lg-12">
-                                <article class="sfn-news-box sfn-news-box--def pb-3 pb-lg-0 mb-4">
+    
+                            <div class="sfn-border-bottom">
+                                <article class="sfn-news-box sfn-news-box--def sfn-news-box--horizontal mb-5">
                                     <div class="sfn-news-box__image">
+                                        <div class="sfn-meta__badge">
+                                            <a href="#">Reviews</a>
+                                        </div>
                                         <a href="#">
-                                            <img src="./assets/images/images/news-sample-image-1.jpg" alt="Box image">
+                                            <img src="./assets/images/images/category-news-01.jpg" alt="Box image">
                                         </a>
                                     </div>
                                     <div class="sfn-news-box__content">
+                                        <div class="sfn-news-box__title">
+                                            <h3><a href="#">French Duncan’s corporate advisory team surpasses £110m of transactions since 2020</a></h3>
+                                        </div>
+        
                                         <div class="sfn-meta__holder">
                                             <time datetime="2021-08-14" class="sfn-meta__date">
                                                 14 Apr 2021
@@ -771,16 +601,8 @@
                                             </address>
                                         </div>
         
-                                        <div class="sfn-news-box__title">
-                                            <h3>
-                                                <a href="#">French Duncan’s corporate advisory team surpasses &pound;110m of transactions and they are held responsible for their actions</a>
-                                            </h3>
-                                        </div>
-
-                                        <div class="sfn-news-box__excerpt d-block d-lg-none">
-                                            <p>Over the course of the past 15 months, the team completed close to 20 transactions, with a combined value of over &pound;110m. The firm experienced particular activity in the care home, engineering and e-commerce sectors, along with supporting the community growth bt providing monthly benefits for its users. It's estimated that by the year 2025 we will be able to live a fully self-sustainable lifestyle.</p>
-                                        </div>
-
+                                        <div class="sfn-news-box__excerpt truncate-excerpt--long"><p>Over the course of the past 15 months, the team completed close to 20 transactions, with a combined value of over £110m. The firm experienced particular activity in the care home, engineering and e-commerce sectors, along with supporting....</p></div>
+        
                                         <address class="sfn-meta__author">
                                             <a href="#" rel="author">
                                                 <img src="./assets/images/images/user-image.jpg" alt="User icon">
@@ -790,16 +612,21 @@
                                         </address>
                                     </div> 
                                 </article>
-                            </div>
-
-                            <div class="col-6 col-lg-12">
-                                <article class="sfn-news-box sfn-news-box--def ">
+        
+                                <article class="sfn-news-box sfn-news-box--def sfn-news-box--horizontal mb-5">
                                     <div class="sfn-news-box__image">
+                                        <div class="sfn-meta__badge">
+                                            <a href="#">Reviews</a>
+                                        </div>
                                         <a href="#">
-                                            <img src="./assets/images/images/news-sample-image-2.jpg" alt="Box image">
+                                            <img src="./assets/images/images/category-news-02.jpg" alt="Box image">
                                         </a>
                                     </div>
                                     <div class="sfn-news-box__content">
+                                        <div class="sfn-news-box__title">
+                                            <h3><a href="#">Aberdeenshire's STATS Group post 9% revenue increase despite COVID-19 challenges</a></h3>
+                                        </div>
+        
                                         <div class="sfn-meta__holder">
                                             <time datetime="2021-08-14" class="sfn-meta__date">
                                                 14 Apr 2021
@@ -811,16 +638,8 @@
                                             </address>
                                         </div>
         
-                                        <div class="sfn-news-box__title">
-                                            <h3>
-                                                <a href="#">French Duncan’s corporate advisory team surpasses &pound;110m of transactions and they are held responsible for their actions</a>
-                                            </h3>
-                                        </div>
-
-                                        <div class="sfn-news-box__excerpt d-block d-lg-none">
-                                            <p>Over the course of the past 15 months, the team completed close to 20 transactions, with a combined value of over &pound;110m. The firm experienced particular activity in the care home, engineering and e-commerce sectors, along with supporting the community growth bt providing monthly benefits for its users. It's estimated that by the year 2025 we will be able to live a fully self-sustainable lifestyle.</p>
-                                        </div>
-
+                                        <div class="sfn-news-box__excerpt truncate-excerpt--long"><p>Over the course of the past 15 months, the team completed close to 20 transactions, with a combined value of over £110m. The firm experienced particular activity in the care home, engineering and e-commerce sectors, along with supporting....</p></div>
+        
                                         <address class="sfn-meta__author">
                                             <a href="#" rel="author">
                                                 <img src="./assets/images/images/user-image.jpg" alt="User icon">
@@ -830,20 +649,21 @@
                                         </address>
                                     </div> 
                                 </article>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-6">
-                                <article class="sfn-news-box sfn-news-box--def sfn-news-box--def-vertical">
+    
+                                <article class="sfn-news-box sfn-news-box--def sfn-news-box--horizontal mb-5">
                                     <div class="sfn-news-box__image">
+                                        <div class="sfn-meta__badge">
+                                            <a href="#">Reviews</a>
+                                        </div>
                                         <a href="#">
-                                            <img src="./assets/images/images/news-sample-image-3.jpg" alt="Box image">
+                                            <img src="./assets/images/images/category-news-03.jpg" alt="Box image">
                                         </a>
                                     </div>
                                     <div class="sfn-news-box__content">
+                                        <div class="sfn-news-box__title">
+                                            <h3><a href="#">Bank of Scotland: Scottish business confidence continues to climb as restrictions ease</a></h3>
+                                        </div>
+        
                                         <div class="sfn-meta__holder">
                                             <time datetime="2021-08-14" class="sfn-meta__date">
                                                 14 Apr 2021
@@ -855,16 +675,8 @@
                                             </address>
                                         </div>
         
-                                        <div class="sfn-news-box__title">
-                                            <h3>
-                                                <a href="#">French Duncan’s corporate advisory team surpasses &pound;110m of transactions and they are held responsible for their actions</a>
-                                            </h3>
-                                        </div>
-
-                                        <div class="sfn-news-box__excerpt">
-                                            <p>Over the course of the past 15 months, the team completed close to 20 transactions, with a combined value of over &pound;110m. The firm experienced particular activity in the care home, engineering and e-commerce sectors, along with supporting the community growth bt providing monthly benefits for its users. It's estimated that by the year 2025 we will be able to live a fully self-sustainable lifestyle.</p>
-                                        </div>
-
+                                        <div class="sfn-news-box__excerpt truncate-excerpt--long"><p>Over the course of the past 15 months, the team completed close to 20 transactions, with a combined value of over £110m. The firm experienced particular activity in the care home, engineering and e-commerce sectors, along with supporting....</p></div>
+        
                                         <address class="sfn-meta__author">
                                             <a href="#" rel="author">
                                                 <img src="./assets/images/images/user-image.jpg" alt="User icon">
@@ -874,16 +686,21 @@
                                         </address>
                                     </div> 
                                 </article>
-                            </div>
-
-                            <div class="col-6">
-                                <article class="sfn-news-box sfn-news-box--def sfn-news-box--def-vertical">
+    
+                                <article class="sfn-news-box sfn-news-box--def sfn-news-box--horizontal mb-5">
                                     <div class="sfn-news-box__image">
+                                        <div class="sfn-meta__badge">
+                                            <a href="#">Reviews</a>
+                                        </div>
                                         <a href="#">
-                                            <img src="./assets/images/images/news-sample-image-4.jpg" alt="Box image">
+                                            <img src="./assets/images/images/category-news-04.jpg" alt="Box image">
                                         </a>
                                     </div>
                                     <div class="sfn-news-box__content">
+                                        <div class="sfn-news-box__title">
+                                            <h3><a href="#">Glasgow office activity on the up in Q1 2021 with take-up increasing 49%</a></h3>
+                                        </div>
+        
                                         <div class="sfn-meta__holder">
                                             <time datetime="2021-08-14" class="sfn-meta__date">
                                                 14 Apr 2021
@@ -895,16 +712,82 @@
                                             </address>
                                         </div>
         
+                                        <div class="sfn-news-box__excerpt truncate-excerpt--long"><p>Over the course of the past 15 months, the team completed close to 20 transactions, with a combined value of over £110m. The firm experienced particular activity in the care home, engineering and e-commerce sectors, along with supporting....</p></div>
+        
+                                        <address class="sfn-meta__author">
+                                            <a href="#" rel="author">
+                                                <img src="./assets/images/images/user-image.jpg" alt="User icon">
+                                                by
+                                                <span>Connor Beaton</span>
+                                            </a>
+                                        </address>
+                                    </div> 
+                                </article>
+    
+                                <article class="sfn-news-box sfn-news-box--def sfn-news-box--horizontal mb-5">
+                                    <div class="sfn-news-box__image">
+                                        <div class="sfn-meta__badge">
+                                            <a href="#">Reviews</a>
+                                        </div>
+                                        <a href="#">
+                                            <img src="./assets/images/images/category-news-05.jpg" alt="Box image">
+                                        </a>
+                                    </div>
+                                    <div class="sfn-news-box__content">
                                         <div class="sfn-news-box__title">
-                                            <h3>
-                                                <a href="#">French Duncan’s corporate advisory team surpasses &pound;110m of transactions and they are held responsible for their actions</a>
-                                            </h3>
+                                            <h3><a href="#">£700k lost to bank transfer scams every day, Which? reveals</a></h3>
                                         </div>
-
-                                        <div class="sfn-news-box__excerpt">
-                                            <p>Over the course of the past 15 months, the team completed close to 20 transactions, with a combined value of over &pound;110m. The firm experienced particular activity in the care home, engineering and e-commerce sectors, along with supporting the community growth bt providing monthly benefits for its users. It's estimated that by the year 2025 we will be able to live a fully self-sustainable lifestyle.</p>
+        
+                                        <div class="sfn-meta__holder">
+                                            <time datetime="2021-08-14" class="sfn-meta__date">
+                                                14 Apr 2021
+                                            </time>
+            
+                                            <address class="sfn-meta__time">
+                                                <img src="./assets/images/icons/clock-icon.svg" alt="Clock icon">
+                                                <span>4 minutes</span>
+                                            </address>
                                         </div>
-
+        
+                                        <div class="sfn-news-box__excerpt truncate-excerpt--long"><p>Over the course of the past 15 months, the team completed close to 20 transactions, with a combined value of over £110m. The firm experienced particular activity in the care home, engineering and e-commerce sectors, along with supporting....</p></div>
+        
+                                        <address class="sfn-meta__author">
+                                            <a href="#" rel="author">
+                                                <img src="./assets/images/images/user-image.jpg" alt="User icon">
+                                                by
+                                                <span>Connor Beaton</span>
+                                            </a>
+                                        </address>
+                                    </div> 
+                                </article>
+    
+                                <article class="sfn-news-box sfn-news-box--def sfn-news-box--horizontal">
+                                    <div class="sfn-news-box__image">
+                                        <div class="sfn-meta__badge">
+                                            <a href="#">Reviews</a>
+                                        </div>
+                                        <a href="#">
+                                            <img src="./assets/images/images/category-news-06.jpg" alt="Box image">
+                                        </a>
+                                    </div>
+                                    <div class="sfn-news-box__content">
+                                        <div class="sfn-news-box__title">
+                                            <h3><a href="#">Young entrepreneurs encouraged to apply to IMPACT30 support programme</a></h3>
+                                        </div>
+        
+                                        <div class="sfn-meta__holder">
+                                            <time datetime="2021-08-14" class="sfn-meta__date">
+                                                14 Apr 2021
+                                            </time>
+            
+                                            <address class="sfn-meta__time">
+                                                <img src="./assets/images/icons/clock-icon.svg" alt="Clock icon">
+                                                <span>4 minutes</span>
+                                            </address>
+                                        </div>
+        
+                                        <div class="sfn-news-box__excerpt truncate-excerpt--long"><p>Over the course of the past 15 months, the team completed close to 20 transactions, with a combined value of over £110m. The firm experienced particular activity in the care home, engineering and e-commerce sectors, along with supporting....</p></div>
+        
                                         <address class="sfn-meta__author">
                                             <a href="#" rel="author">
                                                 <img src="./assets/images/images/user-image.jpg" alt="User icon">
@@ -915,414 +798,29 @@
                                     </div> 
                                 </article>
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-5 row d-block d-lg-none">
-                    <div class="col-12">
-                        <div class="center-button">
-                            <a href="#" class="btn btn-outline-primary btn-has-icon-right">
-                                See all articles
-                                <img src="./assets/images/icons/arrow-right.svg" alt="Arrow right icon">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Banners -->
-        <div class="mb-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="sfn-banner d-none d-lg-block">
-                            <a href="#">
-                                <img src="./assets/images/banners/banner-ratio-1280-341.jpg" alt="Banner image"/>
-                            </a>
-                        </div>
-                        <div class="sfn-banner d-block d-lg-none">
-                            <a href="#">
-                                <img src="./assets/images/banners/banner-ratio-300-250.jpg" alt="Banner 300-250">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Latest Events -->
-        <div class="pb-5 pt-5 mb-lg-5" style="background: #FAFAFA;"">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="sfn-title-long">
-                            <h1>Latest Events:</h1 >
-
-                            <a href="#" class="btn btn-outline-primary btn-has-icon-right d-none d-lg-block">
-                                See all events
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-3">
-                        <article class="sfn-event-box">
-                            <a href="#">
-                                <div class="sfn-event-box__date">
-                                    <h2>18</h2>
-                                    <span>JUN</span>
-                                </div>
     
-                                <div class="sfn-event-box__image">
-                                    <img src="./assets/images/images/event-sample-image-1.jpg" alt="Event image">
+                            <div class="sfn-list-navigation">
+                                <div class="d-none d-lg-block">
+                                  <div class="sfn-counter">
+                                    <span>1-10</span>  of <span>283</span> Articles
+                                  </div>
                                 </div>
-    
-                                <div class="sfn-event-box__content">
-                                    <div class="sfn-meta__location">
-                                        <a href="#">
-                                            <img src="./assets/images/icons/map-pointer-white.svg" alt="Map pointer icon"/>
-                                            Aberdeen
-                                        </a>
-                                    </div>
-    
-                                    <h4>
-                                        <a href="#">Data Protection and Privacy in 2021</a>
-                                    </h4>
+                  
+                                <div>
+                                  <div class="sfn-pagination">
+                                    <nav aria-label="Page navigation example">
+                                      <ul class="pagination">
+                                        <li class="pagination-nav inactive"><a href="#">Previous</a></li>
+                                        <li class="active"><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li class="pagination-nav"><a href="#">Next</a></li>
+                                      </ul>
+                                    </nav>
+                                  </div>
                                 </div>
-                            </a>
-                        </article>
-
-                        <article class="sfn-event-box">
-                            <a href="#">
-                                <div class="sfn-event-box__date">
-                                    <h2>18</h2>
-                                    <span>JUN</span>
-                                </div>
-    
-                                <div class="sfn-event-box__image">
-                                    <img src="./assets/images/images/event-sample-image-2.jpg" alt="Event image">
-                                </div>
-    
-                                <div class="sfn-event-box__content">
-                                    <div class="sfn-meta__location">
-                                        <a href="#">
-                                            <img src="./assets/images/icons/map-pointer-white.svg" alt="Map pointer icon"/>
-                                            Aberdeen
-                                        </a>
-                                    </div>
-    
-                                    <h4>
-                                        <a href="#">Data Protection and Privacy in 2021</a>
-                                    </h4>
-                                </div>
-                            </a>
-                        </article>
-                    </div>
-                    <div class="col-lg-6">
-                        <article class="sfn-event-box sfn-event-box--big">
-                            <a href="#">
-                                <div class="sfn-event-box__date">
-                                    <h2>18</h2>
-                                    <span>JUN</span>
-                                </div>
-    
-                                <div class="sfn-event-box__image">
-                                    <img src="./assets/images/images/event-sample-image-3.jpg" alt="Event image">
-                                </div>
-    
-                                <div class="sfn-event-box__content">
-                                    <div class="sfn-meta__location">
-                                        <a href="#">
-                                            <img src="./assets/images/icons/map-pointer-white.svg" alt="Map pointer icon"/>
-                                            Aberdeen
-                                        </a>
-                                    </div>
-    
-                                    <h2>
-                                        <a href="#">Data Protection and Privacy in 2021</a>
-                                    </h2>
-                                </div>
-                            </a>
-                        </article>
-                    </div>
-                    <div class="col-lg-3">
-                        <article class="sfn-event-box">
-                            <a href="#">
-                                <div class="sfn-event-box__date">
-                                    <h2>18</h2>
-                                    <span>JUN</span>
-                                </div>
-    
-                                <div class="sfn-event-box__image">
-                                    <img src="./assets/images/images/event-sample-image-4.jpg" alt="Event image">
-                                </div>
-    
-                                <div class="sfn-event-box__content">
-                                    <div class="sfn-meta__location">
-                                        <a href="#">
-                                            <img src="./assets/images/icons/map-pointer-white.svg" alt="Map pointer icon"/>
-                                            Aberdeen
-                                        </a>
-                                    </div>
-    
-                                    <h4>
-                                        <a href="#">Data Protection and Privacy in 2021</a>
-                                    </h4>
-                                </div>
-                            </a>
-                        </article>
-
-                        <div class="sfn-event-box--cta sfn-banner d-none d-lg-block">
-                            <a href="#">
-                                <img src="./assets/images/banners/banner-ratio-300-250.jpg" alt="Banner 300-250">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row d-lg-none">
-                    <div class="container">
-                        <div class="col-md-12">
-                            <div class="center-button">
-                                <a href="#" class="d-block btn btn-outline-primary">
-                                    See All Events
-                                    <img src="./assets/images/icons/arrow-right.svg" alt="Arrow right icon">
-                                </a>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Accountancy -->
-        <div class="mb-lg-4 d-none d-lg-block">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="sfn-title-long">
-                            <h1>Accountancy:</h1 >
-
-                            <a href="#" class="btn btn-outline-primary btn-has-icon-right d-none d-lg-block">
-                                See all articles
-                                <img src="./assets/images/icons/arrow-right.svg" alt="Arrow right icon">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-12 d-none d-lg-block">
-                        <article class="sfn-featured-newsbox sfn-featured-newsbox--horizontal mb-4">
-                            <div class="sfn-featured-newsbox__image">
-                                <a href="#" class="sfn-featured-newsbox__image-inner">
-                                    <img src="./assets/images/images/featured-sample-image-2.jpg" alt="Featured article image">
-                                </a>
-
-                                <div class="sfn-meta__badge">
-                                    <a href="#">Reviews</a>
-                                </div>
-                            </div>
-                            <div class="sfn-featured-newsbox__content">
-                                <div class="sfn-meta__holder">
-                                    <time datetime="2021-08-14" class="sfn-meta__date">
-                                        14 Apr 2021
-                                    </time>
-                                </div>                   
-                                <div class="sfn-featured-newsbox__title">
-                                    <h2>
-                                        <a href="#">French Duncan’s corporate advisory team surpasses &pound;110m of transactions since 2020 and the media has covered this topic for years now.</a>
-                                    </h2>
-                                </div>
-                                <div class="sfn-featured-newsbox__author d-none d-lg-block">
-                                    <div class="sfn-meta__holder">
-                                        <address class="sfn-meta__author">
-                                            <a href="#" rel="author">
-                                                <img src="./assets/images/images/user-image.jpg" alt="User icon">
-                                                <span>Connor Beaton</span>
-                                            </a>
-                                        </address>
-    
-                                        <address class="sfn-meta__time d-none d-lg-block">
-                                            <img src="./assets/images/icons/clock-icon.svg" alt="Clock icon">
-                                            <i>Reading time:</i> <span>7 minutes</span>
-                                        </address>
-                                    </div>
-                                </div>
-                                <div class="sfn-featured-newsbox__excerpt d-none d-lg-block">
-                                    <p>Over the course of the past 15 months, the team completed close to 20 transactions, with a combined value of over &pound;110m. The firm experienced particular activity in the care home, engineering and e-commerce sectors, along with supporting the community growth bt providing monthly benefits for its users. It's estimated that by the year 2025 we will be able to live a fully self-sustainable lifestyle.</p>
-                                </div>
-                                <div class="sfn-element__read-more d-none d-lg-block">
-                                    <a href="#">Read Full Article <img src="./assets/images/icons/arrow-right.svg" alt="Arrow right"></a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-3">
-                        <article class="sfn-news-box sfn-news-box--def sfn-news-box--def-vertical mb-4">
-                            <div class="sfn-news-box__image">
-                                <a href="#">
-                                    <img src="./assets/images/images/news-sample-image-5.jpg" alt="Box image">
-                                </a>
-                            </div>
-                            <div class="sfn-news-box__content">
-                                <div class="sfn-meta__holder">
-                                    <time datetime="2021-08-14" class="sfn-meta__date">
-                                        14 Apr 2021
-                                    </time>
-
-                                    <address class="sfn-meta__time sfn-meta__time--short d-none d-lg-block">
-                                        <img src="./assets/images/icons/clock-icon.svg" alt="Clock icon">
-                                        <i>Reading time:</i> <span>7 minutes</span>
-                                    </address>
-                                </div>
-
-                                <div class="sfn-news-box__title">
-                                    <h3>
-                                        <a href="#">French Duncan’s corporate advisory team surpasses &pound;110m of transactions and they are held responsible for their actions</a>
-                                    </h3>
-                                </div>
-
-                                <div class="sfn-news-box__excerpt">
-                                    <p>Over the course of the past 15 months, the team completed close to 20 transactions, with a combined value of over &pound;110m. The firm experienced particular activity in the care home, engineering and e-commerce sectors, along with supporting the community growth bt providing monthly benefits for its users. It's estimated that by the year 2025 we will be able to live a fully self-sustainable lifestyle.</p>
-                                </div>
-
-                                <address class="sfn-meta__author">
-                                    <a href="#" rel="author">
-                                        <img src="./assets/images/images/user-image.jpg" alt="User icon">
-                                        by
-                                        <span>Connor Beaton</span>
-                                    </a>
-                                </address>
-                            </div> 
-                        </article>
-                    </div>
-
-                    <div class="col-md-3">
-                        <article class="sfn-news-box sfn-news-box--def sfn-news-box--def-vertical mb-4">
-                            <div class="sfn-news-box__image">
-                                <a href="#">
-                                    <img src="./assets/images/images/news-sample-image-6.jpg" alt="Box image">
-                                </a>
-                            </div>
-                            <div class="sfn-news-box__content">
-                                <div class="sfn-meta__holder">
-                                    <time datetime="2021-08-14" class="sfn-meta__date">
-                                        14 Apr 2021
-                                    </time>
-
-                                    <address class="sfn-meta__time sfn-meta__time--short d-none d-lg-block">
-                                        <img src="./assets/images/icons/clock-icon.svg" alt="Clock icon">
-                                        <i>Reading time:</i> <span>7 minutes</span>
-                                    </address>
-                                </div>
-
-                                <div class="sfn-news-box__title">
-                                    <h3>
-                                        <a href="#">French Duncan’s corporate advisory team surpasses &pound;110m of transactions and they are held responsible for their actions</a>
-                                    </h3>
-                                </div>
-
-                                <div class="sfn-news-box__excerpt">
-                                    <p>Over the course of the past 15 months, the team completed close to 20 transactions, with a combined value of over &pound;110m. The firm experienced particular activity in the care home, engineering and e-commerce sectors, along with supporting the community growth bt providing monthly benefits for its users. It's estimated that by the year 2025 we will be able to live a fully self-sustainable lifestyle.</p>
-                                </div>
-
-                                <address class="sfn-meta__author">
-                                    <a href="#" rel="author">
-                                        <img src="./assets/images/images/user-image.jpg" alt="User icon">
-                                        by
-                                        <span>Connor Beaton</span>
-                                    </a>
-                                </address>
-                            </div> 
-                        </article>
-                    </div>
-
-                    <div class="col-md-3">
-                        <article class="sfn-news-box sfn-news-box--def sfn-news-box--def-vertical mb-4">
-                            <div class="sfn-news-box__image">
-                                <a href="#">
-                                    <img src="./assets/images/images/news-sample-image-7.jpg" alt="Box image">
-                                </a>
-                            </div>
-                            <div class="sfn-news-box__content">
-                                <div class="sfn-meta__holder">
-                                    <time datetime="2021-08-14" class="sfn-meta__date">
-                                        14 Apr 2021
-                                    </time>
-
-                                    <address class="sfn-meta__time sfn-meta__time--short d-none d-lg-block">
-                                        <img src="./assets/images/icons/clock-icon.svg" alt="Clock icon">
-                                        <i>Reading time:</i> <span>7 minutes</span>
-                                    </address>
-                                </div>
-
-                                <div class="sfn-news-box__title">
-                                    <h3>
-                                        <a href="#">French Duncan’s corporate advisory team surpasses &pound;110m of transactions and they are held responsible for their actions</a>
-                                    </h3>
-                                </div>
-
-                                <div class="sfn-news-box__excerpt">
-                                    <p>Over the course of the past 15 months, the team completed close to 20 transactions, with a combined value of over &pound;110m. The firm experienced particular activity in the care home, engineering and e-commerce sectors, along with supporting the community growth bt providing monthly benefits for its users. It's estimated that by the year 2025 we will be able to live a fully self-sustainable lifestyle.</p>
-                                </div>
-
-                                <address class="sfn-meta__author">
-                                    <a href="#" rel="author">
-                                        <img src="./assets/images/images/user-image.jpg" alt="User icon">
-                                        by
-                                        <span>Connor Beaton</span>
-                                    </a>
-                                </address>
-                            </div> 
-                        </article>
-                    </div>
-
-                    <div class="col-md-3">
-                        <article class="sfn-news-box sfn-news-box--def sfn-news-box--def-vertical mb-4">
-                            <div class="sfn-news-box__image">
-                                <a href="#">
-                                    <img src="./assets/images/images/news-sample-image-8.jpg" alt="Box image">
-                                </a>
-                            </div>
-                            <div class="sfn-news-box__content">
-                                <div class="sfn-meta__holder">
-                                    <time datetime="2021-08-14" class="sfn-meta__date">
-                                        14 Apr 2021
-                                    </time>
-
-                                    <address class="sfn-meta__time sfn-meta__time--short d-none d-lg-block">
-                                        <img src="./assets/images/icons/clock-icon.svg" alt="Clock icon">
-                                        <i>Reading time:</i> <span>7 minutes</span>
-                                    </address>
-                                </div>
-
-                                <div class="sfn-news-box__title">
-                                    <h3>
-                                        <a href="#">French Duncan’s corporate advisory team surpasses &pound;110m of transactions and they are held responsible for their actions</a>
-                                    </h3>
-                                </div>
-
-                                <div class="sfn-news-box__excerpt">
-                                    <p>Over the course of the past 15 months, the team completed close to 20 transactions, with a combined value of over &pound;110m. The firm experienced particular activity in the care home, engineering and e-commerce sectors, along with supporting the community growth bt providing monthly benefits for its users. It's estimated that by the year 2025 we will be able to live a fully self-sustainable lifestyle.</p>
-                                </div>
-
-                                <address class="sfn-meta__author">
-                                    <a href="#" rel="author">
-                                        <img src="./assets/images/images/user-image.jpg" alt="User icon">
-                                        by
-                                        <span>Connor Beaton</span>
-                                    </a>
-                                </address>
-                            </div> 
-                        </article>
                     </div>
                 </div>
             </div>
