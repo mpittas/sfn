@@ -15,30 +15,31 @@
 
   &-top-links {
     nav {
-        ul {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            li {
-              + li {
-                margin-left: 2rem;  
-              }
-              &:not(:last-child) {
-                a {
-                  color: $black;
-                  font-size: 14px;
-                  font-weight: 500;
-                  transition: color .2s ease;
-                  &:hover {
-                    color: $primary;
-                  }
-                }
+      font-family: 'Poppins', sans-serif;
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+          + li {
+            margin-left: 2rem;  
+          }
+          &:not(:last-child) {
+            a {
+              color: $black;
+              font-size: 14px;
+              font-weight: 500;
+              transition: color .2s ease;
+              &:hover {
+                color: $primary;
               }
             }
+          }
         }
+      }
     }
   }
 }
@@ -52,6 +53,7 @@
       padding: 0;
       > li {
         > a {
+            font-family: 'Poppins', sans-serif;
             display: flex;
             align-items: center;
             position: relative;
@@ -103,6 +105,21 @@
             }
           }
         }
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    > .navbar-collapse {
+      background: white;
+      position: absolute;
+      width: 100%;
+      z-index: 5;
+      top: 71px;
+      left: 0;
+      transition: left 0.5s ease;
+      &.collapsing {
+        left: -100%;
+        height: 100%;
       }
     }
   }

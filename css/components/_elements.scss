@@ -1,5 +1,6 @@
 .sfn-element {
   &__read-more {
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
@@ -15,6 +16,33 @@
     }
     img {
       margin-left: 7px;
+    }
+  }
+}
+
+.sfn-blockquote {
+  padding: 3em;
+  border: 1px solid $blue-lightest;
+  blockquote {
+    font-size: 24px;
+    font-style: italic;
+    color: $black;
+    font-weight: 300;
+    line-height: 1.3em;
+    margin-bottom: 1.5em;
+  }
+  &__info {
+    h5 {
+      font-size: 18px;
+      color: $black;
+      margin-bottom: 0.15em;
+    }
+    h6 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      font-style: italic;
+      color: $grey-mid;
     }
   }
 }

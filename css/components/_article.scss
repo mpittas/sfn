@@ -1,0 +1,126 @@
+.sfn-article {
+  padding-right: 3em;
+  padding-left: 3em;
+  &__meta {
+    margin-bottom: 1.5em;
+  }
+
+  &__featured-image {
+    margin-bottom: 1.5em;
+    img {
+
+    }
+  }
+
+  &__subheading {
+    h3 {
+      font-weight: 400;
+      color: $black;
+      font-style: italic;
+      line-height: 1.5em;
+    }
+  }
+
+  &__info-box {
+    margin-bottom: 1.5em;
+  }
+}
+
+// Article meta
+.sfn-article-meta {
+  &-inner {
+    > h6 {
+      font-size: 12px;
+      font-family: 'Poppins', sans-serif;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin: 0 0 1em 0;
+    }
+    + .sfn-article-meta-inner {
+      margin-top: 1.25em;
+      padding-top: 1.25em;
+      border-top: 1px solid $grey-medium;
+    }
+  }
+
+  &-user {
+    display: flex;
+    align-items: center;
+    > img {
+      width: 50px;
+      border-radius: 50%;
+    } 
+    > div {
+      width: calc(100% - 50px);
+      padding-left: 0.75em;
+      h5 {
+        font-size: 16px;
+        font-weight: normal;
+        margin: 0;
+        a {
+          text-decoration: none;
+        }
+      }
+      > h6 {
+        font-size: 13px;
+        font-family: 'Poppins', sans-serif;
+        font-style: italic;
+        font-weight: 300;
+        color: $grey-mid;
+        margin: 0;
+      }
+    } 
+  }
+
+  &-tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -4px;
+    a {
+      margin: 4px;
+      display: block;
+      background: transparent;
+    }
+  }
+}
+
+// Article social
+.sfn-article-social {
+  > div {
+    display: flex;
+    + div {
+      margin-top: 1.25em;
+      padding-top: 1.25em;
+      border-top: 1px solid $blue-lightest;
+    }
+    > img {
+      width: 44px;
+    }
+    > div {
+      width: calc(100% - 44px);
+      padding-left: 1em;
+      > h6 {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &-media {
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      justify-content: flex-start;
+    }
+  }
+
+  &-newsletter {
+    > div {
+      > h6 {
+        margin-bottom: 0.35rem !important;
+      }
+      .btn-primary {
+
+      }
+    }
+  }
+}

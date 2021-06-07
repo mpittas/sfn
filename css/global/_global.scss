@@ -1,7 +1,8 @@
 body {
-  font-family: 'Poppins', sans-serif;
   background: #fff;
   color: $grey-mid;
+  font-family: adobe-caslon-pro, serif;
+  font-size: 1.125rem;
   &::-webkit-input-placeholder {
     color: $grey;
     font-style: italic;
@@ -20,6 +21,13 @@ body {
   }
 }
 
+a {
+  color: $primary;
+}
+p {
+  margin-bottom: 1.5rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: adobe-caslon-pro, serif;
   font-weight: bold;
@@ -31,10 +39,19 @@ h1, h2, h3, h4, h5, h6 {
 // H3 - 24px (Small heading separator and CTA title)
 // h4 - 20px (Small newsbox title)
 
-h1 { margin-top: 0; font-size: 3rem; }
+h1 { margin-top: 0; font-size: 3rem; line-height: 1.1em; }
 h2 { font-size: 2rem; }
 h3 { font-size: 1.5rem; }
 h4 { font-size: 1.25rem; }
+
+h5 {
+  &.title-small-caps {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Poppins';
+    font-size: 14px;
+  }
+}
 
 @media only screen and (max-width: 991px) {
   h1 {font-size: 1.625rem; }

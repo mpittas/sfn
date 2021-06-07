@@ -6,6 +6,7 @@
 }
 
 .sfn-counter {
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   color: $grey-mid;
   span {
@@ -49,6 +50,23 @@
   &__inner {
     @media (min-width: 1368px) {
       padding-right: 26%;
+    }
+  }
+}
+
+.sfn-row-offset {
+  display: flex;
+  position: relative;
+  min-height: 350px;
+  // flex-wrap: wrap;
+  > div {
+    &:nth-child(1) {
+      width: 450px;
+      position: absolute;
+      left: -260px;
+    }
+    &:nth-child(2) {
+      margin-left: 220px;
     }
   }
 }

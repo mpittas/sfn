@@ -384,7 +384,7 @@
                             </div> 
                         </article>
 
-                        <article class="sfn-news-box sfn-news-box--def sfn-news-box--medium-heading sfn-news-box--def-vertical">
+                        <article class="sfn-news-box sfn-news-box--def sfn-news-box--medium-heading sfn-news-box--def-vertical mb-5">
                             <div class="sfn-news-box__image">
                                 <div class="sfn-meta__badge d-none d-lg-block">
                                     <a href="#">Appointments</a>
@@ -1008,13 +1008,18 @@
     </footer>
 
     <!-- Modal -->
-    <div class="modal modal-newsletter fade" id="subscribeModal" tabindex="-1" aria-hidden="true">
+    <div class="modal sfn-newsletter-modal modal-newsletter fade" id="subscribeModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
+                <div class="modal-close" data-bs-dismiss="modal">
+                    <img src="./assets/images/icons/times-icon-white.svg" alt="Times icon">
+                </div>
                 <div class="modal-body">
-                <div class="sfn-newsletter-modal">
+                <div class="sfn-newsletter-modal__inner">
+                    <div class="sfn-newsletter-modal__icon">
+                        <img src="./assets/images/icons/newsletter-notify-icon.svg" alt="Newsletter Notify Icon">
+                    </div>
                     <div class="sfn-newsletter-modal__title">
-                        <img src="./assets/images/icons/document-icon.svg" alt="Newsletter icon" />
                         <h3>Stay up to date with all financial news by subscribing to our newsletter:</h3>
                     </div>
                     <div class="sfn-newsletter-modal__content">

@@ -3,6 +3,7 @@
 
 @import './global/_global.scss';
 
+@import './components/_form-elements.scss';
 @import './components/_header.scss';
 @import './components/_breadcrumbs.scss';
 
@@ -23,6 +24,8 @@
 @import './components/_pagination.scss';
 @import './components/_searchbar.scss';
 @import './components/_buttons.scss';
+@import './components/_article.scss';
+@import './components/_box-info.scss';
 
 // .row {
 //   --bs-gutter-x: 1.875rem;

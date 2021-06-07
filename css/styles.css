@@ -1,7 +1,8 @@
 body {
-  font-family: 'Poppins', sans-serif;
   background: #fff;
   color: #666;
+  font-family: adobe-caslon-pro, serif;
+  font-size: 1.125rem;
 }
 
 body::-webkit-input-placeholder {
@@ -24,6 +25,14 @@ body:-moz-placeholder {
   font-style: italic;
 }
 
+a {
+  color: #438CD1;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: adobe-caslon-pro, serif;
   font-weight: bold;
@@ -33,6 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   margin-top: 0;
   font-size: 3rem;
+  line-height: 1.1em;
 }
 
 h2 {
@@ -45,6 +55,13 @@ h3 {
 
 h4 {
   font-size: 1.25rem;
+}
+
+h5.title-small-caps {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Poppins';
+  font-size: 14px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -68,6 +85,10 @@ img {
   max-width: 100%;
 }
 
+input {
+  font-family: 'Poppins', sans-serif;
+}
+
 .sfn-header {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -86,6 +107,10 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.sfn-header-top-links nav {
+  font-family: 'Poppins', sans-serif;
 }
 
 .sfn-header-top-links nav ul {
@@ -133,6 +158,7 @@ img {
 }
 
 .sfn-header-nav__inner > ul > li > a {
+  font-family: 'Poppins', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -188,6 +214,23 @@ img {
   border: none;
   vertical-align: middle;
   font-size: 12px;
+}
+
+@media (max-width: 991px) {
+  .sfn-header-nav > .navbar-collapse {
+    background: white;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+    top: 71px;
+    left: 0;
+    -webkit-transition: left 0.5s ease;
+    transition: left 0.5s ease;
+  }
+  .sfn-header-nav > .navbar-collapse.collapsing {
+    left: -100%;
+    height: 100%;
+  }
 }
 
 .sfn-header-submenu nav ul {
@@ -767,6 +810,7 @@ img {
 }
 
 .sfn-meta__date {
+  font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   font-size: 11px;
   font-weight: 500;
@@ -778,6 +822,10 @@ img {
   .sfn-meta__date {
     font-size: 14px;
   }
+}
+
+.sfn-meta__badge {
+  font-family: 'Poppins', sans-serif;
 }
 
 .sfn-meta__badge a {
@@ -803,6 +851,7 @@ img {
 }
 
 .sfn-meta__time {
+  font-family: 'Poppins', sans-serif;
   font-size: 11px;
   font-weight: 600;
   color: #666;
@@ -845,6 +894,7 @@ img {
 }
 
 .sfn-meta__author {
+  font-family: 'Poppins', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -884,6 +934,7 @@ img {
 }
 
 .sfn-meta__term {
+  font-family: 'Poppins', sans-serif;
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 500;
@@ -902,6 +953,7 @@ img {
 }
 
 .sfn-meta__location {
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   font-weight: 500;
 }
@@ -1050,7 +1102,7 @@ img {
 }
 
 .sfn-news-box--def .sfn-news-box__content .sfn-meta__holder {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .sfn-news-box--def .sfn-news-box__meta {
@@ -1128,7 +1180,9 @@ img {
 
 @media (min-width: 768px) {
   .sfn-news-box--horizontal.sfn-news-box--def .sfn-meta__holder {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -1522,6 +1576,7 @@ img {
 }
 
 .sfn-element__read-more {
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -1542,6 +1597,34 @@ img {
 
 .sfn-element__read-more img {
   margin-left: 7px;
+}
+
+.sfn-blockquote {
+  padding: 3em;
+  border: 1px solid #C6E2FD;
+}
+
+.sfn-blockquote blockquote {
+  font-size: 24px;
+  font-style: italic;
+  color: #333;
+  font-weight: 300;
+  line-height: 1.3em;
+  margin-bottom: 1.5em;
+}
+
+.sfn-blockquote__info h5 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 0.15em;
+}
+
+.sfn-blockquote__info h6 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: italic;
+  color: #666;
 }
 
 .sfn-news-box {
@@ -1672,7 +1755,7 @@ img {
 }
 
 .sfn-news-box--def .sfn-news-box__content .sfn-meta__holder {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .sfn-news-box--def .sfn-news-box__meta {
@@ -1750,7 +1833,9 @@ img {
 
 @media (min-width: 768px) {
   .sfn-news-box--horizontal.sfn-news-box--def .sfn-meta__holder {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -1984,6 +2069,10 @@ img {
   }
 }
 
+.sfn-social {
+  font-family: 'Poppins', sans-serif;
+}
+
 .sfn-social nav {
   padding: 0.5rem 1rem;
   margin: 0;
@@ -2160,6 +2249,7 @@ img {
 .sfn-footer__nav {
   border-bottom: 1px solid #555;
   padding: 1rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 .sfn-footer__nav-title {
@@ -2351,35 +2441,79 @@ img {
 
 .modal-newsletter .modal-content {
   border: none;
-  background: #333;
+  background-image: url("../assets/images/images/city-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.modal-newsletter .modal-content:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #004a90;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 74, 144, 0.5)), to(#004a90));
+  background: linear-gradient(0deg, rgba(0, 74, 144, 0.5) 0%, #004a90 100%);
 }
 
 .modal-newsletter .modal-body {
   padding: 2rem;
 }
 
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  cursor: pointer;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+
+.modal-close:hover {
+  opacity: 0.6;
+}
+
+@media (min-width: 576px) {
+  .sfn-newsletter-modal .modal-dialog {
+    max-width: 640px;
+  }
+  .sfn-newsletter-modal .modal-content {
+    padding: 3em;
+  }
+}
+
+.sfn-newsletter-modal__icon {
+  margin-bottom: 2em;
+}
+
 .sfn-newsletter-modal__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75em;
 }
 
 .sfn-newsletter-modal__title h3 {
-  margin: 0 0 0 1.25rem;
-  font-size: 16px;
   font-weight: 700;
   color: white;
+  margin-bottom: 0;
 }
 
 .sfn-newsletter-modal__content {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2em;
 }
 
 .sfn-newsletter-modal__content p {
   color: white;
-  font-size: 13px;
+  font-size: 18px;
+  line-height: 1.3em;
   margin-bottom: 0;
+  font-family: adobe-caslon-pro, serif;
 }
 
 .sfn-newsletter-modal__form form {
@@ -2390,12 +2524,37 @@ img {
 .sfn-newsletter-modal__form form input[type="email"] {
   width: 100%;
   background: none;
-  border: 1px solid white;
-  border-radius: 6px;
+  border: 1px solid #C6E2FD;
+  background: white;
   height: 100%;
   min-height: auto;
+  font-size: 12px;
   padding: 0 9rem 0 1rem;
-  color: white;
+}
+
+.sfn-newsletter-modal__form form input[type="email"]::-webkit-input-placeholder {
+  color: #88C0F5;
+  font-style: italic;
+}
+
+.sfn-newsletter-modal__form form input[type="email"]::-moz-placeholder {
+  color: #88C0F5;
+  font-style: italic;
+}
+
+.sfn-newsletter-modal__form form input[type="email"]:-ms-input-placeholder {
+  color: #88C0F5;
+  font-style: italic;
+}
+
+.sfn-newsletter-modal__form form input[type="email"]:-moz-placeholder {
+  color: #88C0F5;
+  font-style: italic;
+}
+
+.sfn-newsletter-modal__form form input[type="email"]:focus {
+  outline: none;
+  border-color: #438CD1;
 }
 
 .sfn-newsletter-modal__form form input[type="submit"] {
@@ -2403,13 +2562,25 @@ img {
   top: 0;
   right: 0;
   height: 100%;
-  background: white;
+  background: #438CD1;
   border: none;
-  border-radius: 6px;
-  padding: 0.5rem 1.5rem;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 12px;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 600;
   text-transform: uppercase;
+  -webkit-transition: background .2s ease;
+  transition: background .2s ease;
+}
+
+.sfn-newsletter-modal__form form input[type="submit"]:hover {
+  background: #2f7ac1;
+}
+
+@media (min-width: 992px) {
+  .sfn-newsletter-modal__form form input[type="submit"] {
+    padding: 0.5rem 1.5rem;
+  }
 }
 
 .sfn-separator {
@@ -2419,6 +2590,7 @@ img {
 }
 
 .sfn-counter {
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   color: #666;
 }
@@ -2470,6 +2642,24 @@ img {
   }
 }
 
+.sfn-row-offset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  min-height: 350px;
+}
+
+.sfn-row-offset > div:nth-child(1) {
+  width: 450px;
+  position: absolute;
+  left: -260px;
+}
+
+.sfn-row-offset > div:nth-child(2) {
+  margin-left: 220px;
+}
+
 @media only screen and (max-width: 991px) {
   .sfn-mobile-separator {
     margin-bottom: 1rem;
@@ -2500,6 +2690,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 .pagination li + li {
@@ -2669,6 +2860,10 @@ img {
   }
 }
 
+.btn {
+  font-family: 'Poppins', sans-serif;
+}
+
 .btn-has-icon-left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2778,6 +2973,192 @@ img {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+.sfn-article {
+  padding-right: 3em;
+  padding-left: 3em;
+}
+
+.sfn-article__meta {
+  margin-bottom: 1.5em;
+}
+
+.sfn-article__featured-image {
+  margin-bottom: 1.5em;
+}
+
+.sfn-article__subheading h3 {
+  font-weight: 400;
+  color: #333;
+  font-style: italic;
+  line-height: 1.5em;
+}
+
+.sfn-article__info-box {
+  margin-bottom: 1.5em;
+}
+
+.sfn-article-meta-inner > h6 {
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0 0 1em 0;
+}
+
+.sfn-article-meta-inner + .sfn-article-meta-inner {
+  margin-top: 1.25em;
+  padding-top: 1.25em;
+  border-top: 1px solid #eee;
+}
+
+.sfn-article-meta-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sfn-article-meta-user > img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.sfn-article-meta-user > div {
+  width: calc(100% - 50px);
+  padding-left: 0.75em;
+}
+
+.sfn-article-meta-user > div h5 {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.sfn-article-meta-user > div h5 a {
+  text-decoration: none;
+}
+
+.sfn-article-meta-user > div > h6 {
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  color: #666;
+  margin: 0;
+}
+
+.sfn-article-meta-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -4px;
+}
+
+.sfn-article-meta-tags a {
+  margin: 4px;
+  display: block;
+  background: transparent;
+}
+
+.sfn-article-social > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sfn-article-social > div + div {
+  margin-top: 1.25em;
+  padding-top: 1.25em;
+  border-top: 1px solid #C6E2FD;
+}
+
+.sfn-article-social > div > img {
+  width: 44px;
+}
+
+.sfn-article-social > div > div {
+  width: calc(100% - 44px);
+  padding-left: 1em;
+}
+
+.sfn-article-social > div > div > h6 {
+  margin-bottom: 0;
+}
+
+.sfn-article-social-media ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.sfn-article-social-newsletter > div > h6 {
+  margin-bottom: 0.35rem !important;
+}
+
+.sfn-box-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.75em;
+  border: 1px solid #C6E2FD;
+}
+
+.sfn-box-info__image img {
+  width: 236px;
+}
+
+.sfn-box-info__content {
+  width: calc(100% - 236px);
+  padding-left: 2em;
+}
+
+.sfn-box-info__content > h2 {
+  margin-bottom: 0.75em;
+}
+
+.sfn-box-info__content ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.sfn-box-info__content ul li {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sfn-box-info__content ul li + li {
+  margin-top: 0.5em;
+}
+
+.sfn-box-info__content ul li span {
+  color: #333;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 14px;
+  min-width: 150px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sfn-box-info__content ul li div {
+  font-size: 18px;
 }
 
 .sfn-typography + .sfn-typography {
