@@ -1,3 +1,11 @@
+.sfn-pagination {
+  display: flex;
+  justify-content: center;
+  @media (min-width: 992px) {
+    display: block;
+  }
+}
+
 .pagination {
   display: flex;
   align-items: center;
@@ -7,30 +15,6 @@
     + li {
       margin-left: -1px;
     }
-    a {
-      display: block;
-      background: white;
-      color: $primary;
-      transition: background .2s ease, color .2s ease;
-      width: 38px;
-      height: 38px;
-      border: 1px solid $blue-lightest;
-      text-align: center;
-      line-height: 38px;
-      text-decoration: none;
-      font-size: 12px;
-      font-weight: bold;
-      &:hover {
-        background: $blue-light;
-        color: $blue-dark;
-      }
-    }
-    &.active {
-      a {
-        background: $blue-light;
-        color: $blue-dark;
-      }
-    }
     &.inactive {
       a {
         opacity: 0.6;
@@ -39,68 +23,189 @@
         }
       }
     }
-    &.pagination-nav {
-      display: flex;
-      align-items: center;
+    &.pagination-jump {
+      color: $primary;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-decoration: underline;
+      text-transform: uppercase;
+      &--left {
+        margin-right: 1.25em;
+      }
+      &--right {
+        margin-left: 1.25em;
+      }
+      @media (min-width: 992px) {
+       a {
+        display: none; 
+       }
+      }
+    }
+    &.pagination-link {
+      display: none;
+      @media (min-width: 992px) {
+        display: block;
+      }
       a {
-        width: auto;
-        height: auto;
-        border: none;
+        display: block;
+        background: white;
         color: $primary;
-        font-size: 14px;
-        font-weight: 700;
-        letter-spacing: 0.1em;
-        text-decoration: underline;
-        text-transform: uppercase;
+        transition: background .2s ease, color .2s ease;
+        width: 38px;
+        height: 38px;
+        border: 1px solid $blue-lightest;
+        text-align: center;
+        line-height: 38px;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: bold;
+        &:hover {
+          background: $blue-light;
+          color: $blue-dark;
+        }
+      }
+      &--mobile {
+        display: block;
+      }
+      &.active {
+        a {
+          background: $blue-light;
+          color: $blue-dark;
+        }
+      }
+    }
+    &.pagination-nav {
+      a {
+        display: block;
+        width: 38px;
+        height: 38px;
+        border: 1px solid $blue-lightest;
+        font-size: 0;
         position: relative;
-        transition: opacity .2s ease;
-        &:after,
         &:before {
-          content: '';
-          display: inline-block;
           width: 15px;
           height: 11px;
-          background-image: url('../assets/images/icons/pagination-arrow-left.svg');
+          content: '';
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          background-image: url(../assets/images/icons/pagination-arrow-left.svg);
           background-repeat: no-repeat;
           background-position: center center;
           background-size: 15px;
-          position: relative;
-          top: 1px;
-        }
-        &:before {
-          margin-right: 0.75rem;
-        }
-        &:after {
-          margin-left: 0.5rem;
-          background-image: url('../assets/images/icons/pagination-arrow-right.svg');
-        }
-        &:hover {
-          background: none;
-          opacity: 0.8;
         }
       }
-      &:first-child {
-        margin-right: 0.75rem;
+      &--left {
         @media (min-width: 992px) {
-          margin-right: 1.5rem;
+          margin-right: 1rem;
         }
+      }
+      &--right {
         a {
-          &:after {
-            display: none;
+          &:before {
+            background-image: url(../assets/images/icons/pagination-arrow-right.svg);
+          }
+        }
+        @media (min-width: 992px) {
+          margin-left: 1rem;
+          a {
+            flex-direction: row-reverse;
+            &:before {
+              margin-right: 0;
+              margin-left: 0.75em;
+            }
           }
         }
       }
-      &:last-child {
-        margin-left: 0.75rem;
-        @media (min-width: 992px) {
-          margin-left: 1.5rem;
-        }
+      
+      @media (min-width: 992px) {
         a {
+          width: auto;
+          height: auto;
+          border: none;
+          font-size: 14px;
+          display: flex;
+          align-items: center;
+          font-size: 14px;
+          font-weight: 600;
+          letter-spacing: 0.1em;
+          text-decoration: underline;
+          text-transform: uppercase;
           &:before {
-            display: none;
+            transform: translate(0,0);
+            position: static;
+            display: inline-block;
+            margin-right: 0.75em;
           }
         }
       }
     }
+    // &.pagination-nav {
+    //   display: flex;
+    //   align-items: center;
+    //   a {
+    //     width: auto;
+    //     height: auto;
+    //     border: none;
+    //     color: $primary;
+    //     font-size: 14px;
+    //     font-weight: 700;
+    //     letter-spacing: 0.1em;
+    //     text-decoration: underline;
+    //     text-transform: uppercase;
+    //     position: relative;
+    //     transition: opacity .2s ease;
+    //     &:after,
+    //     &:before {
+    //       content: '';
+    //       display: inline-block;
+    //       width: 15px;
+    //       height: 11px;
+    //       background-image: url('../assets/images/icons/pagination-arrow-left.svg');
+    //       background-repeat: no-repeat;
+    //       background-position: center center;
+    //       background-size: 15px;
+    //       position: relative;
+    //       top: 1px;
+    //     }
+    //     &:before {
+    //       margin-right: 0.75rem;
+    //     }
+    //     &:after {
+    //       margin-left: 0.5rem;
+    //       background-image: url('../assets/images/icons/pagination-arrow-right.svg');
+    //     }
+    //     &:hover {
+    //       background: none;
+    //       opacity: 0.8;
+    //     }
+    //   }
+    // }
+    &.pagination-dots {
+      display: none;
+      color: $primary;
+      margin: 0 0.75em;
+      @media (min-width: 992px) {
+        display: block;
+      }
+    }
+  }
+}
+
+// Counter
+.sfn-counter {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: $grey-mid;
+  span {
+    font-weight: bold;
+    color: $black;
+  }
+  &__holder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }

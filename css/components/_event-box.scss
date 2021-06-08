@@ -1,7 +1,10 @@
 .sfn-event-box {
   position: relative;
-  background-color: $grey;
-  margin-bottom: 1.25rem;
+  &--holder {
+    .sfn-event-box {
+      margin-bottom: 1.25rem;
+    }
+  }
   &__date {
     position: absolute;
     top: 0;
@@ -16,15 +19,16 @@
     align-items: center;
     text-align: center;
     user-select: none;
+    font-family: 'Poppins', sans-serif;
     z-index: 2;
     > h2 {
       margin: 0 0 0 0;
       color: white;
-      font-family: 'Poppins', sans-serif;
       font-size: 22px;
       font-weight: 400;
       line-height: 0.9em;
       margin-top: 0.25rem;
+      font-family: 'Poppins', sans-serif;
     }
     > span {
       font-size: 11px;
@@ -64,6 +68,11 @@
     bottom: 1.25rem;
     left: 1.25rem;
     right: 1.25rem;
+    @media (min-width: 992px) {
+      bottom: 1.5rem;
+      left: 1.5rem;
+      right: 1.5rem;
+    }
     > .sfn-meta__location {
       margin-bottom: 0.25em;
       a {
@@ -73,7 +82,6 @@
     > h2,
     > h4 {
       margin-bottom: 0;
-      color: white;
       a {
         color: white;
         text-decoration: none;
@@ -88,14 +96,34 @@
       }
     }
   }
-}
 
-@media only screen and (min-width: 992px) {
-  .sfn-event-box {
-    &__content {
-      bottom: 1.5rem;
-      left: 1.5rem;
-      right: 1.5rem;
+  @media (min-width: 992px) {
+    &--def {
+      .sfn-event-box__image {
+        position: relative;
+        padding-bottom: 53%;
+        margin-bottom: 1em;
+        &:before {
+          display: none;
+        }
+      }
+      .sfn-event-box__content {
+        position: static;
+        > .sfn-meta__location {
+          a {
+            color: $grey-mid;
+          }
+        }
+        > h2,
+        > h4 {
+          a {
+            color: $black;
+          }
+        }
+        > h4 {
+          font-size: 26px;
+        }
+      }
     }
   }
 }

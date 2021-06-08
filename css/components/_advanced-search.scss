@@ -1,0 +1,97 @@
+.sfn-advanced-search {
+  padding: 1em;
+  background: $blue-light;
+  display: block;
+  @media (min-width: 992px) {
+    padding: 2em;
+    display: flex;
+    align-items: flex-end;
+  }
+  > div {
+    + div {
+      margin-top: 1.25em;
+    }
+    * {
+      display: block;
+    }
+    &:nth-child(3) {
+      .btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        img {
+          width: 18px;
+        }
+      }
+    }
+    @media (min-width: 992px) {
+      + div {
+        margin-top: 0;
+      }
+      &:nth-child(1) {
+        width: 37%;
+      }
+      &:nth-child(2) {
+        width: 37%;
+        margin-left: 2%;
+      }
+      &:nth-child(3) {
+        width: 32%;
+        margin-left: 2%;
+      } 
+    }
+
+    @media (min-width: 1201px) {
+      + div {
+        margin-top: 0;
+      }
+      &:nth-child(1) {
+        width: 42%;
+      }
+      &:nth-child(2) {
+        width: 42%;
+        margin-left: 2%;
+      }
+      &:nth-child(3) {
+        width: 22%;
+        margin-left: 2%;
+      } 
+    }
+  }
+  
+  select {
+    background: white;
+    border-color: $blue-lightest;
+    color: $grey-mid;
+    font-size: 12px;
+    width: 100%;
+    padding: 0 1em;
+    font-family: 'Poppins';
+    min-height: 40px;
+    background-image: url('../assets/images/icons/chevron-down-blue.svg');
+    background-repeat: no-repeat;
+    background-position: 97% center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  label {
+    margin-bottom: 0.5em;
+    color: $primary;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  input[type="text"] {
+    width: 100%;
+    font-size: 12px;
+    padding: 0 1em;
+    background: white;
+    border-color: $blue-lightest;
+    color: $grey-mid;
+    &::-webkit-input-placeholder { color: $blue-medium; font-style: italic; }
+    &::-moz-placeholder { color: $blue-medium; font-style: italic; }
+    &:-ms-input-placeholder { color: $blue-medium; font-style: italic; }
+    &:-moz-placeholder { color: $blue-medium; font-style: italic; }
+  }
+}

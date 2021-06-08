@@ -5,16 +5,6 @@
   border-bottom: 1px solid $grey-medium;
 }
 
-.sfn-counter {
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  color: $grey-mid;
-  span {
-    font-weight: bold;
-    color: $black;
-  }
-}
-
 .has-spacing-bottom {
   position: relative;
   padding-bottom: 2rem;
@@ -42,8 +32,16 @@
 
 .sfn-border-bottom {
   margin-bottom: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   border-bottom: 1px solid $blue-lightest;
+  @media (min-width: 992px) {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+  }
+  &--small {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
 }
 
 .sfn-category-articles {

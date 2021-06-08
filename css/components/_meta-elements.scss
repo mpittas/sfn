@@ -149,6 +149,8 @@
     img {
       width: 15px;
       margin-right: 3px;
+      position: relative;
+      top: -2px;
     }
     a {
       color: $grey-mid;

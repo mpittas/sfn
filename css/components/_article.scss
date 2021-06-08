@@ -1,7 +1,7 @@
 .sfn-article {
   @media (min-width: 1201px) {
-    padding-right: 3em;
-    padding-left: 3em;
+    padding-right: 2em;
+    padding-left: 2em;
   }
   &__meta {
     margin-bottom: 1.5em;
@@ -9,9 +9,6 @@
 
   &__featured-image {
     margin-bottom: 1.5em;
-    img {
-
-    }
   }
 
   &__subheading {
@@ -170,5 +167,16 @@
 
       }
     }
+  }
+}
+
+// Sidebar
+.sfn-sidebar-fixed {
+  position: static;
+  @media (min-width: 992px) {
+    position: relative;
+  }
+  &--contain {
+    overflow-y: hidden;
   }
 }

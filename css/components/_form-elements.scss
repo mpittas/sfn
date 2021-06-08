@@ -1,3 +1,10 @@
-input {
+select,
+textarea,
+input,
+label {
   font-family: 'Poppins', sans-serif;
+}
+
+label {
+  font-size: 12px;
 }

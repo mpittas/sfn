@@ -239,375 +239,373 @@
     </header>
 
     <main class="wrapper pt-4 pb-lg-5">
-        <div class="mb-5 sfn-sidebar-fixed--contain">
-            <div class="container">
+      <div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9">
+              <h1 class="mb-3">Events:</h1>
+
+              <div class="sfn-advanced-search mb-4">
+                <div class="sfn-advanced-search__inner">
+                  <label for="period">Period</label>
+                  <select name="period" id="period">
+                    <option value="this-month">This Month</option>
+                    <option value="this-week">This Week</option>
+                    <option value="lst-24-hours">Last 24 Hours</option>
+                  </select>
+                </div>
+
+                <div class="sfn-advanced-search__inner">
+                  <label for="location">Location</label>
+                  <input type="text" id="location" placeholder="Enter city or a region...">
+                </div>
+
+                <div class="sfn-advanced-search__button">
+                  <button class="btn btn-primary btn-has-icon-left">
+                    <img src="./assets/images/icons/magnifying-glass-icon-white.svg" alt="Magnifying glass icon">
+                    Find events
+                  </button>
+                </div>
+              </div>
+
+              <div class="sfn-counter__holder sfn-border-bottom sfn-border-bottom--small">
+                <div class="sfn-counter">
+                  <span>18</span> Events found:
+                </div>
+
+                <button class="btn btn-outline-primary btn-has-icon-left">
+                  <img src="./assets/images/icons/times-icon-blue.svg" alt="Times icon blue">
+                  Clear<span class="d-none d-md-inline">&nbsp;Results</span>
+                </button>
+              </div>
+
+              <div class="sfn-events__holder sfn-border-bottom">
                 <div class="row">
-                    <div class="col-lg-2">
-                        <div class="sfn-sidebar-fixed sfn-article-meta d-none d-lg-block">
-                            <div class="sfn-article-meta-inner">
-                                <h6>Written by:</h6>
+                  <div class="col-md-6">
+                    <article class="sfn-event-box sfn-event-box--def mb-4">
+                      <div class="sfn-event-box__date">
+                        <h2>18</h2>
+                        <span>JUN</span>
+                      </div>
 
-                                <div class="sfn-article-meta-user">
-                                    <img src="./assets/images/images/user-image.jpg" alt="User image">
-                                    <div>
-                                        <h5>
-                                            <a href="#">Kieran Findlay</a>
-                                        </h5>
-                                        <h6>Cief Editor</h6>
-                                    </div>
-                                </div>
-                            </div>
+                      <div class="sfn-event-box__image">
+                        <a href="#">
+                          <img src="./assets/images/images/event-sample-image-3.jpg" alt="Event image">
+                        </a>
+                      </div>
 
-                            <div class="sfn-article-meta-inner">
-                                <h6>Article Tags:</h6>
-
-                                <div class="sfn-article-meta-tags">
-                                    <div class="sfn-meta__badge">
-                                        <a href="#">FSB</a>
-                                    </div>
-                                    <div class="sfn-meta__badge">
-                                        <a href="#">Small Business</a>
-                                    </div>
-                                    <div class="sfn-meta__badge">
-                                        <a href="#">Politics</a>
-                                    </div>
-                                    <div class="sfn-meta__badge">
-                                        <a href="#">Economy</a>
-                                    </div>
-                                </div>
-                            </div>
+                      <div class="sfn-event-box__content">
+                        <div class="sfn-meta__location">
+                            <a href="#">
+                              <img src="./assets/images/icons/map-pointer.svg" alt="Map pointer icon"/>
+                              Aberdeen
+                            </a>
                         </div>
-                    </div>
 
-                    <div class="col-12 col-lg-8">
-                        <div class="sfn-article">
-                            <div class="sfn-article__breadcrumbs d-flex justify-content-center d-lg-none mb-4">
-                                <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb">
-                                      <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                      <li class="breadcrumb-item active" aria-current="page">Library</li>
-                                    </ol>
-                                </nav>
-                            </div>
-                            <div class="sfn-article__heading">
-                                <h1>H1: FSB poses small firms’ questions to politicians ahead of Scottish election</h1>
-                            </div>
+                        <h4>
+                          <a href="#">Data Protection and Privacy in 2021</a>
+                        </h4>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-md-6">
+                    <article class="sfn-event-box sfn-event-box--def mb-4">
+                      <div class="sfn-event-box__date">
+                        <h2>18</h2>
+                        <span>JUN</span>
+                      </div>
 
-                            <div class="sfn-article__meta">
-                                <div class="sfn-meta__holder">
-                                    <time datetime="2021-08-14" class="sfn-meta__date">
-                                        14 Apr 2021
-                                    </time>
-    
-                                    <address class="sfn-meta__time">
-                                        <img src="./assets/images/icons/clock-icon.svg" alt="Clock icon">
-                                        <span>4 minutes</span>
-                                    </address>
-                                </div>
-                            </div>
+                      <div class="sfn-event-box__image">
+                        <a href="#">
+                          <img src="./assets/images/images/event-sample-image-1.jpg" alt="Event image">
+                        </a>
+                      </div>
 
-                            <div class="sfn-article__featured-image">
-                                <img src="./assets/images/images/news-featured.jpg" alt="News Featured">
-                            </div>
-
-                            <div class="sfn-article__subheading">
-                                <h3>Scotland’s political leaders have been quizzed by the Federation of Small Businesses (FSB) about their plans for getting Scotland’s local and independent businesses back on their feet.</h3>
-                            </div>
-
-                            <div class="sfn-article-meta mt-4 mb-4 d-none-block">
-                                <div class="sfn-article-meta-inner">
-                                    <h6>Written by:</h6>
-    
-                                    <div class="sfn-article-meta-user">
-                                        <img src="./assets/images/images/user-image.jpg" alt="User image">
-                                        <div>
-                                            <h5>
-                                                <a href="#">Kieran Findlay</a>
-                                            </h5>
-                                            <h6>Cief Editor</h6>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <div class="sfn-article-meta-inner">
-                                    <h6>Article Tags:</h6>
-    
-                                    <div class="sfn-article-meta-tags">
-                                        <div class="sfn-meta__badge">
-                                            <a href="#">FSB</a>
-                                        </div>
-                                        <div class="sfn-meta__badge">
-                                            <a href="#">Small Business</a>
-                                        </div>
-                                        <div class="sfn-meta__badge">
-                                            <a href="#">Politics</a>
-                                        </div>
-                                        <div class="sfn-meta__badge">
-                                            <a href="#">Economy</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="sfn-article__info-box">
-                                <div class="sfn-box-info">
-                                    <div class="sfn-box-info__image">
-                                        <img src="./assets/images/images/map-sample.jpg" alt="Map location image">
-                                    </div>
-    
-                                    <div class="sfn-box-info__content">
-                                        <h2>About this development:</h2>
-    
-                                        <ul>
-                                            <li>
-                                                <span>TYPE:</span>
-                                                <div>residential</div>
-                                            </li>
-    
-                                            <li>
-                                                <span>COUNCIL:</span>
-                                                <div>
-                                                    <a href="#">Dundee City</a>
-                                                </div>
-                                            </li>
-    
-                                            <li>
-                                                <span>TEAM:</span>
-                                                <div>
-                                                    <a href="#">Stewart Milne Group (developer)</a>
-                                                </div>
-                                            </li>
-    
-                                            <li>
-                                                <span>APPLICATION:</span>
-                                                <div>
-                                                    <a href="#">20/00423/FULM</a>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="sfn-article__content">
-                                <p>In a series of video interviews conducted by journalist Clare English with Willie Rennie, Douglas Ross, Anas Sarwar, Lorna Slater, and Nicola Sturgeon, the Holyrood hopefuls are probed on issues raised by FSB’s membership.</p>
-
-                                <p>The political heavyweights are asked about detailed subjects like public procurement, coronavirus grant support, economic recovery and business rates.</p>
-                                    
-                                <p class="mb-4">Andrew McRae, FSB’s Scotland policy chair, said: “As Scotland’s proud champion of local and independent firms, it was great to hear from our political leaders about their plans for getting smaller businesses back on their feet. These incisive interviews should help give those that work for themselves some more of the information they need ahead of the polls.”</p>
-
-                                <div class="sfn-row-offset mb-4 mb-lg-5">
-                                    <div>
-                                        <div class="sfn-blockquote">
-                                            <blockquote>
-                                                As Scotland’s proud champion of local and independent firms, it was great to hear from our political leaders about their plans for getting smaller businesses back on their feet.
-                                            </blockquote>
-    
-                                            <div class="sfn-blockquote__info">
-                                                <h5>Andrew McRae</h5>
-                                                <h6>FSB’s Scotland policy chair</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-    
-                                    <div>
-                                        <p>During the interview, the politicians were also asked to reveal which sort of business they would like to start in a life after politics.</p>
-                                        <p>Douglas Ross said he’d like to supply baked goods like scones to the hospitality industry, Anas Sarwar suggested he’d like to establish an international political campaign group, and Willie Rennie said he’d like to open a corner shop or environmental charity. Bibliophile Nicola Sturgeon said she’d like to establish a bookshop, while Lorna Slater said she already had a plan to set up an aerial training venue for circus arts.</p>
-                                    </div>
-                                </div>
-
-                                <h2>H2: FSB poses small firms’ questions to politicians ahead of Scottish election</h2>
-
-                                <p>Andrew McRae added: “If any of our political leaders do decide to go into, or back into, business after they’ve hung up their rosette for the last time, we’d be pleased to welcome them as members of FSB and support them at every turn.”</p>
-
-                                <div class="sfn-banner mb-5">
-                                    <a href="#">
-                                        <img src="./assets/images/banners/banner-ratio-753-201.jpg" alt="Banner image"/>
-                                    </a>
-                                </div>
-
-                                <h3>H3: FSB poses small firms’ questions to politicians ahead of Scottish election</h3>
-
-                                <p>In a series of video interviews conducted by journalist Clare English with Willie Rennie, Douglas Ross, Anas Sarwar, Lorna Slater, and Nicola Sturgeon, the Holyrood hopefuls are probed on issues raised by FSB’s membership.</p>
-
-                                <h4>H4: FSB poses small firms’ questions to politicians ahead of Scottish election</h4>
-
-                                <p>The political heavyweights are asked about detailed subjects like public procurement, coronavirus grant support, economic recovery and business rates.</p>
-
-                                <div class="sfn-row-offset mb-5">
-                                    <div>
-                                        <img src="./assets/images/banners/banner-ratio-450-375.jpg" alt="Banner image">
-                                    </div>
-    
-                                    <div>
-                                        <h4 class="pb-3">H4: FSB poses small firms’ questions to politicians ahead of Scottish election</h4>
-                                        <p>Andrew McRae, FSB’s Scotland policy chair, said: “As Scotland’s proud champion of local and independent firms, it was great to hear from our political leaders about their plans for getting smaller businesses back on their feet. These incisive interviews should help give those that work for themselves some more of the information they need ahead of the polls.”</p>
-                                        <p>The political heavyweights are asked about detailed subjects like public procurement, coronavirus grant support, economic recovery and business rates.</p>
-                                    </div>
-                                </div>
-
-                                <h5 class="title-small-caps mb-4">SMALL CAPS TITLE: FSB poses small firms’ questions to politicians ahead of Scottish </h5>
-
-                                <p>In a series of video interviews conducted by journalist Clare English with Willie Rennie, Douglas Ross, Anas Sarwar, Lorna Slater, and Nicola Sturgeon, the Holyrood hopefuls are probed on issues raised by FSB’s membership.</p>
-                            </div>
-
-                            <div class="sfn-banner mb-4 d-block d-lg-none">
-                                <a href="#">
-                                    <img src="./assets/images/banners/banner-ratio-335-279.jpg" alt="Banner image"/>
-                                </a>
-                            </div>
+                      <div class="sfn-event-box__content">
+                        <div class="sfn-meta__location">
+                            <a href="#">
+                              <img src="./assets/images/icons/map-pointer.svg" alt="Map pointer icon"/>
+                              Aberdeen
+                            </a>
                         </div>
-                    </div>
 
-                    <div class="col-lg-2">
-                        <div class="sfn-sidebar-fixed sfn-article-social">
-                            <div class="sfn-article-social-media">
-                                <img src="./assets/images/icons/share-icon.svg" alt="Share icon">
-                                <div>
-                                    <h6>Share this article:</h6>
-                                    <nav>
-                                        <ul class="sfn-social__media">
-                                            <li>
-                                                <a href="#">
-                                                    <img src="./assets/images/brands/facebook-light-blue.svg" alt="Facebook">
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <img src="./assets/images/brands/twitter-light-blue.svg" alt="Twitter">
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <img src="./assets/images/brands/linked-in-light-blue.svg" alt="Linked In">
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
+                        <h4>
+                          <a href="#">Data Protection and Privacy in 2021</a>
+                        </h4>
+                      </div>
+                    </article>
+                  </div>
+                </div>
 
-                            <div class="sfn-article-social-newsletter d-none d-lg-flex">
-                                <img src="./assets/images/icons/bell-icon.svg" alt="Bell icon">
-                                <div>
-                                    <h6>Subscribe to our newsletter to not miss articles like this one:</h6>
-                                    <a href="#" class="btn btn-primary btn-sm btn-has-icon-left" data-bs-toggle="modal" data-bs-target="#subscribeModal">
-                                        <img src="./assets/images/icons/newsletter-icon.svg" alt="Newsletter icon">
-                                        SUBSCRIBE
-                                    </a>
-                                </div>
-                            </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <article class="sfn-event-box sfn-event-box--def mb-4">
+                      <div class="sfn-event-box__date">
+                        <h2>18</h2>
+                        <span>JUN</span>
+                      </div>
+
+                      <div class="sfn-event-box__image">
+                        <a href="#">
+                          <img src="./assets/images/images/event-sample-image-2.jpg" alt="Event image">
+                        </a>
+                      </div>
+
+                      <div class="sfn-event-box__content">
+                        <div class="sfn-meta__location">
+                            <a href="#">
+                              <img src="./assets/images/icons/map-pointer.svg" alt="Map pointer icon"/>
+                              Aberdeen
+                            </a>
                         </div>
-                    </div>
+
+                        <h4>
+                          <a href="#">Data Protection and Privacy in 2021</a>
+                        </h4>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-md-6">
+                    <article class="sfn-event-box sfn-event-box--def mb-4">
+                      <div class="sfn-event-box__date">
+                        <h2>18</h2>
+                        <span>JUN</span>
+                      </div>
+
+                      <div class="sfn-event-box__image">
+                        <a href="#">
+                          <img src="./assets/images/images/featured-sample-image-2.jpg" alt="Event image">
+                        </a>
+                      </div>
+
+                      <div class="sfn-event-box__content">
+                        <div class="sfn-meta__location">
+                            <a href="#">
+                              <img src="./assets/images/icons/map-pointer.svg" alt="Map pointer icon"/>
+                              Aberdeen
+                            </a>
+                        </div>
+
+                        <h4>
+                          <a href="#">Data Protection and Privacy in 2021</a>
+                        </h4>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <article class="sfn-event-box sfn-event-box--def mb-4">
+                      <div class="sfn-event-box__date">
+                        <h2>18</h2>
+                        <span>JUN</span>
+                      </div>
+
+                      <div class="sfn-event-box__image">
+                        <a href="#">
+                          <img src="./assets/images/images/news-sample-image-7.jpg" alt="Event image">
+                        </a>
+                      </div>
+
+                      <div class="sfn-event-box__content">
+                        <div class="sfn-meta__location">
+                            <a href="#">
+                              <img src="./assets/images/icons/map-pointer.svg" alt="Map pointer icon"/>
+                              Aberdeen
+                            </a>
+                        </div>
+
+                        <h4>
+                          <a href="#">Data Protection and Privacy in 2021</a>
+                        </h4>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-md-6">
+                    <article class="sfn-event-box sfn-event-box--def">
+                      <div class="sfn-event-box__date">
+                        <h2>18</h2>
+                        <span>JUN</span>
+                      </div>
+
+                      <div class="sfn-event-box__image">
+                        <a href="#">
+                          <img src="./assets/images/images/featured-sample-image-1.jpg" alt="Event image">
+                        </a>
+                      </div>
+
+                      <div class="sfn-event-box__content">
+                        <div class="sfn-meta__location">
+                            <a href="#">
+                              <img src="./assets/images/icons/map-pointer.svg" alt="Map pointer icon"/>
+                              Aberdeen
+                            </a>
+                        </div>
+
+                        <h4>
+                          <a href="#">Data Protection and Privacy in 2021</a>
+                        </h4>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sfn-list-navigation mb-5">
+                <div class="d-none d-lg-block">
+                  <div class="sfn-counter">
+                    <span>1-10</span>  of <span>283</span> Articles
+                  </div>
+                </div>
+  
+                <div class="">
+                    <div class="sfn-pagination">
+                        <nav aria-label="Page navigation example">
+                          <ul class="pagination">
+                            <li class="pagination-jump pagination-jump--left"><a href="#">FIRST</a></li>
+                            <li class="pagination-nav pagination-nav--left inactive"><a href="#">PREV</a></li>
+                            <li class="pagination-link pagination-link--mobile active"><a href="#">1</a></li>
+                            <li class="pagination-link pagination-link--mobile"><a href="#">2</a></li>
+                            <li class="pagination-link pagination-link--mobile"><a href="#">3</a></li>
+                            <li class="pagination-dots">...</li>
+                            <li class="pagination-link"><a href="#">78</a></li>
+                            <li class="pagination-link"><a href="#">79</a></li>
+                            <li class="pagination-link"><a href="#">80</a></li>
+                            <li class="pagination-nav pagination-nav--right"><a href="#">NEXT</a></li>
+                            <li class="pagination-jump pagination-jump--right"><a href="#">LAST</a></li>
+                          </ul>
+                        </nav>
+                      </div>
                 </div>
             </div>
-        </div>
-
-        <div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="sfn-title-long">
-                            <h1>Read More on the topic:</h1>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-6 col-md-3">
-                        <article class="sfn-news-box sfn-news-box--def sfn-news-box--def-vertical mb-4">
-                            <div class="sfn-news-box__image">
-                                <a href="#">
-                                    <img src="./assets/images/images/news-sample-image-5.jpg" alt="Box image">
-                                </a>
-                            </div>
-                            <div class="sfn-news-box__content">
-                                <div class="sfn-meta__holder">
-                                    <time datetime="2021-08-14" class="sfn-meta__date">
-                                        14 Apr 2021
-                                    </time>
-                                </div>
-
-                                <div class="sfn-news-box__title">
-                                    <h3>
-                                        <a href="#">French Duncan’s corporate advisory team surpasses &pound;110m of transactions and they are held responsible for their actions</a>
-                                    </h3>
-                                </div>
-                            </div> 
-                        </article>
-                    </div>
-
-                    <div class="col-6 col-md-3">
-                        <article class="sfn-news-box sfn-news-box--def sfn-news-box--def-vertical mb-4">
-                            <div class="sfn-news-box__image">
-                                <a href="#">
-                                    <img src="./assets/images/images/news-sample-image-6.jpg" alt="Box image">
-                                </a>
-                            </div>
-                            <div class="sfn-news-box__content">
-                                <div class="sfn-meta__holder">
-                                    <time datetime="2021-08-14" class="sfn-meta__date">
-                                        14 Apr 2021
-                                    </time>
-                                </div>
-
-                                <div class="sfn-news-box__title">
-                                    <h3>
-                                        <a href="#">French Duncan’s corporate advisory team surpasses &pound;110m of transactions and they are held responsible for their actions</a>
-                                    </h3>
-                                </div>
-                            </div> 
-                        </article>
-                    </div>
-
-                    <div class="col-6 col-md-3">
-                        <article class="sfn-news-box sfn-news-box--def sfn-news-box--def-vertical mb-4">
-                            <div class="sfn-news-box__image">
-                                <a href="#">
-                                    <img src="./assets/images/images/news-sample-image-7.jpg" alt="Box image">
-                                </a>
-                            </div>
-                            <div class="sfn-news-box__content">
-                                <div class="sfn-meta__holder">
-                                    <time datetime="2021-08-14" class="sfn-meta__date">
-                                        14 Apr 2021
-                                    </time>
-                                </div>
-
-                                <div class="sfn-news-box__title">
-                                    <h3>
-                                        <a href="#">French Duncan’s corporate advisory team surpasses &pound;110m of transactions and they are held responsible for their actions</a>
-                                    </h3>
-                                </div>
-                            </div> 
-                        </article>
-                    </div>
-
-                    <div class="col-6 col-md-3">
-                        <article class="sfn-news-box sfn-news-box--def sfn-news-box--def-vertical mb-4">
-                            <div class="sfn-news-box__image">
-                                <a href="#">
-                                    <img src="./assets/images/images/news-sample-image-8.jpg" alt="Box image">
-                                </a>
-                            </div>
-                            <div class="sfn-news-box__content">
-                                <div class="sfn-meta__holder">
-                                    <time datetime="2021-08-14" class="sfn-meta__date">
-                                        14 Apr 2021
-                                    </time>
-                                </div>
-
-                                <div class="sfn-news-box__title">
-                                    <h3>
-                                        <a href="#">French Duncan’s corporate advisory team surpasses &pound;110m of transactions and they are held responsible for their actions</a>
-                                    </h3>
-                                </div>
-                            </div> 
-                        </article>
-                    </div>
-                </div>
             </div>
+
+            <div class="col-lg-3">
+              <div class="mb-4 d-none d-lg-block">
+                <div class="sfn-title-main">
+                    <em>
+                        <img src="./assets/images/icons/internship-icon.svg" alt="Intership icon">
+                    </em>
+                    <h3>Latest Jobs:</h3>
+                </div>
+                <div class="sfn-news-boxes has-spacing-bottom has-spacing-bottom-small">
+                    <article class="sfn-news-box sfn-news-box--job">
+                        <div class="sfn-news-box__image">
+                            <a href="#">
+                                <img src="./assets/images/logos/jobs/brodies-logo.png" alt="Jobs logo">
+                            </a>
+                        </div>
+                        <div class="sfn-news-box__content">
+                            <div class="sfn-news-box__meta">
+                                <div class="sfn-meta__term">
+                                    <a href="#">BRODIES LLP</a>
+                                </div>
+                            </div>
+
+                            <div class="sfn-news-box__title">
+                                <h3>
+                                    <a href="#">Solicitor (NQ – 3 years' PQE) – Personal & Family...</a>
+                                </h3>
+                            </div>
+
+                            <div class="sfn-meta__location">
+                                <a href="#">
+                                    <img src="./assets/images/icons/map-pointer.svg" alt="Map pointer icon"/>
+                                    Aberdeen
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="sfn-news-box sfn-news-box--job">
+                        <div class="sfn-news-box__image">
+                            <a href="#">
+                                <img src="./assets/images/logos/jobs/denovo-logo.png" alt="Jobs logo">
+                            </a>
+                        </div>
+                        <div class="sfn-news-box__content">
+                            <div class="sfn-news-box__meta">
+                                <div class="sfn-meta__term">
+                                    <a href="#">BRODIES LLP</a>
+                                </div>
+                            </div>
+
+                            <div class="sfn-news-box__title">
+                                <h3>
+                                    <a href="#">Legal Software Implementation Consultant.</a>
+                                </h3>
+                            </div>
+
+                            <div class="sfn-meta__location">
+                                <a href="#">
+                                    <img src="./assets/images/icons/map-pointer.svg" alt="Map pointer icon"/>
+                                    Remote
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="sfn-news-box sfn-news-box--job">
+                        <div class="sfn-news-box__image">
+                            <a href="#">
+                                <img src="./assets/images/logos/jobs/jackson-boyd-logo.png" alt="Jobs logo">
+                            </a>
+                        </div>
+                        <div class="sfn-news-box__content">
+                            <div class="sfn-news-box__meta">
+                                <div class="sfn-meta__term">
+                                    <a href="#">BRODIES LLP</a>
+                                </div>
+                            </div>
+
+                            <div class="sfn-news-box__title">
+                                <h3>
+                                    <a href="#">Employment Solicitor/Senior Solicitor...</a>
+                                </h3>
+                            </div>
+
+                            <div class="sfn-meta__location">
+                                <a href="#">
+                                    <img src="./assets/images/icons/map-pointer.svg" alt="Map pointer icon"/>
+                                    Aberdeen
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="center-button">
+                  <a href="#" class="d-block btn btn-has-icon-right btn-outline-primary">
+                    See All Jobs
+                    <img src="./assets/images/icons/arrow-right.svg" alt="Arrow right">
+                  </a>
+                </div>
+              </div>
+
+              <div class="sfn-banner mb-4 d-block d-lg-none">
+                <a href="#">
+                    <img src="./assets/images/banners/banner-ratio-335-120.jpg" alt="Banner 300-250">
+                </a>
+              </div>
+
+              <div class="sfn-banner mb-2 d-none d-lg-block">
+                <a href="#">
+                    <img src="./assets/images/banners/banner-ratio-300-250.jpg" alt="Banner 300-250">
+                </a>
+              </div>
+
+              <article class="sfn-cta mb-5 mb-lg-1">
+                <div class="sfn-cta__inner">
+                    <img src="./assets/images/icons/megaphone-icon.svg" alt="Megaphone icon">
+                    <h3>Visit Scottish News Online!</h3>
+                    <p>Stay up to date with all the latest business news across Scotland!</p>
+                    <a href="#" class="btn btn-primary">VISIT THE SITE</a>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
+      </div>
     </main>
 
     <footer class="sfn-footer">
