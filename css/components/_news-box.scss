@@ -68,6 +68,10 @@
     font-size: 15px;
     line-height: 1.4em;
     color: $grey-mid2;
+    margin-bottom: 0.75em;
+    p {
+      margin-bottom: 0;
+    }
   }
 
   // Box witout an image.

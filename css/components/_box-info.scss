@@ -1,17 +1,26 @@
 .sfn-box-info {
-  display: flex;
-  align-items: center;
+  display: block;
   padding: 0.75em;
   border: 1px solid $blue-lightest;
+  @media (min-width: 992px) {
+    display: flex;
+    align-items: center;
+  }
   &__image {
-    img {
-      width: 236px;
-    }
+    margin-bottom: 1.5em;
+    @media (min-width: 992px) {
+      margin-bottom: 0;
+      img {
+        width: 236px;
+      }
+    } 
   }
 
   &__content {
-    width: calc(100% - 236px);
-    padding-left: 2em;
+    @media (min-width: 992px) {
+      width: calc(100% - 236px);
+      padding-left: 2em;
+    }
     > h2 {
       margin-bottom: 0.75em;
     }
@@ -30,12 +39,21 @@
           color: $black;
           letter-spacing: 1px;
           font-weight: 600;
-          font-size: 14px;
-          min-width: 150px;
           font-family: 'Poppins', sans-serif;
+          margin-right: 0.5em;
+          font-size: 12px;
+          min-width: 120px;
+          @media (min-width: 992px) {
+            min-width: 150px;
+            font-size: 14px;
+          }
         }
         div {
-          font-size: 18px;
+          font-size: 16px;
+          line-height: 1.3em;
+          @media (min-width: 992px) {
+            font-size: 18px;
+          }
         }
       }
     }

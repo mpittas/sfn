@@ -1,6 +1,8 @@
 .sfn-article {
-  padding-right: 3em;
-  padding-left: 3em;
+  @media (min-width: 1201px) {
+    padding-right: 3em;
+    padding-left: 3em;
+  }
   &__meta {
     margin-bottom: 1.5em;
   }
@@ -82,6 +84,17 @@
       background: transparent;
     }
   }
+
+  @media (max-width:1199px) and (min-width:992px) {
+   &-user {
+     display: block;
+     > div {
+       width: 100%;
+       padding-left: 0;
+       padding-top: 0.5em;
+     }
+   }
+  }
 }
 
 // Article social
@@ -94,13 +107,37 @@
       border-top: 1px solid $blue-lightest;
     }
     > img {
-      width: 44px;
+      width: 30px;
+      @media (min-width: 992px) {
+        width: 44px;
+      }
     }
     > div {
       width: calc(100% - 44px);
       padding-left: 1em;
       > h6 {
         margin-bottom: 0;
+        font-size: 20px;
+        @media (min-width: 992px) {
+          font-size: 16px;
+        }
+      }
+    }
+    @media (min-width:992px) and (max-width:1199px) {
+      display: block;
+      + div {
+        margin-top: 1em;
+        padding-top: 1em;
+      }
+      > img {
+        margin-bottom: 0.5em;
+      }
+      > div {
+        width: 100%;
+        padding-left: 0;
+        > h6 {
+          margin-bottom: 0.25em;
+        }
       }
     }
   }
@@ -110,6 +147,17 @@
       padding: 0;
       margin: 0;
       justify-content: flex-start;
+    }
+    > div {
+      display: flex;
+      align-items: center;
+      > h6 {
+        margin-right: 0.5em;
+      }
+      @media (min-width: 992px) {
+        display: block;
+        margin-right: 0;
+      }
     }
   }
 

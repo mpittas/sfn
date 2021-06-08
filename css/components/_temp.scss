@@ -55,18 +55,28 @@
 }
 
 .sfn-row-offset {
-  display: flex;
-  position: relative;
-  min-height: 350px;
-  // flex-wrap: wrap;
   > div {
-    &:nth-child(1) {
-      width: 450px;
-      position: absolute;
-      left: -260px;
+    + div {
+      margin-top: 1.5em;
     }
-    &:nth-child(2) {
-      margin-left: 220px;
+  }
+  @media (min-width: 1201px) {
+    display: flex;
+    position: relative;
+    min-height: 380px;
+    // flex-wrap: wrap;
+    > div {
+      + div {
+        margin-top: 0;
+      }
+      &:nth-child(1) {
+        width: 450px;
+        position: absolute;
+        left: -260px;
+      }
+      &:nth-child(2) {
+        margin-left: 220px;
+      }
     }
   }
 }

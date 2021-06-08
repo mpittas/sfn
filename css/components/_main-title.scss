@@ -18,9 +18,9 @@
   h3 {
     margin: 0;
     padding-left: 1rem;
+    top: 5px;
+    position: relative;
     @media (min-width: 992px) {
-      position: relative;
-      top: 5px;
       width: calc(100% - 52px);
       white-space: nowrap;
       text-overflow: ellipsis;
