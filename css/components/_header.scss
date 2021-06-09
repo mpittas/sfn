@@ -60,7 +60,7 @@
             padding: 1rem 1.75rem;
             background: white;
             display: block;
-            color: $black;
+            color: $primary;
             font-size: 17px;
             font-weight: 600;
             text-decoration: none;
@@ -86,7 +86,7 @@
         }
         + li {
           > a {
-            border-top: 1px solid $grey-light;
+            border-top: 1px solid $blue-lightest;
           }
         }
         .dropdown {
@@ -114,7 +114,7 @@
       position: absolute;
       width: 100%;
       z-index: 5;
-      top: 71px;
+      top: 70px;
       left: 0;
       transition: left 0.5s ease;
       &.collapsing {
@@ -126,6 +126,7 @@
 }
 
 .sfn-header-submenu {
+  font-family: 'Poppins', sans-serif;
   nav {
     ul {
       list-style-type: none;
@@ -233,20 +234,32 @@
     &__inner {
       > ul {
         > li {
+          a {
+            padding: 1rem 1.25rem;
+            &.active {
+              background: white;
+              color: $blue-dark;
+              &:before {
+                display: none;
+              }
+            }
+          }
           .dropdown-menu {
-            background: $grey-lightest;
+            font-family: 'Poppins', sans-serif;
+            background: $blue-light;
             border: none;
             border-radius: 0;
             margin-top: 0;
             font-size: 15px;
             text-transform: uppercase;
-            padding: 1rem 0.75rem;
+            padding: 1.5rem;
             li {
               + li {
-                margin-top: 0.75rem;
+                margin-top: 1.15rem;
               }
               a {
                 padding: 0;
+                color: $primary;
               }
             }
           }
@@ -259,6 +272,13 @@
               right: 1rem;
             }
           }
+        }
+      }
+    }
+    .sfn-social__list-icons {
+      li {
+        a {
+          color: $primary;
         }
       }
     }

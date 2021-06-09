@@ -13,14 +13,35 @@
     content: '';
     position: absolute;
     bottom: 0;
-    left: 5px;
-    right: 5px;
+    left: 0;
+    right: 0;
     height: 1px;
     background: $blue-lightest;
   }
   &-small {
     margin-bottom: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+  &--offset {
+    &:before {
+      left: 0.75rem;
+      right: 0.75rem;
+    }
+  }
+  @media (min-width: 576px) {
+    &:before {
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 520px;
+      width: 100%;
+    }
+  }
+  @media (min-width: 768px) {
+    &:before {
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 700px;
+    }
   }
   @media (min-width: 992px) {
     padding-bottom: 0;
