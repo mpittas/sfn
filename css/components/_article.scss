@@ -1,10 +1,17 @@
 .sfn-article {
   @media (min-width: 1201px) {
-    padding-right: 2em;
-    padding-left: 2em;
+    padding-right: 1em;
+    padding-left: 1em;
   }
   &__meta {
-    margin-bottom: 1.5em;
+    margin-bottom: 1.25em;
+  }
+
+  &__heading {
+    margin-bottom: 0.75em;
+    h1 {
+      margin-bottom: 0 !important;
+    }
   }
 
   &__featured-image {
@@ -12,6 +19,7 @@
   }
 
   &__subheading {
+    padding-bottom: 1em;
     h3 {
       font-weight: 400;
       color: $black;
@@ -21,7 +29,7 @@
   }
 
   &__info-box {
-    margin-bottom: 1.5em;
+    margin-bottom: 2em;
   }
 }
 
@@ -98,6 +106,7 @@
 .sfn-article-social {
   > div {
     display: flex;
+    align-items: flex-start;
     + div {
       margin-top: 1.25em;
       padding-top: 1.25em;
@@ -163,9 +172,6 @@
       > h6 {
         margin-bottom: 0.35rem !important;
       }
-      .btn-primary {
-
-      }
     }
   }
 }
@@ -178,5 +184,24 @@
   }
   &--contain {
     overflow-y: hidden;
+  }
+}
+
+// Fix headings offset
+.article-page {
+  .sfn-article__content {
+    h1, h2 {
+      margin-bottom: 1em;
+    }
+    h3, h4, h5, h6 {
+      margin-bottom: 1em;
+    }
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .sfn-banner {
+    margin: 2em 0;
   }
 }

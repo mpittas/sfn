@@ -68,13 +68,8 @@
     bottom: 1.25rem;
     left: 1.25rem;
     right: 1.25rem;
-    @media (min-width: 992px) {
-      bottom: 1.5rem;
-      left: 1.5rem;
-      right: 1.5rem;
-    }
     > .sfn-meta__location {
-      margin-bottom: 0.25em;
+      margin-bottom: 0.5em;
       a {
         color: white;
       }
@@ -85,14 +80,6 @@
       a {
         color: white;
         text-decoration: none;
-      }
-    }
-    @media (min-width: 992px) {
-      bottom: 0.75rem;
-      left: 0.75rem;
-      right: 0.75rem;
-      > .sfn-meta__location {
-        margin-bottom: 0.5em;
       }
     }
   }
@@ -124,6 +111,15 @@
           font-size: 26px;
         }
       }
+    }
+  }
+}
+
+.sfn-events__holder {
+  .sfn-event-box {
+    margin-bottom: 25px;
+    @media (min-width: 992px) {
+      margin-bottom: 40px;
     }
   }
 }

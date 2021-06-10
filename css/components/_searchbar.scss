@@ -30,10 +30,10 @@
     padding: 0 2.5rem 0 0.75rem;
     font-size: 12px;
     border-color: $blue-lightest;
-    &::-webkit-input-placeholder { color: $blue-medium; }
-    &::-moz-placeholder { color: $blue-medium; }
-    &:-ms-input-placeholder { color: $blue-medium; }
-    &:-moz-placeholder { color: $blue-medium; }
+    &::-webkit-input-placeholder { color: $blue-medium; font-style: italic; }
+    &::-moz-placeholder { color: $blue-medium; font-style: italic; }
+    &:-ms-input-placeholder { color: $blue-medium; font-style: italic; }
+    &:-moz-placeholder { color: $blue-medium; font-style: italic; }
   }
   input[type=submit] {
     position: absolute;

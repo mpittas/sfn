@@ -58,7 +58,7 @@
   &__excerpt {
     font-family: adobe-caslon-pro, serif;
     font-size: 18px;
-    line-height: 1.4em;
+    line-height: 1.55em;
   }
 
   &--horizontal {
@@ -110,6 +110,11 @@
 
 @media only screen and (min-width: 992px) {
   .sfn-featured-newsbox {
+      &.sfn-top-featured {
+        .sfn-meta__badge {
+          top: -16px;
+        }
+      }
     &--horizontal {
       display: flex;
       > div {

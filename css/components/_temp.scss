@@ -74,6 +74,7 @@
 }
 
 .sfn-row-offset {
+  margin: 2.5em 0;
   > div {
     + div {
       margin-top: 1.5em;
@@ -82,7 +83,7 @@
   @media (min-width: 1201px) {
     display: flex;
     position: relative;
-    min-height: 380px;
+    min-height: 403px;
     // flex-wrap: wrap;
     > div {
       + div {
@@ -94,7 +95,7 @@
         left: -260px;
       }
       &:nth-child(2) {
-        margin-left: 220px;
+        padding-left: 235px;
       }
     }
   }

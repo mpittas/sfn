@@ -47,13 +47,13 @@
     }
   }
   &.btn-outline-primary {
-    background: transparent;
+    background: white;
     border-color: $blue-lightest;
     color: $primary;
     transition: color .2s ease-in-out, border-color .2s ease-in-out, background .2s ease-in-out;
+    position: relative;
     &:hover {
-      color: $primary;
-      background: lighten($primary, 38%);
+      background: lighten($primary, 42%);
     }
     &:focus {
       background: $grey-medium;

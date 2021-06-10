@@ -36,6 +36,7 @@
     font-weight: 500;
     letter-spacing: 0.05em;
     text-decoration: none;
+    color: $grey;
     @media (min-width: 992px) {
       font-size: 14px;
     }
@@ -83,6 +84,9 @@
     }
     span {
       font-weight: 400;
+      em {
+        font-style: normal;
+      }
     }
     img {
       margin-right: 7px;

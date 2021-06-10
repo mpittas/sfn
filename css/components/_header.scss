@@ -138,6 +138,7 @@
         font-size: 13px;
         text-transform: uppercase;
         letter-spacing: 0.1rem;
+        font-weight: 600;
         position: relative;
         + li {
           margin-left: 1.5em;
@@ -158,7 +159,7 @@
           color: $primary;
           transition: color .3s ease-in-out;
           &:hover {
-            color: lighten($primary, 20%);
+            color: darken($primary, 30%);
           }
         }
       }
