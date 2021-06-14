@@ -188,6 +188,23 @@
         line-height: 18px;
       }
     }
+    &-long {
+      .sfn-news-box__image {
+        width: 150px;
+      }
+
+      .sfn-news-box__content {
+        padding-left: 1.75rem;
+      }
+
+      .sfn-news-box__title {
+        h3 {
+          font-size: 26px;
+          line-height: 32px;
+          font-family: adobe-caslon-pro, serif;
+        }
+      }
+    }
   }
 
   &--medium-heading {
