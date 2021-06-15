@@ -46,20 +46,37 @@
       border-color: darken($primary, 15%);
     }
   }
+
   &.btn-outline-primary {
+    border-color: $blue-light;
     background: white;
-    border-color: $blue-lightest;
     color: $primary;
-    transition: color .2s ease-in-out, border-color .2s ease-in-out, background .2s ease-in-out;
-    position: relative;
     &:hover {
-      background: lighten($primary, 42%);
+      background: lighten($primary, 44%);
+      border-color: darken($blue-light, 15%);
+      color: $primary;
     }
     &:focus {
-      background: $grey-medium;
+      background: lighten($primary, 38%);
+    }
+  }
+
+  &-light {
+    background: white;
+    border-color: $blue-light;
+  }
+
+  &-outline-light {
+    background: rgba(255,255,255,0.15);
+    border-color: white;
+    color: white;
+    &:hover {
+      background: rgba(255,255,255,0.25);
+      color: white;
     }
   }
 }
+
 
 
 .center-button {

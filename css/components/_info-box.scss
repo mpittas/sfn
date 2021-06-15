@@ -1,0 +1,51 @@
+.sfn-info-box {
+  background: $blue-light;
+  display: flex;
+  align-items: center;
+  &__icon {
+    padding: 1.5rem;
+    border-right: 1px solid $blue-lightest;
+    padding: 1.847rem;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 64px;
+      @media (min-width: 1200px) {
+        width: 74px;
+      }
+    }
+  }
+
+  &__title {
+    width: calc(100% - 140px);
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    h2 {
+      font-family: 'Poppins', sans-serif;
+      color: $primary;
+      font-size: 30px;
+      line-height: 30px;
+      margin: 0;
+      font-weight: 400;
+      display: flex;
+      flex-direction: column;
+      @media (min-width: 992px) {
+        display: inline;
+      }
+      span {
+        font-size: 16px;
+        @media (min-width: 992px) {
+          font-size: inherit;
+        }
+      }
+      @media (min-width: 1200px) {
+        font-size: 36px;
+      }
+    }
+  }
+}

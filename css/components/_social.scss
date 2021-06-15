@@ -12,6 +12,25 @@
     margin: 0;
     padding: 0;
   }
+
+  &--inline {
+    img {
+      width: 20px;
+      margin-right: 0.5rem;
+      position: relative;
+      top: -1px;
+    }
+    a {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 21px;
+      color: $primary;
+      font-family: 'Poppins', sans-serif;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+  }
 }
 
 .sfn-social__nav {
