@@ -1,0 +1,31 @@
+.sfn-content-box {
+  background: $blue-light;
+  border: 1px solid $blue-lightest;
+  padding: 2rem;
+  + .sfn-content-box {
+    margin-top: 1.5rem;
+  }
+  h4 {
+    color: $blue-dark;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: $primary;
+    b {
+      color: $blue-dark;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li {
+      a {
+        text-decoration: none;
+        color: $blue-dark;
+      }
+    }
+  }
+}

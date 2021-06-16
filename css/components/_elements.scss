@@ -21,14 +21,18 @@
 }
 
 .sfn-blockquote {
-  padding: 6em 2.5em 2.5em 2.5em;
+  padding: 5em 2em 2em 2em;
   border: 1px solid $blue-lightest;
   background-image: url('../assets/images/icons/open-quotes-icon.svg');
   background-size: 54px auto;
   background-repeat: no-repeat;
-  background-position: 11% 7%;
+  background-position: 40px 25px;
   background-color: white;
   z-index: 2;
+  @media (min-width: 992px) {
+    padding: 6em 2.5em 2.5em 2.5em;
+    background-position: 50px 30px;
+  }
   blockquote {
     font-size: 24px;
     font-style: italic;
@@ -38,10 +42,12 @@
     margin-bottom: 1.5em;
   }
   &__info {
+    display: flex;
+    align-items: center;
     h5 {
       font-size: 18px;
       color: $black;
-      margin-bottom: 0.15em;
+      margin-bottom: 0.15em !important;
     }
     h6 {
       font-family: 'Poppins', sans-serif;
@@ -49,6 +55,15 @@
       font-weight: 300;
       font-style: italic;
       color: $grey-mid;
+      margin: 0;
+    }
+    > div {
+      img {
+        max-width: 50px;
+      }
+      + div {
+        margin-left: 1rem;
+      }
     }
   }
 }

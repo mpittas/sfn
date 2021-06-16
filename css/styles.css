@@ -1829,14 +1829,21 @@ label {
 }
 
 .sfn-blockquote {
-  padding: 6em 2.5em 2.5em 2.5em;
+  padding: 5em 2em 2em 2em;
   border: 1px solid #C6E2FD;
   background-image: url("../assets/images/icons/open-quotes-icon.svg");
   background-size: 54px auto;
   background-repeat: no-repeat;
-  background-position: 11% 7%;
+  background-position: 40px 25px;
   background-color: white;
   z-index: 2;
+}
+
+@media (min-width: 992px) {
+  .sfn-blockquote {
+    padding: 6em 2.5em 2.5em 2.5em;
+    background-position: 50px 30px;
+  }
 }
 
 .sfn-blockquote blockquote {
@@ -1848,10 +1855,19 @@ label {
   margin-bottom: 1.5em;
 }
 
+.sfn-blockquote__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .sfn-blockquote__info h5 {
   font-size: 18px;
   color: #333;
-  margin-bottom: 0.15em;
+  margin-bottom: 0.15em !important;
 }
 
 .sfn-blockquote__info h6 {
@@ -1860,6 +1876,15 @@ label {
   font-weight: 300;
   font-style: italic;
   color: #666;
+  margin: 0;
+}
+
+.sfn-blockquote__info > div img {
+  max-width: 50px;
+}
+
+.sfn-blockquote__info > div + div {
+  margin-left: 1rem;
 }
 
 .sfn-news-box {
@@ -3915,18 +3940,6 @@ label {
   font-style: italic;
 }
 
-@media (min-width: 1200px) {
-  .sfn-about__holder {
-    padding-right: 15em;
-  }
-}
-
-@media (min-width: 992px) {
-  .sfn-about__holder {
-    padding-right: 5em;
-  }
-}
-
 .sfn-info-box {
   background: #EDF6FF;
   display: -webkit-box;
@@ -4013,18 +4026,6 @@ label {
 @media (min-width: 1200px) {
   .sfn-info-box__title h2 {
     font-size: 36px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .sfn-team-members {
-    padding-right: 15em;
-  }
-}
-
-@media (min-width: 992px) {
-  .sfn-team-members {
-    padding-right: 5em;
   }
 }
 
@@ -4137,6 +4138,52 @@ label {
 
 .sfn-team-member__text {
   text-align: left;
+}
+
+@media (min-width: 992px) {
+  .sfn-section-offset {
+    padding-right: 5em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sfn-section-offset {
+    padding-right: 15em;
+  }
+}
+
+.sfn-content-box {
+  background: #EDF6FF;
+  border: 1px solid #C6E2FD;
+  padding: 2rem;
+}
+
+.sfn-content-box + .sfn-content-box {
+  margin-top: 1.5rem;
+}
+
+.sfn-content-box h4 {
+  color: #004A90;
+  margin-bottom: 1rem;
+}
+
+.sfn-content-box p {
+  color: #438CD1;
+}
+
+.sfn-content-box p b {
+  color: #004A90;
+}
+
+.sfn-content-box ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sfn-content-box ul li a {
+  text-decoration: none;
+  color: #004A90;
 }
 
 .sfn-typography + .sfn-typography {
