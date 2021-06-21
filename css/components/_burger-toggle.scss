@@ -3,7 +3,7 @@
 // Burger
 .toggle-button {
   position: relative;
-  height: 28px;
+  height: 27px;
   width: 36px;
   cursor: pointer;
   
@@ -12,9 +12,10 @@
   .line-bottom {
     position: absolute;
     display: block;
-    height: 4px;
+    height: 2px;
     width: 36px;
     background: #000;
+    border-radius: 10px;
   }
   
   .line-top {
@@ -24,38 +25,38 @@
   
   .line-middle {
     top: 12px;
-    transition: opacity 200ms linear;
+    transition: opacity 0ms linear;
   }
   
   .line-bottom {
     bottom: 0;
-    transform-origin: 34px 2px;
+    transform-origin: 36px 1px;
   }
   
   &.is-open {
     .line-top {
-      animation: line-top-out 600ms linear normal;
+      animation: line-top-out 0ms linear normal;
       animation-fill-mode: forwards;
     }
     .line-middle {
       opacity: 0;
     }
     .line-bottom {
-      animation: line-bot-out 600ms linear normal;
+      animation: line-bot-out 0ms linear normal;
       animation-fill-mode: forwards;
     }
   }
   
   &.is-closed {
     .line-top {
-      animation: line-top-in 600ms linear normal;
+      animation: line-top-in 0ms linear normal;
       animation-fill-mode: forwards;
     }
     .line-middle {
-      transition-delay: 200ms;
+      transition-delay: 0ms;
     }
     .line-bottom {
-      animation: line-bot-in 600ms linear normal;
+      animation: line-bot-in 0ms linear normal;
       animation-fill-mode: forwards;
     }
   }

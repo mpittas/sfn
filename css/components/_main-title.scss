@@ -55,6 +55,12 @@
       width: 83px;
     }
   }
+  h1, h2 {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
   h1 {
     margin: 0;
     font-weight: bold;
@@ -120,6 +126,20 @@
       @media (min-width: 992px) {
         font-size: 24px;
       }
+    }
+  }
+}
+
+// Page title
+.sfn-page-title {
+  text-align: center;
+  padding-bottom: 0.5rem;
+  @media (min-width: 992px) {
+    text-align: left;
+  }
+  @media (max-width: 991px) {
+    h1 {
+      font-size: 36px;
     }
   }
 }

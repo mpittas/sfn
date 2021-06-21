@@ -104,6 +104,14 @@
 
 // Article social
 .sfn-article-social {
+  padding: 1rem 0;
+  border-top: 1px solid $blue-lightest;
+  border-bottom: 1px solid $blue-lightest;
+  @media (min-width: 992px) {
+    padding: 0;
+    border-top: none;
+    border-bottom: none;
+  }
   > div {
     display: flex;
     align-items: flex-start;
@@ -120,7 +128,11 @@
     }
     > div {
       width: calc(100% - 44px);
-      padding-left: 1em;
+      padding-left: 0.75em;
+      justify-content: space-between;
+      @media (min-width: 992px) {
+        justify-content: flex-start;
+      }
       > h6 {
         margin-bottom: 0;
         font-size: 20px;
@@ -153,12 +165,23 @@
       padding: 0;
       margin: 0;
       justify-content: flex-start;
+      img {
+        width: 30px;
+        @media (min-width: 992px) {
+          width: 20px;
+        }
+      }
     }
     > div {
       display: flex;
       align-items: center;
       > h6 {
         margin-right: 0.5em;
+        position: relative;
+        top: 3px;
+        @media (min-width: 992px) {
+          top: 0;
+        }
       }
       @media (min-width: 992px) {
         display: block;
@@ -178,13 +201,22 @@
 
 // Sidebar
 .sfn-sidebar-fixed {
-  position: static;
   @media (min-width: 992px) {
     position: relative;
+    &-container {
+      padding-top: 635px;
+    }
   }
   &--contain {
     overflow-y: hidden;
   }
+}
+
+.sfn-article-bottom {
+  position: relative;
+  z-index: 2;
+  background: white;
+  padding-top: 1rem;
 }
 
 // Fix headings offset

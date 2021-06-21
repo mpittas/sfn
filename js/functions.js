@@ -1,5 +1,5 @@
 
-// Functions
+// -------------------------------------- FUNCTIONS --------------------------------------
 // Footer collapse nav
 function footerCollapse() {
   var width = $(document).width();
@@ -29,36 +29,41 @@ function toggleAnimation() {
   });
 }
 
-// Changes on document ready
+function stickySidebar() {
+  // Sticky elements (Article page)
+  $('.sfn-sidebar-fixed').sticky({
+    topSpacing: 50,
+  });
+}
+
+// -------------------------------------- DOCUMENT READY --------------------------------------
 jQuery(document).ready(function($){
   toggleAnimation()
   footerCollapse();
+
+  
+  // Show modal with delay
+  var myModal = new bootstrap.Modal(document.getElementById('subscribeModal'));
+  setTimeout(function() {
+    myModal.show();
+  }, 10000);
 });
 
-// Resize function
+// -------------------------------------- WINDOW RESIZE --------------------------------------
 $(window).resize(function() {
   footerCollapse();
 });
 
-
-// Truncate
-
-
 //Show Submenu on when hover on main navigation links
 var headerLink = $('.sfn-header-nav__inner ul li.dropdown a');
 var submenuSection = $('.sfn-header-submenu'); 
-
-// headerLink.click(function(){
-//   submenuSection.toggle();
-// });
 
 
 if ($(window).width() < 1199) {
   $('.sfn-meta__time span > em').text('min');
 }
 
-
-// Truncate code
+// -------------------------------------- TRUNCATE CODE --------------------------------------
 if ($(window).width() < 960) {
   new Cuttr('.sfn-news-boxes--featured h3', { truncate: 'words', length: 6 });
   new Cuttr('.sfn-news-box--medium-heading h3', { truncate: 'words', length: 6 });
