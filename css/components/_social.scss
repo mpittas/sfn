@@ -14,21 +14,15 @@
   }
 
   &--inline {
-    img {
-      width: 20px;
-      margin-right: 0.5rem;
-      position: relative;
-      top: -1px;
-    }
+    display: flex;
+    align-items: center;
     a {
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 21px;
-      color: $primary;
-      font-family: 'Poppins', sans-serif;
+      width: 20px;
+      display: block;
       text-decoration: none;
-      display: flex;
-      align-items: center;
+      + a {
+        margin-left: 0.65rem;
+      }
     }
   }
 }

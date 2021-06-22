@@ -130,6 +130,39 @@
   }
 }
 
+.sfn-title-middle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1px;
+    background: $blue-lightest;
+    z-index: 1;
+  }
+  h1 {
+    position: relative;
+    z-index: 2;
+    top: 6px;
+    &:before {
+      content: '';
+      position: absolute;
+      top: -5px;
+      bottom: 0px;
+      left: -30px;
+      right: -30px;
+      background: white;
+      z-index: -1;
+    }
+  }
+}
+
+
 // Page title
 .sfn-page-title {
   text-align: center;

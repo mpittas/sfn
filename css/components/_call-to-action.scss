@@ -33,7 +33,7 @@
     font-style: italic;
     margin-bottom: 1rem;
     @media (min-width: 992px) {
-      padding: 0 1em;
+      padding: 0 1.75em;
     }
   }
   p {
@@ -41,13 +41,16 @@
     margin-bottom: 1.75rem;
     font-size: 18px;
     font-family: adobe-caslon-pro, serif;
-    opacity: 0.8;
     line-height: 1.3em;
   }
 
 
-  &--dark {
-    background: $blue-dark;
+  &--primary {
+    background: $primary;
+    &:before {
+      border-color: white;
+      opacity: 0.3;
+    }
     h3 {
       color: white;
     }
@@ -55,8 +58,36 @@
       color: white;
       opacity: 1;
     }
-    &-secondary {
-      background: $primary;
+  }
+
+  &--blue-dark {
+    background: $blue-dark;
+    &:before {
+      border-color: white;
+      opacity: 0.3;
+    }
+    h3 {
+      color: white;
+    }
+    p {
+      color: white;
+      opacity: 1;
     }
   }
+
+  &--dark {
+    background: $black;
+    &:before {
+      border-color: white;
+      opacity: 0.3;
+    }
+    h3 {
+      color: white;
+    }
+    p {
+      color: white;
+      opacity: 1;
+    }
+  }
+
 }
