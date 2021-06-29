@@ -1,8 +1,10 @@
+// Header wrapper
 .sfn-header {
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid $blue-lightest;
   @media (min-width: 992px) {
+    margin-bottom: 1em;
     border-bottom: none;
   }
   .toggle-button {
@@ -50,13 +52,30 @@
   }
 }
 
+// Logo and action buttons
+.sfn-header-main {
+  @media (min-width: 992px) {
+    margin-bottom: 16px;
+  }
+}
+
+// Main navigation
 .sfn-header-nav {
-  padding: 0;
   position: static;
+  display: none;
+  @media (min-width: 992px) {
+    display: block;
+  }
+  &__holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $blue-light;
+    border-top: 1px solid $blue-lightest;
+    border-bottom: 1px solid $blue-lightest;
+  }
   &__inner {
-    margin-bottom: 1em;
     > ul {
-      padding: 0;
       > li {
         > a {
             font-family: 'Poppins', sans-serif;
@@ -64,10 +83,9 @@
             align-items: center;
             position: relative;
             padding: 1rem 1.75rem;
-            background: white;
             display: block;
-            color: $primary;
-            font-size: 17px;
+            color: $blue-dark;
+            font-size: 15px;
             font-weight: 600;
             text-decoration: none;
             transition: background .3s ease-in-out;
@@ -90,49 +108,18 @@
               }
             }
         }
-        + li {
-          > a {
-            border-top: 1px solid $blue-lightest;
-          }
-        }
-        .dropdown {
-          &-menu {
-            left: auto;
-            top: auto;
-          }
-          &-toggle {
-            &:after {
-              content: '\f078';
-              font-family: 'Font Awesome 5 Free';
-              margin: 0 0 0 0.5em;
-              border: none;
-              vertical-align: middle;
-              font-size: 12px;
-            }
-          }
-        }
-      }
-    }
-  }
-  @media (max-width: 991px) {
-    > .navbar-collapse {
-      background: white;
-      position: absolute;
-      width: 100%;
-      z-index: 5;
-      top: 70px;
-      left: 0;
-      transition: left 0.5s ease;
-      &.collapsing {
-        left: -100%;
-        height: 100%;
       }
     }
   }
 }
 
+// Main sub-navigation
 .sfn-header-submenu {
   font-family: 'Poppins', sans-serif;
+  display: none;
+  @media (min-width: 992px) {
+    display: block;
+  }
   nav {
     ul {
       list-style-type: none;
@@ -171,135 +158,132 @@
       }
     }
   }
-}
 
-@media only screen and (min-width: 992px) {
-  .sfn-header {
-    margin-bottom: 1em;
-  }
-  .sfn-header-main {
-    margin-bottom: 16px;
-  }
-  .sfn-header-nav {
-    &__holder {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: $blue-light;
-      border-top: 1px solid $blue-lightest;
-      border-bottom: 1px solid $blue-lightest;
-    }
-    &__inner {
-      margin-bottom: 0;
-      ul {
-        li {
-          a {
-            background: none;
-            font-size: 15px;
-            color: $blue-dark;
-          }
-          + li {
-            a {
-              border-top: none;
-            }
-          }
-          .dropdown-menu {
-            display: none;
-            li {
-              + li {
-                margin-left: 0;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  .sfn-header-submenu > .container {
+  > .container {
     padding-top: 1rem;
   }
 }
 
-// Remove padding from containers on mobile
-@media only screen and (max-width: 991px) {
-  .sfn-header-nav {
-    > .navbar-collapse {
-      > .container {
-        padding-right: 0;
-        padding-left: 0;
-        > .row {
-          margin-left: 0;
-          margin-right: 0;
-          > div {
-            padding-left: 0;
-            padding-right: 0;
+
+// Sliding navigation (Mobile)
+.sfn-header-slide {
+  width: 100%;
+  z-index: 9999;
+  overflow-y: auto;
+  height: 100%;
+  left: -100%;
+  transition: left .3s ease;
+  background: #eee;
+  &.open {
+    left: 0;
+  }
+
+  // Top
+  &__top {
+    padding: 1.25rem;
+    background: white;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom:  1px solid $blue-lightest;
+  }
+
+  &__left {
+    display: flex;
+  }
+
+  &__close {
+    position: relative;
+    top: 2px;
+    margin-right: 0.75rem;
+    cursor: pointer;
+  }
+
+  &__logo {
+    img {
+      width: 80px;
+    }
+  }
+
+
+  // Search
+  &__search {
+    background: white;
+    padding: 1.25rem;
+    border-bottom:  1px solid $blue-lightest;
+    .searchbar {
+      padding: 0;
+    }
+  }
+
+  // Nav
+  &__nav {
+    border-bottom: 1px solid $blue-lightest;
+    > nav {
+      font-family: 'Poppins', sans-serif;
+      padding: 0;
+      > ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        > li {
+          line-height: unset;
+          + li {
+            border-top: 1px solid $blue-lightest;
+          }
+          > a {
+            display: block;
+            padding: 1rem 1.25rem;
+            background-color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            color: $primary;
           }
         }
-      }
-    }
-    &__inner {
-      > ul {
-        > li {
-          a {
-            padding: 1rem 1.25rem;
-            &.active {
-              background: white;
-              color: $blue-dark;
-              &:before {
-                display: none;
-              }
-            }
-          }
-          .dropdown-menu {
-            font-family: 'Poppins', sans-serif;
-            background: $blue-light;
+        .dropdown {
+          // &-toggle {}
+          &-menu {
+            width: 100%;
+            background: none;
             border: none;
             border-radius: 0;
-            margin-top: 0;
-            font-size: 15px;
-            text-transform: uppercase;
-            padding: 1.5rem;
-            li {
-              + li {
-                margin-top: 1.15rem;
-              }
-              a {
-                padding: 0;
+            padding: 0.75rem 0;
+            margin: 0;
+            background: $blue-light;
+            > li {
+              > a {
+                // padding 32px 15 between
+                display: block;
+                background: $blue-light;
                 color: $primary;
-                font-size: 13px;
-                text-transform: uppercase;
-                letter-spacing: 0.1rem;
+                font-size: 12px;
                 font-weight: 500;
-              }
+                letter-spacing: 0.25em;
+                text-transform: uppercase;
+                text-decoration: none;
+                padding: 0.75rem 2rem;
+              } 
             }
           }
-          .dropdown-toggle {
-            position: relative;
-            &:after {
-              margin-top: 0;
-              position: absolute;
-              top: 23px;
-              right: 1rem;
-            }
-          }
-        }
-      }
-    }
-    .sfn-social__list-icons {
-      li {
-        a {
-          color: $primary;
         }
       }
     }
   }
-  .sfn-header-submenu {
-    display: none;
+
+  // Info
+  &__info {
+    padding: 1.125rem 0;
+    background: white;
   }
 }
 
 
-// Header simplified
+
+
+// Header simplified (HUB Page)
 .sfn-header-simplified {
   &__top {
     padding: 1.5rem 0;

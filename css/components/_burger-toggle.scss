@@ -1,6 +1,11 @@
 
 
 // Burger
+.sfn-toggle-button {
+  @media (min-width: 992px) {
+    display: none;
+  }
+}
 .toggle-button {
   position: relative;
   height: 27px;
