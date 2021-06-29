@@ -40,7 +40,7 @@ function toggleAnimation() {
 function stickySidebar() {
   // Sticky elements (Article page)
   $('.sfn-sidebar-fixed').sticky({
-    topSpacing: 50,
+    topSpacing: 180,
   });
 }
 

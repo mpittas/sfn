@@ -1,8 +1,14 @@
 // Header wrapper
 .sfn-header {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   border-bottom: 1px solid $blue-lightest;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+  background-color: white;
   @media (min-width: 992px) {
     margin-bottom: 1em;
     border-bottom: none;
@@ -288,6 +294,12 @@
 
 // Header simplified (HUB Page)
 .sfn-header-simplified {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  z-index: 9999;
   &__top {
     padding: 1.5rem 0;
   }

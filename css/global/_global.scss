@@ -74,3 +74,16 @@ input[type=number] {
 img {
   max-width: 100%;
 }
+
+.wrapper {
+  padding-top: 80px;
+  &-no-offset {
+    padding-top: 64px;
+  }
+  &-hub {
+    padding-top: 150px;
+  }
+  @media (min-width: 992px) {
+    padding-top: 162px;
+  }
+}

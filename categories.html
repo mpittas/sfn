@@ -34,10 +34,12 @@
                 <div class="row align-items-center">
                     <div class="col-6 col-lg-3 col-xl-4">
                         <div class="logo-holder">
-                            <div class="toggle-button d-block d-lg-none" data-bs-toggle="collapse" data-bs-target="#toggleMainNav" aria-controls="toggleMainNav" aria-expanded="false" role="button">
-                                <div class="line-top"></div>
-                                <div class="line-middle"></div>
-                                <div class="line-bottom"></div>
+                            <div class="sfn-toggle-button">
+                                <div class="toggle-button">
+                                    <div class="line-top"></div>
+                                    <div class="line-middle"></div>
+                                    <div class="line-bottom"></div>
+                                </div>
                             </div>
                             <div class="navbar-brand logo">
                                 <a href="#">
@@ -88,42 +90,23 @@
         </div>
 
         <div class="sfn-header-nav navbar navbar-expand-lg">
-            <div class="collapse navbar-collapse" id="toggleMainNav">
+            <div>
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="sfn-header-nav__holder">
                                 <div>
-                                    <div class="searchbar d-flex d-lg-none">
-                                        <div class="searchbar__inner">
-                                            <input type="text" placeholder="Search articles, jobs, events...">
-                                            <input type="submit" value="" style="background-image: url('./assets/images/icons/magnifying-glass-icon.svg');">
-                                        </div>
-                                    </div>
-
                                     <nav class="sfn-header-nav__inner">
                                         <ul class="navbar-nav">
-                                            <li class="dropdown" data-bs-toggle="collapse" data-bs-target="#navNews" aria-expanded="false" aria-controls="navNews">
-                                                <a class="dropdown-toggle active" href="#" id="navbarDropdown01" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-link="navNews">
+                                            <li>
+                                                <a href="#" class="dropdown-toggle active" data-bs-toggle="collapse" data-bs-target="#navNews" aria-expanded="false" aria-controls="navNews">
                                                     News
                                                 </a>
-                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown01">
-                                                    <li><a class="dropdown-item" href="#">Latest</a></li>
-                                                    <li><a class="dropdown-item" href="#">Appointments</a></li>
-                                                    <li><a class="dropdown-item" href="#">Legislation</a></li>
-                                                    <li><a class="dropdown-item" href="#">Courts</a></li>
-                                                    <li><a class="dropdown-item" href="#">Financial Regulatory</a></li>
-                                                    <li><a class="dropdown-item" href="#">And Finally</a></li>
-                                                </ul>
-                                                </li>
-                                            <li class="dropdown">
-                                                <a href="#" class="dropdown-toggle" id="navbarDropdown02" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-toggle">
                                                     Analysis
                                                 </a>
-                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown02">
-                                                    <li><a class="dropdown-item" href="#">Analysis Data</a></li>
-                                                    <li><a class="dropdown-item" href="#">Analyisi News</a></li>
-                                                    </ul>
                                             </li>
                                             <li>
                                                 <a href="#">
@@ -146,20 +129,6 @@
 
                                 <div class="sfn-social">
                                     <nav>
-                                        <ul class="sfn-social__nav d-block d-lg-none">
-                                            <li>
-                                                <a href="#">Terms & Conditions</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Privacy Policy</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Cookies</a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-
-                                    <nav>
                                         <ul class="sfn-social__media">
                                             <li>
                                                 <a href="#">
@@ -178,24 +147,6 @@
                                             </li>
                                         </ul>
                                     </nav>
-
-                                    <nav>
-                                        <ul class="sfn-social__list-icons d-block d-lg-none">
-                                            <li>
-                                                <a href="tel:+44(0)1382549723">
-                                                    <img src="./assets/images/icons/phone-icon-blue.svg" alt="Phone icon">
-                                                    +44 (0) 1382 549723
-                                                </a>
-                                            </li>
-
-                                            <li>
-                                                <a href="mailto:newsdesk@irishlegal.com">
-                                                    <img src="./assets/images/icons/email-icon-blue.svg" alt="Email icon">
-                                                    newsdesk@irishlegal.com.
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </nav>
                                 </div>
                             </div>
                         </div>
@@ -205,7 +156,7 @@
         </div>
 
         <!-- We use 'collapse' option from bootstrap to toggle the custom navigation -->
-        <div class="sfn-header-submenu" id="navNews">
+        <div class="sfn-header-submenu collapse" id="navNews">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -237,9 +188,136 @@
                 </div>
             </div>
         </div>
+
+        <div class="sfn-header-slide">
+            <div class="sfn-header-slide__top">
+                <div class="sfn-header-slide__left">
+                    <div class="sfn-header-slide__close">
+                        <img src="./assets/images/icons/arrow-left-dark.svg" alt="Arrow left dark">
+                    </div>
+                    <div class="sfn-header-slide__logo">
+                        <a href="#">
+                            <img src="./assets/images/logos/sfn-logo-main.svg" alt="SFN Logo"/>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="sfn-header-slide__action">
+                    <a href="#" class="btn btn-primary btn-has-icon-left" data-bs-toggle="modal" data-bs-target="#subscribeModal">
+                        <img src="./assets/images/icons/newsletter-icon.svg" alt="Newsletter icon">
+                        SUBSCRIBE
+                    </a>
+                </div>
+            </div>
+    
+            <div class="sfn-header-slide__search">
+                <div class="searchbar">
+                    <div class="searchbar__inner">
+                        <input type="text" placeholder="Search articles by keyword...">
+                        <input type="submit" value="" style="background-image: url('./assets/images/icons/magnifying-glass-icon.svg');">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="sfn-header-slide__nav">
+                <nav class="navbar navbar-collapse collapse show" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto">
+                        <li class="dropdown">
+                            <a class=" dropdown-toggle" href="#" id="navNews" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                                News
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navNews" data-bs-popper="none">
+                                <li><a href="#">Latest</a></li>
+                                <li><a href="#">Appointments</a></li>
+                                <li><a href="#">Legislation</a></li>
+                                <li><a href="#">Courts</a></li>
+                                <li><a href="#">Financial Regulatory</a></li>
+                                <li><a href="#">And Finally</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class=" dropdown-toggle" href="#" id="navAnalysis" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                                Analysis
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navAnalysis" data-bs-popper="none">
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 2</a></li>
+                                <li><a href="#">Link 3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Events</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">Jobs</a>
+                        </li>
+                        <li>
+                            <a href="#">About us</a>
+                        </li>
+                    </ul>
+                  </nav>
+            </div>
+    
+            <div class="sfn-header-slide__info">
+                <div class="sfn-social">
+                    <nav>
+                        <ul class="sfn-social__nav d-block d-lg-none">
+                            <li>
+                                <a href="#">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Cookies</a>
+                            </li>
+                        </ul>
+                    </nav>
+    
+                    <nav>
+                        <ul class="sfn-social__media">
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/brands/facebook-light-blue.svg" alt="Facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/brands/twitter-light-blue.svg" alt="Twitter">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/brands/linked-in-light-blue.svg" alt="Linked In">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+    
+                    <nav>
+                        <ul class="sfn-social__list-icons d-block d-lg-none">
+                            <li>
+                                <a href="tel:+44(0)1382549723">
+                                    <img src="./assets/images/icons/phone-icon-blue.svg" alt="Phone icon">
+                                    +44 (0) 1382 549723
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="mailto:newsdesk@irishlegal.com">
+                                    <img src="./assets/images/icons/email-icon-blue.svg" alt="Email icon">
+                                    newsdesk@irishlegal.com.
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <main class="wrapper pb-lg-5 pt-3">
+    <main class="wrapper pb-lg-5">
         <!-- Banners -->
         <div class="mb-4">
             <div class="container">
