@@ -17,26 +17,6 @@ function footerCollapse() {
   }
 };
 
-// Toggle button animation
-function toggleAnimation() {
-  $(".toggle-button").click(function() {
-    var that = $(this);
-
-    // Toggle mobile menu
-    $('.sfn-toggle-button').click(function(){
-      $('.sfn-header-slide').addClass('open');
-      console.log('i clicked');
-    });
-
-    // Play animation
-    // if (that.hasClass("is-open")) {
-    //   that.removeClass("is-open").addClass("is-closed");      
-    // } else {
-    //   that.removeClass("is-closed").addClass("is-open");      
-    // }
-  });
-}
-
 function stickySidebar() {
   // Sticky elements (Article page)
   $('.sfn-sidebar-fixed').sticky({
