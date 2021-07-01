@@ -171,6 +171,13 @@
 }
 
 
+.sfn-header-slide--open {
+  overflow: hidden;
+  .sfn-header-slide {
+    left: 0;
+  }
+}
+
 // Sliding navigation (Mobile)
 .sfn-header-slide {
   position: fixed;
@@ -183,6 +190,9 @@
   left: -100%;
   transition: left .3s ease;
   background: #eee;
+  @media (min-width: 992px) {
+    display: none;
+  }
   &.open {
     left: 0;
   }

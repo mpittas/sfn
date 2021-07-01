@@ -923,5 +923,13 @@
     <script src="./js/truncateHeadings.js"></script>
 
     <script src="./js/functions.js"></script>
+
+    <script>
+        jQuery(document).ready(function($){
+            // Take article heading height and apply it as an offset to left sidebar
+            var articleHeadingHeight = $('.sfn-article__heading > h1').height();
+            $('.sfn-article-meta').css({'paddingTop': articleHeadingHeight + 50});
+        });
+    </script>
 </body>
 </html>
