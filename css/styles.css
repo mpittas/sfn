@@ -975,15 +975,10 @@ label {
   padding-left: 1rem;
   top: 5px;
   position: relative;
-}
-
-@media (min-width: 992px) {
-  .sfn-title-main h3 {
-    width: calc(100% - 52px);
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-  }
+  width: calc(100% - 52px);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .sfn-title-long {
@@ -1029,7 +1024,6 @@ label {
 }
 
 .sfn-title-long h1, .sfn-title-long h2 {
-  width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1135,7 +1129,6 @@ label {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  overflow-x: hidden;
 }
 
 .sfn-title-middle:before {

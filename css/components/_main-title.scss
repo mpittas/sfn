@@ -21,12 +21,10 @@
     padding-left: 1rem;
     top: 5px;
     position: relative;
-    @media (min-width: 992px) {
-      width: calc(100% - 52px);
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
-    }
+    width: calc(100% - 52px);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 }
 
@@ -58,7 +56,6 @@
     }
   }
   h1, h2 {
-    width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -136,7 +133,6 @@
   position: relative;
   display: flex;
   justify-content: center;
-  overflow-x: hidden;
   &:before {
     content: '';
     position: absolute;
