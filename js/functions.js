@@ -17,27 +17,6 @@ function footerCollapse() {
   }
 };
 
-// Toggle button animation
-function toggleAnimation() {
-  $(".toggle-button").click(function() {
-    var that = $(this);
-
-    // Toggle mobile menu
-    $('.sfn-toggle-button').click(function(){
-      $('.sfn-header-slide').addClass('open');
-      console.log('i clicked');
-    });
-  });
-}
-
-// Close mobile header when clicked on closing icon
-function closeMobileHeader() {
-  $('.sfn-header-slide__close').click(function() {
-    $('.sfn-header-slide').removeClass('open');
-  });
-}
-
-// Sticke sidebar
 function stickySidebar() {
   // Sticky elements (Article page)
   $('.sfn-sidebar-fixed').sticky({

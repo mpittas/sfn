@@ -22,7 +22,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -33,13 +33,9 @@
                 <div class="row align-items-center">
                     <div class="col-6 col-lg-3 col-xl-4">
                         <div class="logo-holder">
-                            <div class="sfn-toggle-button">
-                                <div class="toggle-button">
-                                    <div class="line-top"></div>
-                                    <div class="line-middle"></div>
-                                    <div class="line-bottom"></div>
-                                </div>
-                            </div>
+                            <a class="d-block d-lg-none pe-3" data-bs-toggle="offcanvas" href="#headerSlide">
+                                <img src="./assets/images/icons/hamburger-menu.svg" alt="Menu" style="width:30px;">
+                            </a>
                             <div class="navbar-brand logo">
                                 <a href="#">
                                     <img src="./assets/images/logos/sfn-large-logo.svg" alt="SFN Logo" class="d-none d-lg-block" style="width: 330px"/>
@@ -188,11 +184,16 @@
             </div>
         </div>
 
-        <div class="sfn-header-slide">
+    </header>
+
+    <div class="sfn-header-slide offcanvas offcanvas-start" tabindex="-1" id="headerSlide">
+        <div class="overflow-auto">
             <div class="sfn-header-slide__top">
                 <div class="sfn-header-slide__left">
                     <div class="sfn-header-slide__close">
-                        <img src="./assets/images/icons/arrow-left-dark.svg" alt="Arrow left dark">
+                        <a data-bs-toggle="offcanvas" href="#headerSlide">
+                            <img src="./assets/images/icons/arrow-left-dark.svg" alt="Arrow left dark">
+                        </a>
                     </div>
                     <div class="sfn-header-slide__logo">
                         <a href="#">
@@ -314,7 +315,7 @@
                 </div>
             </div>
         </div>
-    </header>
+    </div>
 
     <main class="wrapper wrapper-no-offset pb-lg-5">
         <!-- Featured News / Single Featured New / Latest Articles -->
@@ -1833,7 +1834,7 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js" integrity="sha512-QABeEm/oYtKZVyaO8mQQjePTPplrV8qoT7PrwHDJCBLqZl5UmuPi3APEcWwtTNOiH24psax69XPQtEo5dAkGcA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <script src="./js/cuttr.min.js"></script>
 

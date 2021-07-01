@@ -126,7 +126,7 @@ label {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 99999;
+  z-index: 1000;
   background-color: white;
 }
 
@@ -325,21 +325,8 @@ label {
 }
 
 .sfn-header-slide {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  z-index: 9999;
-  overflow-y: auto;
-  height: 100%;
-  left: -100%;
-  -webkit-transition: left .3s ease;
-  transition: left .3s ease;
-  background: #eee;
-}
-
-.sfn-header-slide.open {
-  left: 0;
+  border: 0;
 }
 
 .sfn-header-slide__top {
@@ -452,7 +439,7 @@ label {
   left: 0;
   width: 100%;
   background: white;
-  z-index: 9999;
+  z-index: 1000;
 }
 
 .sfn-header-simplified__top {
