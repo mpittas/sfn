@@ -311,7 +311,15 @@
   background: white;
   z-index: 9999;
   &__top {
-    padding: 1.5rem 0;
+    padding: 1rem 0;
+    @media (min-width: 992px) {
+      padding: 1.5rem 0;
+    }
+    > .container {
+      > .row {
+        align-items: center;
+      }
+    }
   }
 
   &__logo {
@@ -360,6 +368,10 @@
   }
 
   &__nav {
+    background: $blue-light; 
+    @media (min-width: 992px) {
+      background: transparent;
+    }
     &-inner {
       padding: 1rem 0;
       background: $blue-light; 

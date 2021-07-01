@@ -270,7 +270,7 @@
       display: flex;
       .sfn-news-box__image {
         width: 50%;
-        padding-right: 0.5rem;
+        padding-right: 15px;
         margin-bottom: 0;
       }
       .sfn-news-box__content {
@@ -278,7 +278,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-left: 0.5rem;
+        padding-left: 15px;
       }
       .sfn-news-box__title {
         h3 {

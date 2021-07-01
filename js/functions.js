@@ -36,13 +36,6 @@ function closeMobileHeader() {
   });
 }
 
-function stickySidebar() {
-  // Sticky elements (Article page)
-  $('.sfn-sidebar-fixed').sticky({
-    topSpacing: 180,
-  });
-}
-
 // Take article heading height and apply it as an offset to left sidebar
 function articleLeftSidebarOffset() {
   var articleHeadingHeight = $('.sfn-article__heading > h1').height();
@@ -71,8 +64,6 @@ jQuery(document).ready(function($){
   closeMobileHeader();
 
   footerCollapse();
-
-  stickySidebar();
 
   delayModalOnPageLoad();
 

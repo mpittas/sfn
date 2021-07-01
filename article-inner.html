@@ -925,10 +925,31 @@
     <script src="./js/functions.js"></script>
 
     <script>
-        jQuery(document).ready(function($){
+        function sidebarOffset() {
             // Take article heading height and apply it as an offset to left sidebar
             var articleHeadingHeight = $('.sfn-article__heading > h1').height();
             $('.sfn-article-meta').css({'paddingTop': articleHeadingHeight + 50});
+        }
+
+        function stickySidebar() {
+            // Sticky elements (Article page)
+            $('.sfn-sidebar-fixed').sticky({
+                topSpacing: 180,
+            });
+        }
+
+        jQuery(document).ready(function($){
+            if ($(window).width() > 991) {
+                sidebarOffset();
+                stickySidebar();
+            }
+        });
+
+        jQuery(window).resize(function($) {
+            if ($(window).width() > 991) {
+                sidebarOffset();
+                stickySidebar();
+            }
         });
     </script>
 </body>

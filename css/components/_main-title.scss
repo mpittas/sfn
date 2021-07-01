@@ -5,7 +5,7 @@
   margin: 0 0 1.25rem 0;
   border-top: 1px solid $blue-lightest;
   border-bottom: 1px solid $blue-lightest;
-  overflow-x: hidden;
+  overflow: hidden;
   > em {
     font-style: normal;
     width: 52px;
@@ -33,7 +33,7 @@
   margin: 0 0 2rem 0;
   border-top: 1px solid $blue-lightest;
   border-bottom: 1px solid $blue-lightest;
-  overflow-x: hidden;
+  overflow: hidden;
   position: relative;
   @media (min-width: 992px) {
     padding: 0.75rem 0;
