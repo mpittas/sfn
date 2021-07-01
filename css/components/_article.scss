@@ -35,6 +35,9 @@
 
 // Article meta
 .sfn-article-meta {
+  @media (min-width: 992px) {
+    padding-top: 10.5em;
+  }
   &-inner {
     > h6 {
       font-size: 12px;

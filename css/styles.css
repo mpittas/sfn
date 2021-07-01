@@ -3891,6 +3891,12 @@ label {
   margin-bottom: 2em;
 }
 
+@media (min-width: 992px) {
+  .sfn-article-meta {
+    padding-top: 10.5em;
+  }
+}
+
 .sfn-article-meta-inner > h6 {
   font-size: 12px;
   font-family: 'Poppins', sans-serif;
