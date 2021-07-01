@@ -83,11 +83,13 @@
 // Image caption
 .sfn-caption {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  @media (min-width: 992px) {
+    padding-bottom: 1rem;
+  }
   &__text {
     margin-bottom: 0.5rem;
     @media (min-width: 992px) {
-      width: 70%;
       margin-bottom: 0;
     }
     p {
@@ -101,8 +103,8 @@
     font-weight: 600;
     color: $grey-mid;
     @media (min-width: 992px) {
+      float: right;
       padding-left: 5%;
-      width: 30%;
     }
   }
 }

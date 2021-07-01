@@ -2223,8 +2223,16 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+@media (min-width: 992px) {
+  .sfn-caption {
+    padding-bottom: 1rem;
+  }
 }
 
 .sfn-caption__text {
@@ -2233,7 +2241,6 @@ label {
 
 @media (min-width: 992px) {
   .sfn-caption__text {
-    width: 70%;
     margin-bottom: 0;
   }
 }
@@ -2251,8 +2258,8 @@ label {
 
 @media (min-width: 992px) {
   .sfn-caption__author {
+    float: right;
     padding-left: 5%;
-    width: 30%;
   }
 }
 
@@ -3804,7 +3811,7 @@ label {
 }
 
 .btn.btn-outline-primary {
-  border-color: #EDF6FF;
+  border-color: #C6E2FD;
   background: white;
   color: #438CD1;
 }
