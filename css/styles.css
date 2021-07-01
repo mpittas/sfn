@@ -143,7 +143,7 @@ label {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 99999;
+  z-index: 100;
   background-color: white;
 }
 
@@ -354,7 +354,7 @@ label {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 9999;
+  z-index: 101;
   overflow-y: auto;
   height: 100%;
   left: -100%;
@@ -483,7 +483,7 @@ label {
   left: 0;
   width: 100%;
   background: white;
-  z-index: 9999;
+  z-index: 100;
 }
 
 .sfn-header-simplified__top {

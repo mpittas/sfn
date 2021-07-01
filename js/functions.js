@@ -1,6 +1,6 @@
 
-// -------------------------------------- FUNCTIONS -------------------------------------- //
-// Footer collapse nav
+// ------------------------------- FUNCTIONS ------------------------------- //
+//+++++ Footer collapse nav +++++
 function footerCollapse() {
   var width = $(document).width();
   
@@ -17,7 +17,7 @@ function footerCollapse() {
   }
 };
 
-// Toggle button animation
+// +++++ Toggle button animation +++++
 function openMobileHeader() {
   $(".toggle-button").click(function() {
     var that = $(this);
@@ -29,19 +29,21 @@ function openMobileHeader() {
   });
 }
 
-// Close mobile header when clicked on closing icon
+// +++++ Close mobile header when clicked on closing icon +++++
 function closeMobileHeader() {
   $('.sfn-header-slide__close').click(function() {
     $('body').removeClass('sfn-header-slide--open');
   });
 }
 
-// Take article heading height and apply it as an offset to left sidebar
+// +++++ Take article heading height and apply it as an offset to left sidebar +++++
 function articleLeftSidebarOffset() {
   var articleHeadingHeight = $('.sfn-article__heading > h1').height();
   $('.sfn-article-meta').css({'paddingTop': articleHeadingHeight + 50});
 }
 
+
+// +++++ Delay subscribe modal on page load +++++
 function delayModalOnPageLoad() {
   // Show modal with delay
   var myModal = new bootstrap.Modal(document.getElementById('subscribeModal'));
@@ -50,6 +52,7 @@ function delayModalOnPageLoad() {
   }, 10000);
 }
 
+// +++++ Shorten meta string on smaller devices +++++
 function shortenMetaString() {
   if ($(window).width() < 1199) {
     // Update (Shorten) meta string so it doesn't fall it  doesn't breal the design
@@ -57,20 +60,16 @@ function shortenMetaString() {
   }
 }
 
-// -------------------------------------- DOCUMENT READY -------------------------------------- //
+// ------------------------------- DOCUMENT READY ------------------------------- //
 jQuery(document).ready(function($){
   openMobileHeader();
-
   closeMobileHeader();
-
   footerCollapse();
-
   delayModalOnPageLoad();
-
   shortenMetaString();
 });
 
-// -------------------------------------- WINDOW RESIZE -------------------------------------- //
+// ------------------------------- WINDOW RESIZE ------------------------------- //
 $(window).resize(function() {
   footerCollapse();
   shortenMetaString();
