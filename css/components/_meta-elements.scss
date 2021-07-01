@@ -45,6 +45,12 @@
   &__badge {
     font-family: 'Poppins', sans-serif;
     display: flex;
+    &--hide {
+      display: none;
+      @media (min-width: 992px) {
+        display: flex;
+      }
+    }
     a {
       font-size: 10px;
       font-weight: 600;

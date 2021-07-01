@@ -110,11 +110,6 @@
 
 @media only screen and (min-width: 992px) {
   .sfn-featured-newsbox {
-      &.sfn-top-featured {
-        .sfn-meta__badge {
-          top: -16px;
-        }
-      }
     &--horizontal {
       display: flex;
       > div {
