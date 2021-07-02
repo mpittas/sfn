@@ -132,7 +132,7 @@ img {
 }
 
 .open-subnav .wrapper {
-  padding-top: 197px;
+  padding-top: 200px;
 }
 
 select,
@@ -318,7 +318,7 @@ label {
   padding: 0;
   width: 1290px;
   background: white;
-  padding: 0.75rem;
+  padding: 1.094rem;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: opacity .2s ease, visibility .2s ease;
@@ -334,8 +334,8 @@ label {
 }
 
 .sfn-header-nav__inner > ul > li > ul li + li {
-  margin-left: 1.5em;
-  padding-left: 1.5em;
+  margin-left: 1.75em;
+  padding-left: 1.75em;
 }
 
 .sfn-header-nav__inner > ul > li > ul li + li:before {

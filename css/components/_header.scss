@@ -137,7 +137,7 @@
           padding: 0;
           width: 1290px;
           background: white;
-          padding: 0.75rem;
+          padding: 1.094rem;
           opacity: 0;
           visibility: hidden;
           transition: opacity .2s ease, visibility .2s ease;
@@ -148,8 +148,8 @@
             font-weight: 600;
             position: relative;
             + li {
-              margin-left: 1.5em;
-              padding-left: 1.5em;
+              margin-left: 1.75em;
+              padding-left: 1.75em;
               &:before {
                 content: '';
                 position: absolute;
