@@ -118,3 +118,34 @@
     justify-content: space-between;
   }
 }
+
+// Test header
+.test-header {
+  &__main-nav {
+    nav {
+      > ul {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        > li {
+          position: relative;
+          + li {
+            margin-left: 3rem;
+          }
+          > a {
+
+          }
+          > ul {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+          }
+        }
+      }
+    }
+  }
+}

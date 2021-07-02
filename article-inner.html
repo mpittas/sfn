@@ -26,7 +26,7 @@
 
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
+<body class="open-subnav">
     <header class="sfn-header">
         <div class="sfn-header-main navbar-expand-lg">
             <div class="container">
@@ -97,15 +97,49 @@
                                 <div>
                                     <nav class="sfn-header-nav__inner">
                                         <ul class="navbar-nav">
-                                            <li>
-                                                <a href="#" class="dropdown-toggle active" data-bs-toggle="collapse" data-bs-target="#navNews" aria-expanded="false" aria-controls="navNews">
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle active">
                                                     News
                                                 </a>
+                                                <ul class="sfn-header-subnav">
+                                                    <li>
+                                                        <a href="#" class="active">Latest</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Appointments</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Legislation</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Courts</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Financial Regulatory</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">And Finally</a>
+                                                    </li>
+                                                </ul>
                                             </li>
-                                            <li>
+                                            <li class="dropdown">
                                                 <a href="#" class="dropdown-toggle">
                                                     Analysis
                                                 </a>
+                                                <ul class="sfn-header-subnav">
+                                                    <li>
+                                                        <a href="#">Example 1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Example 2</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Example 3</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Example 4</a>
+                                                    </li>
+                                                </ul>
                                             </li>
                                             <li>
                                                 <a href="#">
@@ -148,40 +182,6 @@
                                     </nav>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- We use 'collapse' option from bootstrap to toggle the custom navigation -->
-        <div class="sfn-header-submenu collapse" id="navNews">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="sfn-header-submenu__inner">
-                            <nav>
-                                <ul>
-                                    <li>
-                                        <a href="#" class="active">Latest</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Appointments</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Legislation</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Courts</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Financial Regulatory</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">And Finally</a>
-                                    </li>
-                                </ul>
-                            </nav>
                         </div>
                     </div>
                 </div>
@@ -921,6 +921,8 @@
     <script src="./js/cuttr.min.js"></script>
 
     <script src="./js/truncateHeadings.js"></script>
+
+    <script src="./js/showSubnav.js"></script>
 
     <script src="./js/functions.js"></script>
 

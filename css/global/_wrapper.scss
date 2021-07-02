@@ -1,0 +1,30 @@
+// Important offset porperties to main container
+.wrapper {
+  padding-top: 80px;
+  transition: padding-top .2s ease;
+  &-no-offset {
+    padding-top: 64px;
+  }
+  @media (min-width: 992px) {
+    padding-top: 163px;
+  }
+}
+
+.wrapper-hub {
+  padding-top: 150px;
+}
+
+// On Category and Article page subnav is opened
+// Add more spacing to the wrapper
+// In JS we remove this class if we hover on nav link that doesn't contain dropdown so it doesn't show the wrong dropdown
+//             ^ Function name is 'headerNavNoDropdown();'
+.open-subnav {
+  .sfn-header-subnav {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .wrapper {
+    padding-top: 197px;
+  }
+}

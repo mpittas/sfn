@@ -10,7 +10,6 @@
   z-index: 100;
   background-color: white;
   @media (min-width: 992px) {
-    margin-bottom: 1em;
     border-bottom: none;
   }
   .toggle-button {
@@ -82,91 +81,105 @@
   }
   &__inner {
     > ul {
+      position: relative;
       > li {
-        > a {
-            font-family: 'Poppins', sans-serif;
-            display: flex;
-            align-items: center;
-            position: relative;
-            padding: 1rem 1.75rem;
-            display: block;
-            color: $blue-dark;
-            font-size: 15px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: background .3s ease-in-out;
-            &:before {
-              content: '';
-              position: absolute;
-              top: 0;
-              left: 0;
-              right: 0;
-              height: 3px;
-              background: $primary;
-              opacity: 0;
-              transition: opacity 0.3s ease-in-out;
+        position: static;
+        &:hover {
+          > a {
+            + ul {
+              opacity: 1;
+              visibility: visible;
+              z-index: 3;
             }
-            &:hover,
-            &.active {
-              background: darken($blue-light, 5%);
-              &:before {
-                opacity: 1;
-              }
-            }
+          }
         }
-      }
-    }
-  }
-}
-
-// Main sub-navigation
-.sfn-header-submenu {
-  font-family: 'Poppins', sans-serif;
-  display: none;
-  @media (min-width: 992px) {
-    display: block;
-  }
-  nav {
-    ul {
-      list-style-type: none;
-      display: flex;
-      align-items: center;
-      margin: 0;
-      padding: 0;
-      li {
-        font-size: 13px;
-        text-transform: uppercase;
-        letter-spacing: 0.1rem;
-        font-weight: 600;
-        position: relative;
-        + li {
-          margin-left: 1.5em;
-          padding-left: 1.5em;
+        > a {
+          font-family: 'Poppins', sans-serif;
+          display: flex;
+          align-items: center;
+          position: relative;
+          padding: 1rem 1.75rem;
+          display: block;
+          color: $blue-dark;
+          font-size: 15px;
+          font-weight: 600;
+          text-decoration: none;
+          transition: background .3s ease-in-out;
           &:before {
             content: '';
             position: absolute;
+            top: 0;
             left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            height: 15px;
-            width: 1px;
-            background: $blue-lightest;
+            right: 0;
+            height: 3px;
+            background: $primary;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+          }
+          &:hover,
+          &.active {
+            background: darken($blue-light, 5%);
+            &:before {
+              opacity: 1;
+            }
+          }
+          
+        }
+        > ul {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          font-family: 'Poppins', sans-serif;
+          list-style-type: none;
+          display: flex;
+          align-items: center;
+          margin: 0;
+          padding: 0;
+          width: 1290px;
+          background: #ccc;
+          padding: 0.75rem;
+          opacity: 0;
+          visibility: hidden;
+          transition: opacity .2s ease, visibility .2s ease;
+          li {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            font-weight: 600;
+            position: relative;
+            + li {
+              margin-left: 1.5em;
+              padding-left: 1.5em;
+              &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 15px;
+                width: 1px;
+                background: $blue-lightest;
+              }
+            }
+            a {
+              text-decoration: none;
+              color: $primary;
+              transition: color .3s ease-in-out;
+              &:hover {
+                color: darken($primary, 30%);
+              }
+            }
           }
         }
-        a {
-          text-decoration: none;
-          color: $primary;
-          transition: color .3s ease-in-out;
-          &:hover {
-            color: darken($primary, 30%);
+        &:first-child {
+          > a {
+            + ul {
+              z-index: 2;
+            }
           }
         }
       }
     }
-  }
-
-  > .container {
-    padding-top: 1rem;
   }
 }
 
