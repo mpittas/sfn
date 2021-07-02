@@ -26,7 +26,7 @@
 
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
+<body class="open-subnav">
     <header class="sfn-header">
         <div class="sfn-header-main navbar-expand-lg">
             <div class="container">
@@ -41,7 +41,7 @@
                                 </div>
                             </div>
                             <div class="navbar-brand logo">
-                                <a href="#">
+                                <a href="index.html">
                                     <img src="./assets/images/logos/sfn-large-logo.svg" alt="SFN Logo" class="d-none d-lg-block" style="width: 330px"/>
                                     <img src="./assets/images/logos/sfn-logo-main.svg" alt="SFN Logo" class="d-block d-lg-none" style="width: 80px"/>
                                 </a>
@@ -97,28 +97,67 @@
                                 <div>
                                     <nav class="sfn-header-nav__inner">
                                         <ul class="navbar-nav">
-                                            <li>
-                                                <a href="#" class="dropdown-toggle active" data-bs-toggle="collapse" data-bs-target="#navNews" aria-expanded="false" aria-controls="navNews">
+                                            <li class="dropdown">
+                                                <a href="categories.html" class="dropdown-toggle active">
                                                     News
                                                 </a>
+                                                <ul class="sfn-header-subnav">
+                                                    <li>
+                                                        <a href="#" class="active">Latest</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Appointments</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Legislation</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Courts</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Financial Regulatory</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">And Finally</a>
+                                                    </li>
+                                                </ul>
                                             </li>
-                                            <li>
+                                            <li class="dropdown">
                                                 <a href="#" class="dropdown-toggle">
                                                     Analysis
                                                 </a>
+                                                <ul class="sfn-header-subnav">
+                                                    <li>
+                                                        <a href="#">Example 1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Example 2</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Example 3</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Example 4</a>
+                                                    </li>
+                                                </ul>
                                             </li>
                                             <li>
-                                                <a href="#">
+                                                <a href="events.html">
                                                     Events
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#">
+                                                <a href="jobs.html">
+                                                    Jobs
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="advertisement.html">
                                                     Advertisement
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#">
+                                                <a href="about.html">
                                                     About Us
                                                 </a>
                                             </li>
@@ -154,40 +193,6 @@
             </div>
         </div>
 
-        <!-- We use 'collapse' option from bootstrap to toggle the custom navigation -->
-        <div class="sfn-header-submenu collapse" id="navNews">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="sfn-header-submenu__inner">
-                            <nav>
-                                <ul>
-                                    <li>
-                                        <a href="#" class="active">Latest</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Appointments</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Legislation</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Courts</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Financial Regulatory</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">And Finally</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div class="sfn-header-slide">
             <div class="sfn-header-slide__top">
                 <div class="sfn-header-slide__left">
@@ -195,7 +200,7 @@
                         <img src="./assets/images/icons/arrow-left-dark.svg" alt="Arrow left dark">
                     </div>
                     <div class="sfn-header-slide__logo">
-                        <a href="#">
+                        <a href="index.html">
                             <img src="./assets/images/logos/sfn-logo-main.svg" alt="SFN Logo"/>
                         </a>
                     </div>
@@ -222,7 +227,7 @@
                 <nav class="navbar navbar-collapse collapse show" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto">
                         <li class="dropdown">
-                            <a class=" dropdown-toggle" href="#" id="navNews" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                            <a class=" dropdown-toggle" href="categories.html" id="navNews" role="button" data-bs-toggle="dropdown" aria-expanded="true">
                                 News
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navNews" data-bs-popper="none">
@@ -245,14 +250,16 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">Events</a>
-                        </li>
-                        
-                        <li>
-                            <a href="#">Jobs</a>
+                            <a href="events.html">Events</a>
                         </li>
                         <li>
-                            <a href="#">About us</a>
+                            <a href="jobs.html">Jobs</a>
+                        </li>
+                        <li>
+                            <a href="advertisement.html">Advertisement</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About us</a>
                         </li>
                     </ul>
                   </nav>
@@ -1232,6 +1239,8 @@
     <script src="./js/cuttr.min.js"></script>
 
     <script src="./js/truncateHeadings.js"></script>
+
+    <script src="./js/showSubnav.js"></script>
 
     <script src="./js/functions.js"></script>
 </body>

@@ -41,7 +41,7 @@
                                 </div>
                             </div>
                             <div class="navbar-brand logo">
-                                <a href="#">
+                                <a href="index.html">
                                     <img src="./assets/images/logos/sfn-large-logo.svg" alt="SFN Logo" class="d-none d-lg-block" style="width: 330px"/>
                                     <img src="./assets/images/logos/sfn-logo-main.svg" alt="SFN Logo" class="d-block d-lg-none" style="width: 80px"/>
                                 </a>
@@ -97,28 +97,67 @@
                                 <div>
                                     <nav class="sfn-header-nav__inner">
                                         <ul class="navbar-nav">
-                                            <li>
-                                                <a href="#" class="dropdown-toggle active" data-bs-toggle="collapse" data-bs-target="#navNews" aria-expanded="false" aria-controls="navNews">
+                                            <li class="dropdown">
+                                                <a href="categories.html" class="dropdown-toggle active">
                                                     News
                                                 </a>
+                                                <ul class="sfn-header-subnav">
+                                                    <li>
+                                                        <a href="#" class="active">Latest</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Appointments</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Legislation</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Courts</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Financial Regulatory</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">And Finally</a>
+                                                    </li>
+                                                </ul>
                                             </li>
-                                            <li>
+                                            <li class="dropdown">
                                                 <a href="#" class="dropdown-toggle">
                                                     Analysis
                                                 </a>
+                                                <ul class="sfn-header-subnav">
+                                                    <li>
+                                                        <a href="#">Example 1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Example 2</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Example 3</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Example 4</a>
+                                                    </li>
+                                                </ul>
                                             </li>
                                             <li>
-                                                <a href="#">
+                                                <a href="events.html">
                                                     Events
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#">
+                                                <a href="jobs.html">
+                                                    Jobs
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="advertisement.html">
                                                     Advertisement
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#">
+                                                <a href="about.html">
                                                     About Us
                                                 </a>
                                             </li>
@@ -154,40 +193,6 @@
             </div>
         </div>
 
-        <!-- We use 'collapse' option from bootstrap to toggle the custom navigation -->
-        <div class="sfn-header-submenu collapse" id="navNews">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="sfn-header-submenu__inner">
-                            <nav>
-                                <ul>
-                                    <li>
-                                        <a href="#" class="active">Latest</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Appointments</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Legislation</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Courts</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Financial Regulatory</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">And Finally</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div class="sfn-header-slide">
             <div class="sfn-header-slide__top">
                 <div class="sfn-header-slide__left">
@@ -195,7 +200,7 @@
                         <img src="./assets/images/icons/arrow-left-dark.svg" alt="Arrow left dark">
                     </div>
                     <div class="sfn-header-slide__logo">
-                        <a href="#">
+                        <a href="index.html">
                             <img src="./assets/images/logos/sfn-logo-main.svg" alt="SFN Logo"/>
                         </a>
                     </div>
@@ -222,7 +227,7 @@
                 <nav class="navbar navbar-collapse collapse show" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto">
                         <li class="dropdown">
-                            <a class=" dropdown-toggle" href="#" id="navNews" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                            <a class=" dropdown-toggle" href="categories.html" id="navNews" role="button" data-bs-toggle="dropdown" aria-expanded="true">
                                 News
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navNews" data-bs-popper="none">
@@ -245,14 +250,16 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">Events</a>
-                        </li>
-                        
-                        <li>
-                            <a href="#">Jobs</a>
+                            <a href="events.html">Events</a>
                         </li>
                         <li>
-                            <a href="#">About us</a>
+                            <a href="jobs.html">Jobs</a>
+                        </li>
+                        <li>
+                            <a href="advertisement.html">Advertisement</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About us</a>
                         </li>
                     </ul>
                   </nav>
@@ -324,7 +331,7 @@
                     <div class="col-lg-6 order-lg-1">
                         <article class="sfn-featured-newsbox sfn-top-featured mb-4">
                             <div class="sfn-featured-newsbox__image">
-                                <a href="#" class="sfn-featured-newsbox__image-inner">
+                                <a href="article-inner.html" class="sfn-featured-newsbox__image-inner">
                                     <img src="./assets/images/images/business-man-02.jpg" alt="Featured article image">
                                 </a>
 
@@ -349,7 +356,7 @@
                                 </div>
                                 <div class="sfn-featured-newsbox__title">
                                     <h2>
-                                        <a href="#">French Duncan’s corporate advisory team surpasses &pound;110m of transactions since 2020 and the media has covered this topic for years now.</a>
+                                        <a href="article-inner.html">French Duncan’s corporate advisory team surpasses &pound;110m of transactions since 2020 and the media has covered this topic for years now.</a>
                                     </h2>
                                 </div>
                                 <div class="sfn-featured-newsbox__author d-none d-lg-block">
@@ -364,7 +371,7 @@
                                     <p>Over the course of the past 15 months, the team completed close to 20 transactions, with a combined value of over &pound;110m. The firm experienced particular activity in the care home, engineering and e-commerce sectors, along with supporting the community growth bt providing monthly benefits for its users. It's estimated that by the year 2025 we will be able to live a fully self-sustainable lifestyle.</p>
                                 </div>
                                 <div class="sfn-element__read-more d-none d-lg-block">
-                                    <a href="#">Read Full Article <img src="./assets/images/icons/arrow-right.svg" alt="Arrow right"></a>
+                                    <a href="article-inner.html">Read Full Article <img src="./assets/images/icons/arrow-right.svg" alt="Arrow right"></a>
                                 </div>
                             </div>
                         </article>

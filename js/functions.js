@@ -60,6 +60,7 @@ function shortenMetaString() {
   }
 }
 
+
 // ------------------------------- DOCUMENT READY ------------------------------- //
 jQuery(document).ready(function($){
   openMobileHeader();
@@ -74,3 +75,8 @@ $(window).resize(function() {
   footerCollapse();
   shortenMetaString();
 });
+
+
+//Main header nav
+// hover on <li> that doesn't have class 'dropdown' remove class 'open-subnav' from <body>
+
