@@ -9,10 +9,7 @@ function footerCollapse() {
       $(this).next().slideToggle();
       $(this).toggleClass('active');
     });
-  
-    $('.sfn-footer__nav-inner').hide();
-  } else {
-    $('.sfn-footer__nav-inner').show();
+
   }
 };
 
