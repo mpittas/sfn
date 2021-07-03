@@ -1,3 +1,4 @@
+// Footer
 .sfn-footer {
   @media (min-width: 992px) {
     max-width: 1320px;
@@ -29,35 +30,70 @@
       padding-right: 3rem;
     }
   }
+
+  @media (max-width: 991px) {
+    > div > div > .row > div {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  // Top
   &__top {
     background: $black;
     position: relative;
     .sfn-social__list-icons li a {
       color: white;
     }
+    @media (min-width: 992px) {
+      padding: 3rem 0;
+    }
+    @media (max-width: 991px) {
+      > .container {
+        > .row {
+          > *:last-child {
+            .sfn-footer__nav {
+              border-bottom: none;
+            }
+          }
+        }
+      } 
+    }
   }
 
-  &__bottom {
-    background: $grey-mid2;
-    z-index: 2;
-  }
-
+  // Info
   &__info {
     text-align: center;
     padding: 2rem 0;
     border-bottom: 1px solid $grey-mid2;
+    @media (min-width: 992px) {
+      padding-top: 0;
+      text-align: left;
+      padding-bottom: 0;
+      border-bottom: none;
+      .sfn-social {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
   }
 
+  // Logo
   &__logo {
     margin-bottom: 1.5rem;
   }
 
+  // Contacts
   &__contacts {
     ul {
       padding: 0;
     }
+    @media (min-width: 992px) {
+      margin-bottom: 2.5rem;
+    }
   }
 
+  // Socials
   &__socials {
     margin-bottom: 1.5rem;
     > h4 {
@@ -71,12 +107,19 @@
       justify-content: center;
       padding: 0;
     }
+    @media (min-width: 992px) {
+      margin-bottom: 0;
+      .sfn-social__media {
+        justify-content: flex-start;
+      }
+    }
   }
 
+  // Main nav
   &__nav {
-    border-bottom: 1px solid $grey-mid2;
     padding: 1rem;
     font-family: 'Poppins', sans-serif;
+    border-bottom: 1px solid $grey-mid2;
     &-title {
       display: flex;
       justify-content: space-between;
@@ -121,71 +164,7 @@
         }
       }
     }
-  }
-
-  &__copyright {
-    padding: 1rem;
-    color: rgba(255,255,255,0.5);
-    border-bottom: 1px solid $grey-mid;
-    h6 {
-      font-size: 14px;
-      line-height: 1.4em;
-      display: block;
-      color: rgba(255,255,255,0.5);
-      font-weight: 400;
-      margin-bottom: 0;
-    }
-  }
-
-
-  &__credits {
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    > h3 {
-      font-size: 13px;
-      color: rgba(255,255,255,0.6);
-      margin: 0 0.5rem 0 0;
-      font-family: 'Poppins', sans-serif;
-      font-weight: 500;
-    }
-  }
-}
-
-@media only screen and (max-width: 991px) {
-  .sfn-footer {
-    > div > div > .row > div {
-      padding-left: 0;
-      padding-right: 0;
-    }
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .sfn-footer {
-    &__top {
-      padding: 3rem 0;
-    }
-    &__info {
-      padding-top: 0;
-      text-align: left;
-      padding-bottom: 0;
-      border-bottom: none;
-      .sfn-social {
-        display: flex;
-        flex-direction: column-reverse;
-      }
-    }
-    &__contacts {
-      margin-bottom: 2.5rem;
-    }
-    &__socials {
-      margin-bottom: 0;
-      .sfn-social__media {
-        justify-content: flex-start;
-      }
-    }
-    &__nav {
+    @media (min-width: 992px) {
       border-bottom: none;
       padding: 0;
       &-title {
@@ -220,8 +199,13 @@
         }
       }
     }
+  }
 
-    &__bottom {
+  // Bottom
+  &__bottom {
+    background: $grey-mid2;
+    z-index: 2;
+    @media (min-width: 992px) {
       padding: 1rem;
       position: relative;
       z-index: 1;
@@ -231,13 +215,40 @@
         justify-content: space-between;
       }
     }
+  }
 
-    &__copyright {
+  // Copyright
+  &__copyright {
+    padding: 1rem;
+    color: rgba(255,255,255,0.5);
+    border-bottom: 1px solid $grey-mid;
+    h6 {
+      font-size: 14px;
+      line-height: 1.4em;
+      display: block;
+      color: rgba(255,255,255,0.5);
+      font-weight: 400;
+      margin-bottom: 0;
+    }
+    @media (min-width: 992px) {
       padding: 0;
       border-bottom: none;
     }
+  }
 
-    &__credits {
+  // Credits
+  &__credits {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    > h3 {
+      font-size: 13px;
+      color: rgba(255,255,255,0.6);
+      margin: 0 0.5rem 0 0;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+    }
+    @media (min-width: 992px) {
       padding: 0;
       display: flex;
       justify-content: flex-end;
