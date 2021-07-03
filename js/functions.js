@@ -17,11 +17,9 @@ function footerCollapse() {
   }
 };
 
-// +++++ Toggle button animation +++++
+// OPEN MOBILE NAV
 function openMobileHeader() {
   $(".toggle-button").click(function() {
-    var that = $(this);
-
     // Toggle mobile menu
     $('.sfn-toggle-button').click(function(){
       $('body').addClass('sfn-header-slide--open');
@@ -29,7 +27,7 @@ function openMobileHeader() {
   });
 }
 
-// +++++ Close mobile header when clicked on closing icon +++++
+// OPEN MOBILE NAV
 function closeMobileHeader() {
   $('.sfn-header-slide__close').click(function() {
     $('body').removeClass('sfn-header-slide--open');
