@@ -3182,7 +3182,6 @@ label {
 .sfn-footer__top {
   background: #333;
   position: relative;
-  padding-bottom: 0.5rem;
 }
 
 .sfn-footer__top .sfn-social__list-icons li a {
@@ -3214,6 +3213,7 @@ label {
 @media (max-width: 991px) {
   .sfn-footer__top > .container > .row > *:last-child .sfn-footer__nav {
     border-bottom: none;
+    padding-bottom: 1.5rem;
   }
 }
 
@@ -3427,6 +3427,8 @@ label {
   color: rgba(255, 255, 255, 0.5);
   font-weight: 400;
   margin-bottom: 0;
+  position: relative;
+  top: 4px;
 }
 
 @media (min-width: 992px) {
