@@ -11,9 +11,9 @@ function footerCollapse() {
       console.log(this);
     });
   
-    $('.sfn-footer__nav-inner').stop().hide();
+    $('.sfn-footer__nav-inner').hide();
   } else {
-    $('.sfn-footer__nav-inner').stop().show();
+    $('.sfn-footer__nav-inner').show();
   }
 };
 
