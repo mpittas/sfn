@@ -6,10 +6,8 @@ function footerCollapse() {
   
   if (width < 991) {
     $('.sfn-footer__nav-title').click(function() {
-      $(this).next().slideToggle();
       $(this).toggleClass('active');
     });
-
   }
 };
 
