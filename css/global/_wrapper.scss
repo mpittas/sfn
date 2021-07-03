@@ -1,7 +1,7 @@
 // Important offset porperties to main container
 .wrapper {
   padding-top: 80px;
-  transition: padding-top .2s ease;
+  transition: padding-top .1s ease;
   &-no-offset {
     padding-top: 64px;
   }
@@ -25,6 +25,9 @@
   }
 
   .wrapper {
-    padding-top: 200px;
+    padding-top: 90px;
+    @media (min-width: 992px) {
+      padding-top: 200px;
+    }
   }
 }

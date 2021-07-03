@@ -140,7 +140,7 @@
           padding: 1.094rem;
           opacity: 0;
           visibility: hidden;
-          transition: opacity .2s ease, visibility .2s ease;
+          transition: opacity .1s ease, visibility .1s ease;
           li {
             font-size: 13px;
             text-transform: uppercase;
@@ -166,7 +166,7 @@
               color: $primary;
               transition: color .3s ease-in-out;
               &:hover {
-                color: darken($primary, 30%);
+                color: lighten($primary, 20%);
               }
             }
           }
@@ -276,7 +276,7 @@
           }
         }
         .dropdown {
-          // &-toggle {}
+          position: relative;
           &-menu {
             width: 100%;
             background: none;
@@ -298,6 +298,26 @@
                 text-decoration: none;
                 padding: 0.75rem 2rem;
               } 
+            }
+          }
+          &-toggle {
+            &:after {
+              display: none;
+            }
+            &--close {
+              position: absolute;
+              top: 0.85rem;
+              right: 1.25rem;
+              width: 30px;
+              height: 30px;
+              background-color: transparent;
+              background-image: url('../assets/images/icons/chevron-down-blue.svg');
+              background-repeat: no-repeat;
+              background-size: 14px;
+              background-position: center;
+              &.show {
+                transform: rotate(180deg);
+              }
             }
           }
         }

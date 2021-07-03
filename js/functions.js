@@ -58,6 +58,11 @@ function shortenMetaString() {
   }
 }
 
+function dropdownParentNavClickable() {
+  $('.sfn-header-slide__nav .dropdown-toggle').click(function() {
+    location.href = this.href;
+});
+}
 
 // ------------------------------- DOCUMENT READY ------------------------------- //
 jQuery(document).ready(function($){
@@ -66,6 +71,8 @@ jQuery(document).ready(function($){
   footerCollapse();
   delayModalOnPageLoad();
   shortenMetaString();
+  dropdownParentNavClickable();
+  
 });
 
 // ------------------------------- WINDOW RESIZE ------------------------------- //

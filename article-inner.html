@@ -227,9 +227,10 @@
                 <nav class="navbar navbar-collapse collapse show" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto">
                         <li class="dropdown">
-                            <a class=" dropdown-toggle" href="categories.html" id="navNews" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                            <a class=" dropdown-toggle" href="categories.html">
                                 News
                             </a>
+                            <span class="dropdown-toggle--close" id="navNews" role="button" data-bs-toggle="dropdown" aria-expanded="true"></span>
                             <ul class="dropdown-menu" aria-labelledby="navNews" data-bs-popper="none">
                                 <li><a href="#">Latest</a></li>
                                 <li><a href="#">Appointments</a></li>
@@ -240,9 +241,10 @@
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a class=" dropdown-toggle" href="#" id="navAnalysis" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                            <a class=" dropdown-toggle">
                                 Analysis
                             </a>
+                            <span class="dropdown-toggle--close" id="navNews" role="button" data-bs-toggle="dropdown" aria-expanded="true"></span>
                             <ul class="dropdown-menu" aria-labelledby="navAnalysis" data-bs-popper="none">
                                 <li><a href="#">Link 1</a></li>
                                 <li><a href="#">Link 2</a></li>
@@ -935,7 +937,7 @@
 
     <script>
         function sidebarOffset() {
-            // Take article heading height and apply it as an offset to left sidebar
+            // Take article heading's height and apply it as an offset to left sidebar
             var articleHeadingHeight = $('.sfn-article__heading > h1').height();
             $('.sfn-article-meta').css({'paddingTop': articleHeadingHeight + 50});
         }
