@@ -146,3 +146,6 @@ The "Issues" and "Pull Requests" tabs are the place to go if any changes are to 
 --- 
 
 ## License
+
+Uses "MIT License"
+https://github.com/mpittas/sfn/blob/main/LICENSE
