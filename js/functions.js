@@ -6,9 +6,8 @@ function footerCollapse() {
   
   if (width < 991) {
     $('.sfn-footer__nav-title').click(function() {
-      $(this).next().stop().slideToggle();
+      $(this).next().slideToggle();
       $(this).toggleClass('active');
-      console.log(this);
     });
   
     $('.sfn-footer__nav-inner').hide();
