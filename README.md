@@ -68,6 +68,37 @@ function closeMobileHeader() {
 
 That is pretty much all the JS that we use to achieve the result. Maybe we can implement a touch interaction where the navigation can be closed by sliding it.
 
+One issue I faced was the dropdown functionality on main navigation for mobile. We use bootstrap dropdown data-attributes and this makes the parent link no to go to the page we have specified in the `<a href="categories.html"></a>` tag. I came up with a solution where we add the link and the chevron icon (dropdown icon) separately. The HTML looksl ike this: 
+
+``` HTML
+<div class="sfn-header-slide__nav">
+  <nav class="navbar navbar-collapse collapse show" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto">
+           <!-- ATTENTION HERE -->
+          <li class="dropdown">
+              <a class=" dropdown-toggle" href="categories.html">
+                  News
+              </a>
+              <span class="dropdown-toggle--close" id="navNews" role="button" data-bs-toggle="dropdown" aria-expanded="true"></span>
+              <ul class="dropdown-menu" aria-labelledby="navNews" data-bs-popper="none">
+                  <li><a href="#">Latest</a></li>
+                  <li><a href="#">Appointments</a></li>
+                  <li><a href="#">Legislation</a></li>
+                  <li><a href="#">Courts</a></li>
+                  <li><a href="#">Financial Regulatory</a></li>
+                  <li><a href="#">And Finally</a></li>
+              </ul>
+          </li>
+        <!-- / ATTENTION HERE -->
+        
+        <li>...</li>
+        <li>...</li>
+        <li>...</li>
+    </ul>
+  </nav>
+</div>
+
+```
 ---
 
 ## Sticky sidebar
