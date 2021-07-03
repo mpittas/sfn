@@ -72,6 +72,7 @@
     display: block;
   }
   &__holder {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,7 +82,6 @@
   }
   &__inner {
     > ul {
-      position: relative;
       > li {
         position: static;
         &:hover {
@@ -135,7 +135,7 @@
           align-items: center;
           margin: 0;
           padding: 0;
-          width: 1290px;
+          width: 100%;
           background: white;
           padding: 1.094rem;
           opacity: 0;

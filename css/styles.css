@@ -240,6 +240,7 @@ label {
 }
 
 .sfn-header-nav__holder {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -252,10 +253,6 @@ label {
   background: #EDF6FF;
   border-top: 1px solid #C6E2FD;
   border-bottom: 1px solid #C6E2FD;
-}
-
-.sfn-header-nav__inner > ul {
-  position: relative;
 }
 
 .sfn-header-nav__inner > ul > li {
@@ -322,7 +319,7 @@ label {
           align-items: center;
   margin: 0;
   padding: 0;
-  width: 1290px;
+  width: 100%;
   background: white;
   padding: 1.094rem;
   opacity: 0;
@@ -1504,6 +1501,12 @@ label {
   display: flex;
 }
 
+@media (max-width: 1200px) and (min-width: 992px) {
+  .sfn-news-box {
+    display: block;
+  }
+}
+
 .sfn-news-box + .sfn-news-box {
   margin-top: 1rem;
 }
@@ -1511,6 +1514,13 @@ label {
 .sfn-news-box__image {
   width: 97px;
   position: relative;
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+  .sfn-news-box__image {
+    width: 67px;
+    margin-bottom: 0.5rem;
+  }
 }
 
 .sfn-news-box__image .sfn-meta__badge {
@@ -1535,6 +1545,13 @@ label {
 .sfn-news-box__content {
   width: calc(100% - 97px);
   padding-left: 1rem;
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+  .sfn-news-box__content {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 .sfn-news-box__meta {
@@ -2373,6 +2390,12 @@ label {
   display: flex;
 }
 
+@media (max-width: 1200px) and (min-width: 992px) {
+  .sfn-news-box {
+    display: block;
+  }
+}
+
 .sfn-news-box + .sfn-news-box {
   margin-top: 1rem;
 }
@@ -2380,6 +2403,13 @@ label {
 .sfn-news-box__image {
   width: 97px;
   position: relative;
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+  .sfn-news-box__image {
+    width: 67px;
+    margin-bottom: 0.5rem;
+  }
 }
 
 .sfn-news-box__image .sfn-meta__badge {
@@ -2404,6 +2434,13 @@ label {
 .sfn-news-box__content {
   width: calc(100% - 97px);
   padding-left: 1rem;
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+  .sfn-news-box__content {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 .sfn-news-box__meta {
