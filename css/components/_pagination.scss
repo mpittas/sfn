@@ -210,3 +210,12 @@
     justify-content: space-between;
   }
 }
+
+// List results count
+@media only screen and (min-width: 992px) {
+  .sfn-list-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

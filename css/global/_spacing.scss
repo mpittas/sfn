@@ -1,10 +1,4 @@
-// Separator
-.sfn-separator {
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid $grey-medium;
-}
-
+// Global spacing classes
 .has-spacing-bottom {
   position: relative;
   padding-bottom: 2rem;
@@ -51,6 +45,7 @@
   }
 }
 
+// Adds border bottom
 .sfn-border-bottom {
   margin-bottom: 2rem;
   padding-bottom: 1rem;
@@ -65,14 +60,7 @@
   }
 }
 
-.sfn-category-articles {
-  &__inner {
-    @media (min-width: 1368px) {
-      padding-right: 26%;
-    }
-  }
-}
-
+// Row offset
 .sfn-row-offset {
   margin: 2.5em 0;
   > div {
@@ -96,55 +84,6 @@
       }
       &:nth-child(2) {
         padding-left: 235px;
-      }
-    }
-  }
-}
-
-// List navigation
-@media only screen and (max-width: 991px) {
-  .sfn-mobile-separator {
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid $grey-medium;
-  }
-}
-
-
-@media only screen and (min-width: 992px) {
-  .sfn-list-navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-}
-
-// Test header
-.test-header {
-  &__main-nav {
-    nav {
-      > ul {
-        display: flex;
-        align-items: center;
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        > li {
-          position: relative;
-          + li {
-            margin-left: 3rem;
-          }
-          > a {
-
-          }
-          > ul {
-            position: absolute;
-            top: 0;
-            left: 0;
-            opacity: 0;
-            visibility: hidden;
-          }
-        }
       }
     }
   }
