@@ -1,5 +1,7 @@
 # Scottish Financial News
 
+https://mpittas.github.io/sfn-frontend/
+
 Development of static front-end pages for SFN. We use HTML, CSS and JS. For the CSS we use a compiler called SCSS. This is the current and latest list of pages that were developed by me:
 
 - Home
