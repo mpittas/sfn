@@ -773,7 +773,7 @@ label {
 
 @media (min-width: 992px) {
   .sfn-header-simplified__nav nav ul li + li {
-    margin-left: 3rem;
+    margin-left: 3.75rem;
   }
 }
 
@@ -1594,6 +1594,18 @@ label {
 
 .sfn-meta__location a:hover {
   opacity: 0.75;
+}
+
+@media (max-width: 1401px) and (min-width: 1200px) {
+  .sfn-news-boxes--featured .sfn-meta__date {
+    width: 80px;
+  }
+}
+
+@media (max-width: 1401px) and (min-width: 1200px) {
+  .sfn-news-boxes--featured .sfn-meta__badge {
+    width: calc(100% - 86px);
+  }
 }
 
 .sfn-news-box {

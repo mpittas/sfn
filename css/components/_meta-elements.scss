@@ -173,3 +173,17 @@
     }
   }
 }
+
+// Specific cases
+.sfn-news-boxes--featured {
+  .sfn-meta__date {
+    @media (max-width: 1401px) and (min-width: 1200px) {
+      width: 80px;
+    }
+  }
+  .sfn-meta__badge {
+    @media (max-width: 1401px) and (min-width: 1200px) {
+      width: calc(100% - 86px);
+    }
+  }
+}
